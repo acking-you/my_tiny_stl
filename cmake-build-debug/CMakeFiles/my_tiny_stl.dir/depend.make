@@ -7,9 +7,21 @@ CMakeFiles/my_tiny_stl.dir/BinarySearch.cpp.obj: ../BinarySearch.h
 CMakeFiles/my_tiny_stl.dir/HashTable.cpp.obj: ../HashTable.cpp
 CMakeFiles/my_tiny_stl.dir/HashTable.cpp.obj: ../HashTable.h
 
+CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.obj: ../LinkMap.cpp
+CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.obj: ../LinkMap.h
+
+CMakeFiles/my_tiny_stl.dir/Tarjan.cpp.obj: ../Tarjan.cpp
+CMakeFiles/my_tiny_stl.dir/Tarjan.cpp.obj: ../Tarjan.h
+
+CMakeFiles/my_tiny_stl.dir/Trie_dyn.cpp.obj: ../Trie_dyn.cpp
+CMakeFiles/my_tiny_stl.dir/Trie_dyn.cpp.obj: ../Trie_dyn.h
+
+CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.obj: ../Trie_static.cpp
+CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.obj: ../Trie_static.h
+
 CMakeFiles/my_tiny_stl.dir/UnionFind.cpp.obj: ../UnionFind.cpp
 CMakeFiles/my_tiny_stl.dir/UnionFind.cpp.obj: ../UnionFind.h
 
-CMakeFiles/my_tiny_stl.dir/main.cpp.obj: ../UnionFind.h
+CMakeFiles/my_tiny_stl.dir/main.cpp.obj: ../Trie_static.h
 CMakeFiles/my_tiny_stl.dir/main.cpp.obj: ../main.cpp
 

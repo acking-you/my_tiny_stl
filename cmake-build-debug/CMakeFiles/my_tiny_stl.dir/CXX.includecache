@@ -6,15 +6,19 @@
 
 #IncludeRegexTransform: 
 
-D:/CLion Project/my_tiny_stl/UnionFind.cpp
-UnionFind.h
-D:/CLion Project/my_tiny_stl/UnionFind.h
+D:/CLion Project/my_tiny_stl/Trie_static.cpp
+Trie_static.h
+D:/CLion Project/my_tiny_stl/Trie_static.h
 
-D:/CLion Project/my_tiny_stl/UnionFind.h
+D:/CLion Project/my_tiny_stl/Trie_static.h
+cstring
+-
+string
+-
 
 D:/CLion Project/my_tiny_stl/main.cpp
 iostream
 -
-UnionFind.h
-D:/CLion Project/my_tiny_stl/UnionFind.h
+Trie_static.h
+D:/CLion Project/my_tiny_stl/Trie_static.h
 

@@ -108,12 +108,68 @@ CMakeFiles/my_tiny_stl.dir/UnionFind.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_tiny_stl.dir/UnionFind.cpp.s"
 	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\CLion Project\my_tiny_stl\UnionFind.cpp" -o CMakeFiles\my_tiny_stl.dir\UnionFind.cpp.s
 
+CMakeFiles/my_tiny_stl.dir/Tarjan.cpp.obj: CMakeFiles/my_tiny_stl.dir/flags.make
+CMakeFiles/my_tiny_stl.dir/Tarjan.cpp.obj: ../Tarjan.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/my_tiny_stl.dir/Tarjan.cpp.obj"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\my_tiny_stl.dir\Tarjan.cpp.obj -c "D:\CLion Project\my_tiny_stl\Tarjan.cpp"
+
+CMakeFiles/my_tiny_stl.dir/Tarjan.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_tiny_stl.dir/Tarjan.cpp.i"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\CLion Project\my_tiny_stl\Tarjan.cpp" > CMakeFiles\my_tiny_stl.dir\Tarjan.cpp.i
+
+CMakeFiles/my_tiny_stl.dir/Tarjan.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_tiny_stl.dir/Tarjan.cpp.s"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\CLion Project\my_tiny_stl\Tarjan.cpp" -o CMakeFiles\my_tiny_stl.dir\Tarjan.cpp.s
+
+CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.obj: CMakeFiles/my_tiny_stl.dir/flags.make
+CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.obj: ../LinkMap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.obj"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\my_tiny_stl.dir\LinkMap.cpp.obj -c "D:\CLion Project\my_tiny_stl\LinkMap.cpp"
+
+CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.i"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\CLion Project\my_tiny_stl\LinkMap.cpp" > CMakeFiles\my_tiny_stl.dir\LinkMap.cpp.i
+
+CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.s"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\CLion Project\my_tiny_stl\LinkMap.cpp" -o CMakeFiles\my_tiny_stl.dir\LinkMap.cpp.s
+
+CMakeFiles/my_tiny_stl.dir/Trie_dyn.cpp.obj: CMakeFiles/my_tiny_stl.dir/flags.make
+CMakeFiles/my_tiny_stl.dir/Trie_dyn.cpp.obj: ../Trie_dyn.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/my_tiny_stl.dir/Trie_dyn.cpp.obj"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\my_tiny_stl.dir\Trie_dyn.cpp.obj -c "D:\CLion Project\my_tiny_stl\Trie_dyn.cpp"
+
+CMakeFiles/my_tiny_stl.dir/Trie_dyn.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_tiny_stl.dir/Trie_dyn.cpp.i"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\CLion Project\my_tiny_stl\Trie_dyn.cpp" > CMakeFiles\my_tiny_stl.dir\Trie_dyn.cpp.i
+
+CMakeFiles/my_tiny_stl.dir/Trie_dyn.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_tiny_stl.dir/Trie_dyn.cpp.s"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\CLion Project\my_tiny_stl\Trie_dyn.cpp" -o CMakeFiles\my_tiny_stl.dir\Trie_dyn.cpp.s
+
+CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.obj: CMakeFiles/my_tiny_stl.dir/flags.make
+CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.obj: ../Trie_static.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.obj"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\my_tiny_stl.dir\Trie_static.cpp.obj -c "D:\CLion Project\my_tiny_stl\Trie_static.cpp"
+
+CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.i"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\CLion Project\my_tiny_stl\Trie_static.cpp" > CMakeFiles\my_tiny_stl.dir\Trie_static.cpp.i
+
+CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.s"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\CLion Project\my_tiny_stl\Trie_static.cpp" -o CMakeFiles\my_tiny_stl.dir\Trie_static.cpp.s
+
 # Object files for target my_tiny_stl
 my_tiny_stl_OBJECTS = \
 "CMakeFiles/my_tiny_stl.dir/main.cpp.obj" \
 "CMakeFiles/my_tiny_stl.dir/BinarySearch.cpp.obj" \
 "CMakeFiles/my_tiny_stl.dir/HashTable.cpp.obj" \
-"CMakeFiles/my_tiny_stl.dir/UnionFind.cpp.obj"
+"CMakeFiles/my_tiny_stl.dir/UnionFind.cpp.obj" \
+"CMakeFiles/my_tiny_stl.dir/Tarjan.cpp.obj" \
+"CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.obj" \
+"CMakeFiles/my_tiny_stl.dir/Trie_dyn.cpp.obj" \
+"CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.obj"
 
 # External object files for target my_tiny_stl
 my_tiny_stl_EXTERNAL_OBJECTS =
@@ -122,11 +178,15 @@ my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/main.cpp.obj
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/BinarySearch.cpp.obj
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/HashTable.cpp.obj
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/UnionFind.cpp.obj
+my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/Tarjan.cpp.obj
+my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.obj
+my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/Trie_dyn.cpp.obj
+my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.obj
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/build.make
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/linklibs.rsp
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/objects1.rsp
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable my_tiny_stl.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable my_tiny_stl.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\my_tiny_stl.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

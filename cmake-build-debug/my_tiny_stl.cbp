@@ -92,6 +92,30 @@
 		<Unit filename="D:/CLion Project/my_tiny_stl/HashTable.h">
 			<Option target="my_tiny_stl"/>
 		</Unit>
+		<Unit filename="D:/CLion Project/my_tiny_stl/LinkMap.cpp">
+			<Option target="my_tiny_stl"/>
+		</Unit>
+		<Unit filename="D:/CLion Project/my_tiny_stl/LinkMap.h">
+			<Option target="my_tiny_stl"/>
+		</Unit>
+		<Unit filename="D:/CLion Project/my_tiny_stl/Tarjan.cpp">
+			<Option target="my_tiny_stl"/>
+		</Unit>
+		<Unit filename="D:/CLion Project/my_tiny_stl/Tarjan.h">
+			<Option target="my_tiny_stl"/>
+		</Unit>
+		<Unit filename="D:/CLion Project/my_tiny_stl/Trie_dyn.cpp">
+			<Option target="my_tiny_stl"/>
+		</Unit>
+		<Unit filename="D:/CLion Project/my_tiny_stl/Trie_dyn.h">
+			<Option target="my_tiny_stl"/>
+		</Unit>
+		<Unit filename="D:/CLion Project/my_tiny_stl/Trie_static.cpp">
+			<Option target="my_tiny_stl"/>
+		</Unit>
+		<Unit filename="D:/CLion Project/my_tiny_stl/Trie_static.h">
+			<Option target="my_tiny_stl"/>
+		</Unit>
 		<Unit filename="D:/CLion Project/my_tiny_stl/UnionFind.cpp">
 			<Option target="my_tiny_stl"/>
 		</Unit>

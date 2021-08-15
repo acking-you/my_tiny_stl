@@ -176,6 +176,114 @@ HashTable.cpp.s:
 	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/HashTable.cpp.s
 .PHONY : HashTable.cpp.s
 
+LinkMap.obj: LinkMap.cpp.obj
+
+.PHONY : LinkMap.obj
+
+# target to build an object file
+LinkMap.cpp.obj:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.obj
+.PHONY : LinkMap.cpp.obj
+
+LinkMap.i: LinkMap.cpp.i
+
+.PHONY : LinkMap.i
+
+# target to preprocess a source file
+LinkMap.cpp.i:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.i
+.PHONY : LinkMap.cpp.i
+
+LinkMap.s: LinkMap.cpp.s
+
+.PHONY : LinkMap.s
+
+# target to generate assembly for a file
+LinkMap.cpp.s:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.s
+.PHONY : LinkMap.cpp.s
+
+Tarjan.obj: Tarjan.cpp.obj
+
+.PHONY : Tarjan.obj
+
+# target to build an object file
+Tarjan.cpp.obj:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Tarjan.cpp.obj
+.PHONY : Tarjan.cpp.obj
+
+Tarjan.i: Tarjan.cpp.i
+
+.PHONY : Tarjan.i
+
+# target to preprocess a source file
+Tarjan.cpp.i:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Tarjan.cpp.i
+.PHONY : Tarjan.cpp.i
+
+Tarjan.s: Tarjan.cpp.s
+
+.PHONY : Tarjan.s
+
+# target to generate assembly for a file
+Tarjan.cpp.s:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Tarjan.cpp.s
+.PHONY : Tarjan.cpp.s
+
+Trie_dyn.obj: Trie_dyn.cpp.obj
+
+.PHONY : Trie_dyn.obj
+
+# target to build an object file
+Trie_dyn.cpp.obj:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Trie_dyn.cpp.obj
+.PHONY : Trie_dyn.cpp.obj
+
+Trie_dyn.i: Trie_dyn.cpp.i
+
+.PHONY : Trie_dyn.i
+
+# target to preprocess a source file
+Trie_dyn.cpp.i:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Trie_dyn.cpp.i
+.PHONY : Trie_dyn.cpp.i
+
+Trie_dyn.s: Trie_dyn.cpp.s
+
+.PHONY : Trie_dyn.s
+
+# target to generate assembly for a file
+Trie_dyn.cpp.s:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Trie_dyn.cpp.s
+.PHONY : Trie_dyn.cpp.s
+
+Trie_static.obj: Trie_static.cpp.obj
+
+.PHONY : Trie_static.obj
+
+# target to build an object file
+Trie_static.cpp.obj:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.obj
+.PHONY : Trie_static.cpp.obj
+
+Trie_static.i: Trie_static.cpp.i
+
+.PHONY : Trie_static.i
+
+# target to preprocess a source file
+Trie_static.cpp.i:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.i
+.PHONY : Trie_static.cpp.i
+
+Trie_static.s: Trie_static.cpp.s
+
+.PHONY : Trie_static.s
+
+# target to generate assembly for a file
+Trie_static.cpp.s:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.s
+.PHONY : Trie_static.cpp.s
+
 UnionFind.obj: UnionFind.cpp.obj
 
 .PHONY : UnionFind.obj
@@ -245,6 +353,18 @@ help:
 	@echo ... HashTable.obj
 	@echo ... HashTable.i
 	@echo ... HashTable.s
+	@echo ... LinkMap.obj
+	@echo ... LinkMap.i
+	@echo ... LinkMap.s
+	@echo ... Tarjan.obj
+	@echo ... Tarjan.i
+	@echo ... Tarjan.s
+	@echo ... Trie_dyn.obj
+	@echo ... Trie_dyn.i
+	@echo ... Trie_dyn.s
+	@echo ... Trie_static.obj
+	@echo ... Trie_static.i
+	@echo ... Trie_static.s
 	@echo ... UnionFind.obj
 	@echo ... UnionFind.i
 	@echo ... UnionFind.s
