@@ -7,6 +7,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/CLion Project/my_tiny_stl/BinarySearch.cpp" "D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/my_tiny_stl.dir/BinarySearch.cpp.obj"
   "D:/CLion Project/my_tiny_stl/HashTable.cpp" "D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/my_tiny_stl.dir/HashTable.cpp.obj"
   "D:/CLion Project/my_tiny_stl/LinkMap.cpp" "D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.obj"
+  "D:/CLion Project/my_tiny_stl/TCP_SOCKET_CLIENT.cpp" "D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_CLIENT.cpp.obj"
+  "D:/CLion Project/my_tiny_stl/TCP_SOCKET_SERVER.cpp" "D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_SERVER.cpp.obj"
   "D:/CLion Project/my_tiny_stl/Tarjan.cpp" "D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/my_tiny_stl.dir/Tarjan.cpp.obj"
   "D:/CLion Project/my_tiny_stl/Trie_dyn.cpp" "D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/my_tiny_stl.dir/Trie_dyn.cpp.obj"
   "D:/CLion Project/my_tiny_stl/Trie_static.cpp" "D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.obj"

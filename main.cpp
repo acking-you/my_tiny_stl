@@ -1,11 +1,11 @@
 #include <iostream>
-#include "Trie_static.h"
+#include "TCP_SOCKET_CLIENT.h"
+
 using namespace std;
-int main(){
-  Trie_static a;
-  a.insert("dream");
-  if(a.search("drea"))
-      cout<<"true";
-  else
-      cout<<"false";
+
+int main() {
+    TCP_SOCKET_CLIENT a;
+    const char *URL = "github.com";
+    a.Gethostbyname(URL);
+
 }

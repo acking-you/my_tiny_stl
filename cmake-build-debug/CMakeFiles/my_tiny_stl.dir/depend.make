@@ -10,6 +10,16 @@ CMakeFiles/my_tiny_stl.dir/HashTable.cpp.obj: ../HashTable.h
 CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.obj: ../LinkMap.cpp
 CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.obj: ../LinkMap.h
 
+CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_CLIENT.cpp.obj: ../TCP_INTERFACE.h
+CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_CLIENT.cpp.obj: ../TCP_SOCKET_CLIENT.cpp
+CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_CLIENT.cpp.obj: ../TCP_SOCKET_CLIENT.h
+CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_CLIENT.cpp.obj: ../_public_socket.h
+
+CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_SERVER.cpp.obj: ../TCP_INTERFACE.h
+CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_SERVER.cpp.obj: ../TCP_SOCKET_SERVER.cpp
+CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_SERVER.cpp.obj: ../TCP_SOCKET_SERVER.h
+CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_SERVER.cpp.obj: ../_public_socket.h
+
 CMakeFiles/my_tiny_stl.dir/Tarjan.cpp.obj: ../Tarjan.cpp
 CMakeFiles/my_tiny_stl.dir/Tarjan.cpp.obj: ../Tarjan.h
 
@@ -22,6 +32,8 @@ CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.obj: ../Trie_static.h
 CMakeFiles/my_tiny_stl.dir/UnionFind.cpp.obj: ../UnionFind.cpp
 CMakeFiles/my_tiny_stl.dir/UnionFind.cpp.obj: ../UnionFind.h
 
-CMakeFiles/my_tiny_stl.dir/main.cpp.obj: ../Trie_static.h
+CMakeFiles/my_tiny_stl.dir/main.cpp.obj: ../TCP_INTERFACE.h
+CMakeFiles/my_tiny_stl.dir/main.cpp.obj: ../TCP_SOCKET_CLIENT.h
+CMakeFiles/my_tiny_stl.dir/main.cpp.obj: ../_public_socket.h
 CMakeFiles/my_tiny_stl.dir/main.cpp.obj: ../main.cpp
 

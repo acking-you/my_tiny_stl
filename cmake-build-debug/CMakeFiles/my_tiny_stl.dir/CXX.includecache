@@ -6,19 +6,27 @@
 
 #IncludeRegexTransform: 
 
-D:/CLion Project/my_tiny_stl/Trie_static.cpp
-Trie_static.h
-D:/CLion Project/my_tiny_stl/Trie_static.h
+D:/CLion Project/my_tiny_stl/TCP_INTERFACE.h
+_public_socket.h
+D:/CLion Project/my_tiny_stl/_public_socket.h
 
-D:/CLion Project/my_tiny_stl/Trie_static.h
-cstring
+D:/CLion Project/my_tiny_stl/TCP_SOCKET_CLIENT.cpp
+TCP_SOCKET_CLIENT.h
+D:/CLion Project/my_tiny_stl/TCP_SOCKET_CLIENT.h
+
+D:/CLion Project/my_tiny_stl/TCP_SOCKET_CLIENT.h
+TCP_INTERFACE.h
+D:/CLion Project/my_tiny_stl/TCP_INTERFACE.h
+iostream
 -
-string
+
+D:/CLion Project/my_tiny_stl/_public_socket.h
+winsock2.h
 -
 
 D:/CLion Project/my_tiny_stl/main.cpp
 iostream
 -
-Trie_static.h
-D:/CLion Project/my_tiny_stl/Trie_static.h
+TCP_SOCKET_CLIENT.h
+D:/CLion Project/my_tiny_stl/TCP_SOCKET_CLIENT.h
 

@@ -98,6 +98,21 @@
 		<Unit filename="D:/CLion Project/my_tiny_stl/LinkMap.h">
 			<Option target="my_tiny_stl"/>
 		</Unit>
+		<Unit filename="D:/CLion Project/my_tiny_stl/TCP_INTERFACE.h">
+			<Option target="my_tiny_stl"/>
+		</Unit>
+		<Unit filename="D:/CLion Project/my_tiny_stl/TCP_SOCKET_CLIENT.cpp">
+			<Option target="my_tiny_stl"/>
+		</Unit>
+		<Unit filename="D:/CLion Project/my_tiny_stl/TCP_SOCKET_CLIENT.h">
+			<Option target="my_tiny_stl"/>
+		</Unit>
+		<Unit filename="D:/CLion Project/my_tiny_stl/TCP_SOCKET_SERVER.cpp">
+			<Option target="my_tiny_stl"/>
+		</Unit>
+		<Unit filename="D:/CLion Project/my_tiny_stl/TCP_SOCKET_SERVER.h">
+			<Option target="my_tiny_stl"/>
+		</Unit>
 		<Unit filename="D:/CLion Project/my_tiny_stl/Tarjan.cpp">
 			<Option target="my_tiny_stl"/>
 		</Unit>
@@ -120,6 +135,9 @@
 			<Option target="my_tiny_stl"/>
 		</Unit>
 		<Unit filename="D:/CLion Project/my_tiny_stl/UnionFind.h">
+			<Option target="my_tiny_stl"/>
+		</Unit>
+		<Unit filename="D:/CLion Project/my_tiny_stl/_public_socket.h">
 			<Option target="my_tiny_stl"/>
 		</Unit>
 		<Unit filename="D:/CLion Project/my_tiny_stl/main.cpp">

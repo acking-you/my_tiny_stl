@@ -160,6 +160,32 @@ CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.s"
 	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\CLion Project\my_tiny_stl\Trie_static.cpp" -o CMakeFiles\my_tiny_stl.dir\Trie_static.cpp.s
 
+CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_SERVER.cpp.obj: CMakeFiles/my_tiny_stl.dir/flags.make
+CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_SERVER.cpp.obj: ../TCP_SOCKET_SERVER.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_SERVER.cpp.obj"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\my_tiny_stl.dir\TCP_SOCKET_SERVER.cpp.obj -c "D:\CLion Project\my_tiny_stl\TCP_SOCKET_SERVER.cpp"
+
+CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_SERVER.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_SERVER.cpp.i"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\CLion Project\my_tiny_stl\TCP_SOCKET_SERVER.cpp" > CMakeFiles\my_tiny_stl.dir\TCP_SOCKET_SERVER.cpp.i
+
+CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_SERVER.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_SERVER.cpp.s"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\CLion Project\my_tiny_stl\TCP_SOCKET_SERVER.cpp" -o CMakeFiles\my_tiny_stl.dir\TCP_SOCKET_SERVER.cpp.s
+
+CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_CLIENT.cpp.obj: CMakeFiles/my_tiny_stl.dir/flags.make
+CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_CLIENT.cpp.obj: ../TCP_SOCKET_CLIENT.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_CLIENT.cpp.obj"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\my_tiny_stl.dir\TCP_SOCKET_CLIENT.cpp.obj -c "D:\CLion Project\my_tiny_stl\TCP_SOCKET_CLIENT.cpp"
+
+CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_CLIENT.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_CLIENT.cpp.i"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\CLion Project\my_tiny_stl\TCP_SOCKET_CLIENT.cpp" > CMakeFiles\my_tiny_stl.dir\TCP_SOCKET_CLIENT.cpp.i
+
+CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_CLIENT.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_CLIENT.cpp.s"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\CLion Project\my_tiny_stl\TCP_SOCKET_CLIENT.cpp" -o CMakeFiles\my_tiny_stl.dir\TCP_SOCKET_CLIENT.cpp.s
+
 # Object files for target my_tiny_stl
 my_tiny_stl_OBJECTS = \
 "CMakeFiles/my_tiny_stl.dir/main.cpp.obj" \
@@ -169,7 +195,9 @@ my_tiny_stl_OBJECTS = \
 "CMakeFiles/my_tiny_stl.dir/Tarjan.cpp.obj" \
 "CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.obj" \
 "CMakeFiles/my_tiny_stl.dir/Trie_dyn.cpp.obj" \
-"CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.obj"
+"CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.obj" \
+"CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_SERVER.cpp.obj" \
+"CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_CLIENT.cpp.obj"
 
 # External object files for target my_tiny_stl
 my_tiny_stl_EXTERNAL_OBJECTS =
@@ -182,11 +210,13 @@ my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/Tarjan.cpp.obj
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.obj
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/Trie_dyn.cpp.obj
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.obj
+my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_SERVER.cpp.obj
+my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_CLIENT.cpp.obj
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/build.make
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/linklibs.rsp
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/objects1.rsp
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable my_tiny_stl.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable my_tiny_stl.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\my_tiny_stl.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

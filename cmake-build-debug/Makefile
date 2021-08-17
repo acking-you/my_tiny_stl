@@ -203,6 +203,60 @@ LinkMap.cpp.s:
 	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.s
 .PHONY : LinkMap.cpp.s
 
+TCP_SOCKET_CLIENT.obj: TCP_SOCKET_CLIENT.cpp.obj
+
+.PHONY : TCP_SOCKET_CLIENT.obj
+
+# target to build an object file
+TCP_SOCKET_CLIENT.cpp.obj:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_CLIENT.cpp.obj
+.PHONY : TCP_SOCKET_CLIENT.cpp.obj
+
+TCP_SOCKET_CLIENT.i: TCP_SOCKET_CLIENT.cpp.i
+
+.PHONY : TCP_SOCKET_CLIENT.i
+
+# target to preprocess a source file
+TCP_SOCKET_CLIENT.cpp.i:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_CLIENT.cpp.i
+.PHONY : TCP_SOCKET_CLIENT.cpp.i
+
+TCP_SOCKET_CLIENT.s: TCP_SOCKET_CLIENT.cpp.s
+
+.PHONY : TCP_SOCKET_CLIENT.s
+
+# target to generate assembly for a file
+TCP_SOCKET_CLIENT.cpp.s:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_CLIENT.cpp.s
+.PHONY : TCP_SOCKET_CLIENT.cpp.s
+
+TCP_SOCKET_SERVER.obj: TCP_SOCKET_SERVER.cpp.obj
+
+.PHONY : TCP_SOCKET_SERVER.obj
+
+# target to build an object file
+TCP_SOCKET_SERVER.cpp.obj:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_SERVER.cpp.obj
+.PHONY : TCP_SOCKET_SERVER.cpp.obj
+
+TCP_SOCKET_SERVER.i: TCP_SOCKET_SERVER.cpp.i
+
+.PHONY : TCP_SOCKET_SERVER.i
+
+# target to preprocess a source file
+TCP_SOCKET_SERVER.cpp.i:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_SERVER.cpp.i
+.PHONY : TCP_SOCKET_SERVER.cpp.i
+
+TCP_SOCKET_SERVER.s: TCP_SOCKET_SERVER.cpp.s
+
+.PHONY : TCP_SOCKET_SERVER.s
+
+# target to generate assembly for a file
+TCP_SOCKET_SERVER.cpp.s:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_SERVER.cpp.s
+.PHONY : TCP_SOCKET_SERVER.cpp.s
+
 Tarjan.obj: Tarjan.cpp.obj
 
 .PHONY : Tarjan.obj
@@ -356,6 +410,12 @@ help:
 	@echo ... LinkMap.obj
 	@echo ... LinkMap.i
 	@echo ... LinkMap.s
+	@echo ... TCP_SOCKET_CLIENT.obj
+	@echo ... TCP_SOCKET_CLIENT.i
+	@echo ... TCP_SOCKET_CLIENT.s
+	@echo ... TCP_SOCKET_SERVER.obj
+	@echo ... TCP_SOCKET_SERVER.i
+	@echo ... TCP_SOCKET_SERVER.s
 	@echo ... Tarjan.obj
 	@echo ... Tarjan.i
 	@echo ... Tarjan.s

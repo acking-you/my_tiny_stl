@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_tiny_stl.dir/BinarySearch.cpp.obj"
   "CMakeFiles/my_tiny_stl.dir/HashTable.cpp.obj"
   "CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.obj"
+  "CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_CLIENT.cpp.obj"
+  "CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_SERVER.cpp.obj"
   "CMakeFiles/my_tiny_stl.dir/Tarjan.cpp.obj"
   "CMakeFiles/my_tiny_stl.dir/Trie_dyn.cpp.obj"
   "CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.obj"
