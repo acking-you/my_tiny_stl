@@ -5,42 +5,36 @@
 #include "TCP_SOCKET_CLIENT.h"
 
 //初始化
-TCP_SOCKET_CLIENT::TCP_SOCKET_CLIENT() : clntSock(0) {
-    memset(&sockAddr, 0, sizeof sockAddr);
-}
+TCP_SOCKET_CLIENT::TCP_SOCKET_CLIENT() : clntSock(0) {}
 
 //关闭套接字操作
-bool TCP_SOCKET_CLIENT::Close() {
-    if (clntSock == 0)
-        return false;
-    if (closesocket(clntSock) != 0)
-        return false;
+void TCP_SOCKET_CLIENT::Close(SOCKET clnt) {
+    if (closesocket(clnt) != 0)
+        error_die("close");
     clntSock = 0;
-    return true;
 }
 
 //连接服务器操作
-bool TCP_SOCKET_CLIENT::Connect(const char *IPAdrr, u_short port) {
+SOCKET TCP_SOCKET_CLIENT::Connect(const char *IPAdrr, u_short port) {
+    memset(&sockAddr, 0, sizeof sockAddr);
     clntSock = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP);
     sockAddr.sin_family = PF_INET;
     sockAddr.sin_addr.s_addr = inet_addr(IPAdrr);
     sockAddr.sin_port = htons(port);
     if (connect(clntSock, (SOCKADDR *) &sockAddr, sizeof(sockAddr)) != 0) {
-        closesocket(clntSock);
-        clntSock = 0;
-        return false;
+        error_die("connect");
     }
-    return true;
+    return clntSock;
 }
 
 //发送信息操作
-int TCP_SOCKET_CLIENT::Send(const void *buf, const int bufSize) {
-    return send(clntSock, (const char *) buf, bufSize, 0);
+int TCP_SOCKET_CLIENT::Send(SOCKET clnt, const void *buf, const int bufSize) {
+    return send(clnt, (const char *) buf, bufSize, 0);
 }
 
 //接收信息操作
-int TCP_SOCKET_CLIENT::Recv(void *buf, const int bufSize) {
-    return recv(clntSock, (char *) buf, bufSize, 0);
+int TCP_SOCKET_CLIENT::Recv(SOCKET clnt, void *buf, const int bufSize) {
+    return recv(clnt, (char *) buf, bufSize, 0);
 }
 
 //根据域名获取ip地址等信息
@@ -68,4 +62,9 @@ void TCP_SOCKET_CLIENT::Gethostbyname(const char *URL) {
 TCP_SOCKET_CLIENT::~TCP_SOCKET_CLIENT() {
     if (clntSock != 0)
         closesocket(clntSock);
+}
+
+void TCP_SOCKET_CLIENT::error_die(const char *str) {
+    printf("[hint]%s failed:%d", str, WSAGetLastError());
+    exit(-1);
 }

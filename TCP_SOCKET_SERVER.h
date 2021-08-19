@@ -13,22 +13,24 @@ public:
 
     ~TCP_SOCKET_SERVER();
 
-    bool Bind(int port);
+    void Bind(int port);
 
-    bool Listen();
+    void Listen();
 
-    bool Accept();
+    SOCKET Accept();
 
-    int Send(const void *buf, const int buflen);
+    int Send(SOCKET clnt, const void *buf, const int buflen);
 
-    int Recv(void *buf, const int buflen);
+    int Recv(SOCKET clnt, void *buf, const int buflen);
 
-    bool Close();
+    void Close(SOCKET clnt);
+
+    void error_die(const char *str);
 
 private:
     SOCKET servSock;
-    SOCKET clntSock;
     sockaddr_in sockAddr;
+
 };
 
 
