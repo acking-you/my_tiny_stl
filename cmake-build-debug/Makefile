@@ -149,6 +149,33 @@ BinarySearch.cpp.s:
 	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/BinarySearch.cpp.s
 .PHONY : BinarySearch.cpp.s
 
+Complex.obj: Complex.cpp.obj
+
+.PHONY : Complex.obj
+
+# target to build an object file
+Complex.cpp.obj:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Complex.cpp.obj
+.PHONY : Complex.cpp.obj
+
+Complex.i: Complex.cpp.i
+
+.PHONY : Complex.i
+
+# target to preprocess a source file
+Complex.cpp.i:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Complex.cpp.i
+.PHONY : Complex.cpp.i
+
+Complex.s: Complex.cpp.s
+
+.PHONY : Complex.s
+
+# target to generate assembly for a file
+Complex.cpp.s:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Complex.cpp.s
+.PHONY : Complex.cpp.s
+
 HashTable.obj: HashTable.cpp.obj
 
 .PHONY : HashTable.obj
@@ -404,6 +431,9 @@ help:
 	@echo ... BinarySearch.obj
 	@echo ... BinarySearch.i
 	@echo ... BinarySearch.s
+	@echo ... Complex.obj
+	@echo ... Complex.i
+	@echo ... Complex.s
 	@echo ... HashTable.obj
 	@echo ... HashTable.i
 	@echo ... HashTable.s

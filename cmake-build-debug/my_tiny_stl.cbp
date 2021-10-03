@@ -86,10 +86,19 @@
 		<Unit filename="D:/CLion Project/my_tiny_stl/BinarySearch.h">
 			<Option target="my_tiny_stl"/>
 		</Unit>
+		<Unit filename="D:/CLion Project/my_tiny_stl/Complex.cpp">
+			<Option target="my_tiny_stl"/>
+		</Unit>
+		<Unit filename="D:/CLion Project/my_tiny_stl/Complex.h">
+			<Option target="my_tiny_stl"/>
+		</Unit>
 		<Unit filename="D:/CLion Project/my_tiny_stl/HashTable.cpp">
 			<Option target="my_tiny_stl"/>
 		</Unit>
 		<Unit filename="D:/CLion Project/my_tiny_stl/HashTable.h">
+			<Option target="my_tiny_stl"/>
+		</Unit>
+		<Unit filename="D:/CLion Project/my_tiny_stl/Heap.h">
 			<Option target="my_tiny_stl"/>
 		</Unit>
 		<Unit filename="D:/CLion Project/my_tiny_stl/LinkMap.cpp">
