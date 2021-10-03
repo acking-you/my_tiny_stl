@@ -6,19 +6,27 @@
 
 #IncludeRegexTransform: 
 
-D:/CLion Project/my_tiny_stl/Heap.h
+D:/CLion Project/my_tiny_stl/TCP_INTERFACE.h
+_public_socket.h
+D:/CLion Project/my_tiny_stl/_public_socket.h
+
+D:/CLion Project/my_tiny_stl/TCP_SOCKET_CLIENT.cpp
+TCP_SOCKET_CLIENT.h
+D:/CLion Project/my_tiny_stl/TCP_SOCKET_CLIENT.h
+
+D:/CLion Project/my_tiny_stl/TCP_SOCKET_CLIENT.h
+TCP_INTERFACE.h
+D:/CLion Project/my_tiny_stl/TCP_INTERFACE.h
 iostream
 -
-cassert
--
-algorithm
+
+D:/CLion Project/my_tiny_stl/_public_socket.h
+winsock2.h
 -
 
 D:/CLion Project/my_tiny_stl/main.cpp
-Heap.h
-D:/CLion Project/my_tiny_stl/Heap.h
-ctime
+iostream
 -
-queue
--
+TCP_SOCKET_CLIENT.h
+D:/CLion Project/my_tiny_stl/TCP_SOCKET_CLIENT.h
 
