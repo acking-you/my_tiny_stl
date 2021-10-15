@@ -122,6 +122,60 @@ my_tiny_stl/fast:
 	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/build
 .PHONY : my_tiny_stl/fast
 
+AVLTree.obj: AVLTree.cpp.obj
+
+.PHONY : AVLTree.obj
+
+# target to build an object file
+AVLTree.cpp.obj:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/AVLTree.cpp.obj
+.PHONY : AVLTree.cpp.obj
+
+AVLTree.i: AVLTree.cpp.i
+
+.PHONY : AVLTree.i
+
+# target to preprocess a source file
+AVLTree.cpp.i:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/AVLTree.cpp.i
+.PHONY : AVLTree.cpp.i
+
+AVLTree.s: AVLTree.cpp.s
+
+.PHONY : AVLTree.s
+
+# target to generate assembly for a file
+AVLTree.cpp.s:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/AVLTree.cpp.s
+.PHONY : AVLTree.cpp.s
+
+BigInteger.obj: BigInteger.cpp.obj
+
+.PHONY : BigInteger.obj
+
+# target to build an object file
+BigInteger.cpp.obj:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/BigInteger.cpp.obj
+.PHONY : BigInteger.cpp.obj
+
+BigInteger.i: BigInteger.cpp.i
+
+.PHONY : BigInteger.i
+
+# target to preprocess a source file
+BigInteger.cpp.i:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/BigInteger.cpp.i
+.PHONY : BigInteger.cpp.i
+
+BigInteger.s: BigInteger.cpp.s
+
+.PHONY : BigInteger.s
+
+# target to generate assembly for a file
+BigInteger.cpp.s:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/BigInteger.cpp.s
+.PHONY : BigInteger.cpp.s
+
 BinarySearch.obj: BinarySearch.cpp.obj
 
 .PHONY : BinarySearch.obj
@@ -311,6 +365,33 @@ Tarjan.cpp.s:
 	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Tarjan.cpp.s
 .PHONY : Tarjan.cpp.s
 
+Treap.obj: Treap.cpp.obj
+
+.PHONY : Treap.obj
+
+# target to build an object file
+Treap.cpp.obj:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Treap.cpp.obj
+.PHONY : Treap.cpp.obj
+
+Treap.i: Treap.cpp.i
+
+.PHONY : Treap.i
+
+# target to preprocess a source file
+Treap.cpp.i:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Treap.cpp.i
+.PHONY : Treap.cpp.i
+
+Treap.s: Treap.cpp.s
+
+.PHONY : Treap.s
+
+# target to generate assembly for a file
+Treap.cpp.s:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Treap.cpp.s
+.PHONY : Treap.cpp.s
+
 Trie_dyn.obj: Trie_dyn.cpp.obj
 
 .PHONY : Trie_dyn.obj
@@ -428,6 +509,12 @@ help:
 	@echo ... my_tiny_stl
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... AVLTree.obj
+	@echo ... AVLTree.i
+	@echo ... AVLTree.s
+	@echo ... BigInteger.obj
+	@echo ... BigInteger.i
+	@echo ... BigInteger.s
 	@echo ... BinarySearch.obj
 	@echo ... BinarySearch.i
 	@echo ... BinarySearch.s
@@ -449,6 +536,9 @@ help:
 	@echo ... Tarjan.obj
 	@echo ... Tarjan.i
 	@echo ... Tarjan.s
+	@echo ... Treap.obj
+	@echo ... Treap.i
+	@echo ... Treap.s
 	@echo ... Trie_dyn.obj
 	@echo ... Trie_dyn.i
 	@echo ... Trie_dyn.s

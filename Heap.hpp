@@ -2,13 +2,12 @@
 // Created by Alone on 2021/10/2.
 //
 
-#ifndef MY_TINY_STL_HEAP_H
-#define MY_TINY_STL_HEAP_H
+#ifndef MY_TINY_STL_HEAP_HPP
+#define MY_TINY_STL_HEAP_HPP
 
 #include <iostream>
-#include <cassert>
 #include <algorithm>
-
+#include <stdexcept>
 namespace L_B__ {
     template<typename T=int>//用于默认排序的仿函数，默认为大顶堆
     class cmp {
@@ -98,15 +97,16 @@ namespace L_B__ {
 
         void pop() {
             if (length == 0)
-                assert(0);
+                throw std::range_error("from pop :The Heap is empty!");
             length--;
             std::swap(nums[0], nums[length]);//实际上pop操作就相当于堆排的一次过程
             sift_down(nums, 0, length, _CMP());
         }
 
         _T top() {
-            if (length == 0)
-                assert(0);
+            if(length==0){
+                throw std::range_error("form top :The Heap is empty!");
+            }
             return nums[0];
         }
 
@@ -116,4 +116,4 @@ namespace L_B__ {
     };
 }
 
-#endif //MY_TINY_STL_HEAP_H
+#endif //MY_TINY_STL_HEAP_HPP

@@ -199,6 +199,45 @@ CMakeFiles/my_tiny_stl.dir/Complex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_tiny_stl.dir/Complex.cpp.s"
 	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\CLion Project\my_tiny_stl\Complex.cpp" -o CMakeFiles\my_tiny_stl.dir\Complex.cpp.s
 
+CMakeFiles/my_tiny_stl.dir/BigInteger.cpp.obj: CMakeFiles/my_tiny_stl.dir/flags.make
+CMakeFiles/my_tiny_stl.dir/BigInteger.cpp.obj: ../BigInteger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/my_tiny_stl.dir/BigInteger.cpp.obj"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\my_tiny_stl.dir\BigInteger.cpp.obj -c "D:\CLion Project\my_tiny_stl\BigInteger.cpp"
+
+CMakeFiles/my_tiny_stl.dir/BigInteger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_tiny_stl.dir/BigInteger.cpp.i"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\CLion Project\my_tiny_stl\BigInteger.cpp" > CMakeFiles\my_tiny_stl.dir\BigInteger.cpp.i
+
+CMakeFiles/my_tiny_stl.dir/BigInteger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_tiny_stl.dir/BigInteger.cpp.s"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\CLion Project\my_tiny_stl\BigInteger.cpp" -o CMakeFiles\my_tiny_stl.dir\BigInteger.cpp.s
+
+CMakeFiles/my_tiny_stl.dir/AVLTree.cpp.obj: CMakeFiles/my_tiny_stl.dir/flags.make
+CMakeFiles/my_tiny_stl.dir/AVLTree.cpp.obj: ../AVLTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/my_tiny_stl.dir/AVLTree.cpp.obj"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\my_tiny_stl.dir\AVLTree.cpp.obj -c "D:\CLion Project\my_tiny_stl\AVLTree.cpp"
+
+CMakeFiles/my_tiny_stl.dir/AVLTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_tiny_stl.dir/AVLTree.cpp.i"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\CLion Project\my_tiny_stl\AVLTree.cpp" > CMakeFiles\my_tiny_stl.dir\AVLTree.cpp.i
+
+CMakeFiles/my_tiny_stl.dir/AVLTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_tiny_stl.dir/AVLTree.cpp.s"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\CLion Project\my_tiny_stl\AVLTree.cpp" -o CMakeFiles\my_tiny_stl.dir\AVLTree.cpp.s
+
+CMakeFiles/my_tiny_stl.dir/Treap.cpp.obj: CMakeFiles/my_tiny_stl.dir/flags.make
+CMakeFiles/my_tiny_stl.dir/Treap.cpp.obj: ../Treap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/my_tiny_stl.dir/Treap.cpp.obj"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\my_tiny_stl.dir\Treap.cpp.obj -c "D:\CLion Project\my_tiny_stl\Treap.cpp"
+
+CMakeFiles/my_tiny_stl.dir/Treap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_tiny_stl.dir/Treap.cpp.i"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\CLion Project\my_tiny_stl\Treap.cpp" > CMakeFiles\my_tiny_stl.dir\Treap.cpp.i
+
+CMakeFiles/my_tiny_stl.dir/Treap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_tiny_stl.dir/Treap.cpp.s"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\CLion Project\my_tiny_stl\Treap.cpp" -o CMakeFiles\my_tiny_stl.dir\Treap.cpp.s
+
 # Object files for target my_tiny_stl
 my_tiny_stl_OBJECTS = \
 "CMakeFiles/my_tiny_stl.dir/main.cpp.obj" \
@@ -211,7 +250,10 @@ my_tiny_stl_OBJECTS = \
 "CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.obj" \
 "CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_SERVER.cpp.obj" \
 "CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_CLIENT.cpp.obj" \
-"CMakeFiles/my_tiny_stl.dir/Complex.cpp.obj"
+"CMakeFiles/my_tiny_stl.dir/Complex.cpp.obj" \
+"CMakeFiles/my_tiny_stl.dir/BigInteger.cpp.obj" \
+"CMakeFiles/my_tiny_stl.dir/AVLTree.cpp.obj" \
+"CMakeFiles/my_tiny_stl.dir/Treap.cpp.obj"
 
 # External object files for target my_tiny_stl
 my_tiny_stl_EXTERNAL_OBJECTS =
@@ -227,11 +269,14 @@ my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.obj
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_SERVER.cpp.obj
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/TCP_SOCKET_CLIENT.cpp.obj
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/Complex.cpp.obj
+my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/BigInteger.cpp.obj
+my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/AVLTree.cpp.obj
+my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/Treap.cpp.obj
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/build.make
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/linklibs.rsp
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/objects1.rsp
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable my_tiny_stl.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable my_tiny_stl.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\my_tiny_stl.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
