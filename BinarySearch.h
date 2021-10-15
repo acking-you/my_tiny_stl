@@ -1,7 +1,6 @@
 //
 // Created by Alone on 2021/7/20.
 //
-#include <vector>
 
 #ifndef BINARYSEARCH_H
 #define BINARYSEARCH_H
@@ -18,6 +17,8 @@ class BinarySearch {
 public:
     BinarySearch();
 
+    BinarySearch(int val);
+
     ~BinarySearch();
 
     void insert(int val);
@@ -27,9 +28,11 @@ public:
     void print();
 
 private://内存池,方便管理动态分配的内存
-    std::vector<TreeNode *> __node_pool;
+    TreeNode *head;
 
-    void node_insert(TreeNode *root, TreeNode *target);
+    void destroy(TreeNode *root);
+
+    TreeNode *node_insert(TreeNode *root, int val);
 
     bool node_check(TreeNode *root, int target);
 
