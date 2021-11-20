@@ -4,7 +4,7 @@
 
 #ifndef BINARYSEARCH_H
 #define BINARYSEARCH_H
-
+#include <queue>
 struct TreeNode {
     TreeNode *left;
     TreeNode *right;
@@ -26,7 +26,6 @@ public:
     bool count(int val);
 
     void print();
-
 private://内存池,方便管理动态分配的内存
     TreeNode *head;
 
@@ -35,7 +34,7 @@ private://内存池,方便管理动态分配的内存
     TreeNode *node_insert(TreeNode *root, int val);
 
     bool node_check(TreeNode *root, int target);
-
+    void lever_print(TreeNode* root);
     void inorder_print(TreeNode *root);
 };
 

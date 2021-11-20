@@ -53,7 +53,7 @@ bool BinarySearch::node_check(TreeNode *root, int target) {
 
 //中序打印操作
 void BinarySearch::print() {
-    this->inorder_print(head);
+    this->lever_print(head);
 }
 
 //与中序打印配套的操作
@@ -73,4 +73,28 @@ void BinarySearch::destroy(TreeNode *node) {
     delete node;
     node = nullptr;
 }
+
+void BinarySearch::lever_print(TreeNode *root) {
+    std::queue<TreeNode*>Q;Q.push(root);
+    while (!Q.empty()){
+        for(int i=Q.size();i>0;i--){
+            TreeNode* t = Q.front();Q.pop();
+            if(t== nullptr){
+                printf(" null ");
+                continue;
+            }
+            printf(" %d ",t->val);
+            if(t->left)
+                Q.push(t->left);
+            else
+                Q.push(nullptr);
+            if(t->right)
+                Q.push(t->right);
+            else
+                Q.push(nullptr);
+        }
+        printf("\n");
+    }
+}
+
 
