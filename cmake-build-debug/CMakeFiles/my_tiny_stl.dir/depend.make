@@ -44,8 +44,6 @@ CMakeFiles/my_tiny_stl.dir/Trie_static.cpp.obj: ../Trie_static.h
 CMakeFiles/my_tiny_stl.dir/UnionFind.cpp.obj: ../UnionFind.cpp
 CMakeFiles/my_tiny_stl.dir/UnionFind.cpp.obj: ../UnionFind.h
 
-CMakeFiles/my_tiny_stl.dir/main.cpp.obj: ../AVLTree.h
 CMakeFiles/my_tiny_stl.dir/main.cpp.obj: ../BinarySearch.h
-CMakeFiles/my_tiny_stl.dir/main.cpp.obj: ../Treap.h
 CMakeFiles/my_tiny_stl.dir/main.cpp.obj: ../main.cpp
 
