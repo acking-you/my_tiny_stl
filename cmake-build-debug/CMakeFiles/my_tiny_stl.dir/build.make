@@ -238,6 +238,84 @@ CMakeFiles/my_tiny_stl.dir/Treap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_tiny_stl.dir/Treap.cpp.s"
 	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\CLion Project\my_tiny_stl\Treap.cpp" -o CMakeFiles\my_tiny_stl.dir\Treap.cpp.s
 
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strtok.c.obj: CMakeFiles/my_tiny_stl.dir/flags.make
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strtok.c.obj: ../Clib实现/strtok系列函数实现/strtok.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strtok.c.obj"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\my_tiny_stl.dir\Clib实现\strtok系列函数实现\strtok.c.obj   -c "D:\CLion Project\my_tiny_stl\Clib实现\strtok系列函数实现\strtok.c"
+
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strtok.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strtok.c.i"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\CLion Project\my_tiny_stl\Clib实现\strtok系列函数实现\strtok.c" > CMakeFiles\my_tiny_stl.dir\Clib实现\strtok系列函数实现\strtok.c.i
+
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strtok.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strtok.c.s"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\CLion Project\my_tiny_stl\Clib实现\strtok系列函数实现\strtok.c" -o CMakeFiles\my_tiny_stl.dir\Clib实现\strtok系列函数实现\strtok.c.s
+
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strspn.c.obj: CMakeFiles/my_tiny_stl.dir/flags.make
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strspn.c.obj: ../Clib实现/strtok系列函数实现/strspn.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strspn.c.obj"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\my_tiny_stl.dir\Clib实现\strtok系列函数实现\strspn.c.obj   -c "D:\CLion Project\my_tiny_stl\Clib实现\strtok系列函数实现\strspn.c"
+
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strspn.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strspn.c.i"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\CLion Project\my_tiny_stl\Clib实现\strtok系列函数实现\strspn.c" > CMakeFiles\my_tiny_stl.dir\Clib实现\strtok系列函数实现\strspn.c.i
+
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strspn.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strspn.c.s"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\CLion Project\my_tiny_stl\Clib实现\strtok系列函数实现\strspn.c" -o CMakeFiles\my_tiny_stl.dir\Clib实现\strtok系列函数实现\strspn.c.s
+
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strcspn.c.obj: CMakeFiles/my_tiny_stl.dir/flags.make
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strcspn.c.obj: ../Clib实现/strtok系列函数实现/strcspn.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strcspn.c.obj"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\my_tiny_stl.dir\Clib实现\strtok系列函数实现\strcspn.c.obj   -c "D:\CLion Project\my_tiny_stl\Clib实现\strtok系列函数实现\strcspn.c"
+
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strcspn.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strcspn.c.i"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\CLion Project\my_tiny_stl\Clib实现\strtok系列函数实现\strcspn.c" > CMakeFiles\my_tiny_stl.dir\Clib实现\strtok系列函数实现\strcspn.c.i
+
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strcspn.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strcspn.c.s"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\CLion Project\my_tiny_stl\Clib实现\strtok系列函数实现\strcspn.c" -o CMakeFiles\my_tiny_stl.dir\Clib实现\strtok系列函数实现\strcspn.c.s
+
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strpbrk.cpp.obj: CMakeFiles/my_tiny_stl.dir/flags.make
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strpbrk.cpp.obj: ../Clib实现/strtok系列函数实现/strpbrk.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strpbrk.cpp.obj"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\my_tiny_stl.dir\Clib实现\strtok系列函数实现\strpbrk.cpp.obj -c "D:\CLion Project\my_tiny_stl\Clib实现\strtok系列函数实现\strpbrk.cpp"
+
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strpbrk.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strpbrk.cpp.i"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\CLion Project\my_tiny_stl\Clib实现\strtok系列函数实现\strpbrk.cpp" > CMakeFiles\my_tiny_stl.dir\Clib实现\strtok系列函数实现\strpbrk.cpp.i
+
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strpbrk.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strpbrk.cpp.s"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\CLion Project\my_tiny_stl\Clib实现\strtok系列函数实现\strpbrk.cpp" -o CMakeFiles\my_tiny_stl.dir\Clib实现\strtok系列函数实现\strpbrk.cpp.s
+
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok.c.obj: CMakeFiles/my_tiny_stl.dir/flags.make
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok.c.obj: ../Clib实现/strtok.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/my_tiny_stl.dir/Clib实现/strtok.c.obj"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\my_tiny_stl.dir\Clib实现\strtok.c.obj   -c "D:\CLion Project\my_tiny_stl\Clib实现\strtok.c"
+
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_tiny_stl.dir/Clib实现/strtok.c.i"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\CLion Project\my_tiny_stl\Clib实现\strtok.c" > CMakeFiles\my_tiny_stl.dir\Clib实现\strtok.c.i
+
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_tiny_stl.dir/Clib实现/strtok.c.s"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\CLion Project\my_tiny_stl\Clib实现\strtok.c" -o CMakeFiles\my_tiny_stl.dir\Clib实现\strtok.c.s
+
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok_r.c.obj: CMakeFiles/my_tiny_stl.dir/flags.make
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok_r.c.obj: ../Clib实现/strtok_r.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/my_tiny_stl.dir/Clib实现/strtok_r.c.obj"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\my_tiny_stl.dir\Clib实现\strtok_r.c.obj   -c "D:\CLion Project\my_tiny_stl\Clib实现\strtok_r.c"
+
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok_r.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_tiny_stl.dir/Clib实现/strtok_r.c.i"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\CLion Project\my_tiny_stl\Clib实现\strtok_r.c" > CMakeFiles\my_tiny_stl.dir\Clib实现\strtok_r.c.i
+
+CMakeFiles/my_tiny_stl.dir/Clib实现/strtok_r.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_tiny_stl.dir/Clib实现/strtok_r.c.s"
+	D:\Program_Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\CLion Project\my_tiny_stl\Clib实现\strtok_r.c" -o CMakeFiles\my_tiny_stl.dir\Clib实现\strtok_r.c.s
+
 # Object files for target my_tiny_stl
 my_tiny_stl_OBJECTS = \
 "CMakeFiles/my_tiny_stl.dir/main.cpp.obj" \
@@ -253,7 +331,13 @@ my_tiny_stl_OBJECTS = \
 "CMakeFiles/my_tiny_stl.dir/Complex.cpp.obj" \
 "CMakeFiles/my_tiny_stl.dir/BigInteger.cpp.obj" \
 "CMakeFiles/my_tiny_stl.dir/AVLTree.cpp.obj" \
-"CMakeFiles/my_tiny_stl.dir/Treap.cpp.obj"
+"CMakeFiles/my_tiny_stl.dir/Treap.cpp.obj" \
+"CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strtok.c.obj" \
+"CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strspn.c.obj" \
+"CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strcspn.c.obj" \
+"CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strpbrk.cpp.obj" \
+"CMakeFiles/my_tiny_stl.dir/Clib实现/strtok.c.obj" \
+"CMakeFiles/my_tiny_stl.dir/Clib实现/strtok_r.c.obj"
 
 # External object files for target my_tiny_stl
 my_tiny_stl_EXTERNAL_OBJECTS =
@@ -272,11 +356,17 @@ my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/Complex.cpp.obj
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/BigInteger.cpp.obj
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/AVLTree.cpp.obj
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/Treap.cpp.obj
+my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strtok.c.obj
+my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strspn.c.obj
+my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strcspn.c.obj
+my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strpbrk.cpp.obj
+my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/Clib实现/strtok.c.obj
+my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/Clib实现/strtok_r.c.obj
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/build.make
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/linklibs.rsp
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/objects1.rsp
 my_tiny_stl.exe: CMakeFiles/my_tiny_stl.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable my_tiny_stl.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable my_tiny_stl.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\my_tiny_stl.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

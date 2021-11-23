@@ -203,6 +203,168 @@ BinarySearch.cpp.s:
 	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/BinarySearch.cpp.s
 .PHONY : BinarySearch.cpp.s
 
+Clib实现/strtok.obj: Clib实现/strtok.c.obj
+
+.PHONY : Clib实现/strtok.obj
+
+# target to build an object file
+Clib实现/strtok.c.obj:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Clib实现/strtok.c.obj
+.PHONY : Clib实现/strtok.c.obj
+
+Clib实现/strtok.i: Clib实现/strtok.c.i
+
+.PHONY : Clib实现/strtok.i
+
+# target to preprocess a source file
+Clib实现/strtok.c.i:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Clib实现/strtok.c.i
+.PHONY : Clib实现/strtok.c.i
+
+Clib实现/strtok.s: Clib实现/strtok.c.s
+
+.PHONY : Clib实现/strtok.s
+
+# target to generate assembly for a file
+Clib实现/strtok.c.s:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Clib实现/strtok.c.s
+.PHONY : Clib实现/strtok.c.s
+
+Clib实现/strtok_r.obj: Clib实现/strtok_r.c.obj
+
+.PHONY : Clib实现/strtok_r.obj
+
+# target to build an object file
+Clib实现/strtok_r.c.obj:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Clib实现/strtok_r.c.obj
+.PHONY : Clib实现/strtok_r.c.obj
+
+Clib实现/strtok_r.i: Clib实现/strtok_r.c.i
+
+.PHONY : Clib实现/strtok_r.i
+
+# target to preprocess a source file
+Clib实现/strtok_r.c.i:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Clib实现/strtok_r.c.i
+.PHONY : Clib实现/strtok_r.c.i
+
+Clib实现/strtok_r.s: Clib实现/strtok_r.c.s
+
+.PHONY : Clib实现/strtok_r.s
+
+# target to generate assembly for a file
+Clib实现/strtok_r.c.s:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Clib实现/strtok_r.c.s
+.PHONY : Clib实现/strtok_r.c.s
+
+Clib实现/strtok系列函数实现/strcspn.obj: Clib实现/strtok系列函数实现/strcspn.c.obj
+
+.PHONY : Clib实现/strtok系列函数实现/strcspn.obj
+
+# target to build an object file
+Clib实现/strtok系列函数实现/strcspn.c.obj:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strcspn.c.obj
+.PHONY : Clib实现/strtok系列函数实现/strcspn.c.obj
+
+Clib实现/strtok系列函数实现/strcspn.i: Clib实现/strtok系列函数实现/strcspn.c.i
+
+.PHONY : Clib实现/strtok系列函数实现/strcspn.i
+
+# target to preprocess a source file
+Clib实现/strtok系列函数实现/strcspn.c.i:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strcspn.c.i
+.PHONY : Clib实现/strtok系列函数实现/strcspn.c.i
+
+Clib实现/strtok系列函数实现/strcspn.s: Clib实现/strtok系列函数实现/strcspn.c.s
+
+.PHONY : Clib实现/strtok系列函数实现/strcspn.s
+
+# target to generate assembly for a file
+Clib实现/strtok系列函数实现/strcspn.c.s:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strcspn.c.s
+.PHONY : Clib实现/strtok系列函数实现/strcspn.c.s
+
+Clib实现/strtok系列函数实现/strpbrk.obj: Clib实现/strtok系列函数实现/strpbrk.cpp.obj
+
+.PHONY : Clib实现/strtok系列函数实现/strpbrk.obj
+
+# target to build an object file
+Clib实现/strtok系列函数实现/strpbrk.cpp.obj:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strpbrk.cpp.obj
+.PHONY : Clib实现/strtok系列函数实现/strpbrk.cpp.obj
+
+Clib实现/strtok系列函数实现/strpbrk.i: Clib实现/strtok系列函数实现/strpbrk.cpp.i
+
+.PHONY : Clib实现/strtok系列函数实现/strpbrk.i
+
+# target to preprocess a source file
+Clib实现/strtok系列函数实现/strpbrk.cpp.i:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strpbrk.cpp.i
+.PHONY : Clib实现/strtok系列函数实现/strpbrk.cpp.i
+
+Clib实现/strtok系列函数实现/strpbrk.s: Clib实现/strtok系列函数实现/strpbrk.cpp.s
+
+.PHONY : Clib实现/strtok系列函数实现/strpbrk.s
+
+# target to generate assembly for a file
+Clib实现/strtok系列函数实现/strpbrk.cpp.s:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strpbrk.cpp.s
+.PHONY : Clib实现/strtok系列函数实现/strpbrk.cpp.s
+
+Clib实现/strtok系列函数实现/strspn.obj: Clib实现/strtok系列函数实现/strspn.c.obj
+
+.PHONY : Clib实现/strtok系列函数实现/strspn.obj
+
+# target to build an object file
+Clib实现/strtok系列函数实现/strspn.c.obj:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strspn.c.obj
+.PHONY : Clib实现/strtok系列函数实现/strspn.c.obj
+
+Clib实现/strtok系列函数实现/strspn.i: Clib实现/strtok系列函数实现/strspn.c.i
+
+.PHONY : Clib实现/strtok系列函数实现/strspn.i
+
+# target to preprocess a source file
+Clib实现/strtok系列函数实现/strspn.c.i:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strspn.c.i
+.PHONY : Clib实现/strtok系列函数实现/strspn.c.i
+
+Clib实现/strtok系列函数实现/strspn.s: Clib实现/strtok系列函数实现/strspn.c.s
+
+.PHONY : Clib实现/strtok系列函数实现/strspn.s
+
+# target to generate assembly for a file
+Clib实现/strtok系列函数实现/strspn.c.s:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strspn.c.s
+.PHONY : Clib实现/strtok系列函数实现/strspn.c.s
+
+Clib实现/strtok系列函数实现/strtok.obj: Clib实现/strtok系列函数实现/strtok.c.obj
+
+.PHONY : Clib实现/strtok系列函数实现/strtok.obj
+
+# target to build an object file
+Clib实现/strtok系列函数实现/strtok.c.obj:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strtok.c.obj
+.PHONY : Clib实现/strtok系列函数实现/strtok.c.obj
+
+Clib实现/strtok系列函数实现/strtok.i: Clib实现/strtok系列函数实现/strtok.c.i
+
+.PHONY : Clib实现/strtok系列函数实现/strtok.i
+
+# target to preprocess a source file
+Clib实现/strtok系列函数实现/strtok.c.i:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strtok.c.i
+.PHONY : Clib实现/strtok系列函数实现/strtok.c.i
+
+Clib实现/strtok系列函数实现/strtok.s: Clib实现/strtok系列函数实现/strtok.c.s
+
+.PHONY : Clib实现/strtok系列函数实现/strtok.s
+
+# target to generate assembly for a file
+Clib实现/strtok系列函数实现/strtok.c.s:
+	$(MAKE) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strtok.c.s
+.PHONY : Clib实现/strtok系列函数实现/strtok.c.s
+
 Complex.obj: Complex.cpp.obj
 
 .PHONY : Complex.obj
@@ -518,6 +680,24 @@ help:
 	@echo ... BinarySearch.obj
 	@echo ... BinarySearch.i
 	@echo ... BinarySearch.s
+	@echo ... Clib实现/strtok.obj
+	@echo ... Clib实现/strtok.i
+	@echo ... Clib实现/strtok.s
+	@echo ... Clib实现/strtok_r.obj
+	@echo ... Clib实现/strtok_r.i
+	@echo ... Clib实现/strtok_r.s
+	@echo ... Clib实现/strtok系列函数实现/strcspn.obj
+	@echo ... Clib实现/strtok系列函数实现/strcspn.i
+	@echo ... Clib实现/strtok系列函数实现/strcspn.s
+	@echo ... Clib实现/strtok系列函数实现/strpbrk.obj
+	@echo ... Clib实现/strtok系列函数实现/strpbrk.i
+	@echo ... Clib实现/strtok系列函数实现/strpbrk.s
+	@echo ... Clib实现/strtok系列函数实现/strspn.obj
+	@echo ... Clib实现/strtok系列函数实现/strspn.i
+	@echo ... Clib实现/strtok系列函数实现/strspn.s
+	@echo ... Clib实现/strtok系列函数实现/strtok.obj
+	@echo ... Clib实现/strtok系列函数实现/strtok.i
+	@echo ... Clib实现/strtok系列函数实现/strtok.s
 	@echo ... Complex.obj
 	@echo ... Complex.i
 	@echo ... Complex.s

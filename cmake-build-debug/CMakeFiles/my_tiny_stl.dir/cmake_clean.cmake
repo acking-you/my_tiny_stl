@@ -2,6 +2,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_tiny_stl.dir/AVLTree.cpp.obj"
   "CMakeFiles/my_tiny_stl.dir/BigInteger.cpp.obj"
   "CMakeFiles/my_tiny_stl.dir/BinarySearch.cpp.obj"
+  "CMakeFiles/my_tiny_stl.dir/Clib实现/strtok.c.obj"
+  "CMakeFiles/my_tiny_stl.dir/Clib实现/strtok_r.c.obj"
+  "CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strcspn.c.obj"
+  "CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strpbrk.cpp.obj"
+  "CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strspn.c.obj"
+  "CMakeFiles/my_tiny_stl.dir/Clib实现/strtok系列函数实现/strtok.c.obj"
   "CMakeFiles/my_tiny_stl.dir/Complex.cpp.obj"
   "CMakeFiles/my_tiny_stl.dir/HashTable.cpp.obj"
   "CMakeFiles/my_tiny_stl.dir/LinkMap.cpp.obj"
@@ -20,6 +26,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
+foreach(lang C CXX)
   include(CMakeFiles/my_tiny_stl.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()
