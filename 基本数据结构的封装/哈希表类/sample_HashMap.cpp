@@ -2,7 +2,7 @@
 // Created by Alone on 2021/7/20.
 //
 #include <stdio.h>
-#include "HashTable.h"
+#include "sample_HashMap.h"
 
 HashTable::HashTable() {}
 
