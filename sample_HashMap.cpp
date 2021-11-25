@@ -4,24 +4,24 @@
 #include <stdio.h>
 #include "HashTable.h"
 
-HashTable::HashTable() {}
+sample_HashMap::sample_HashMap() {}
 
-HashTable::~HashTable() {
+sample_HashMap::~sample_HashMap() {
     clear();
 }
 
-int HashTable::hash_func(int value) {
+int sample_HashMap::hash_func(int value) {
     return value % MAX_HASH_TABALE_LEN;
 }
 
-void HashTable::insert(int value) {
+void sample_HashMap::insert(int value) {
     int t = this->hash_func(value);
     ListNode *node = new ListNode(value);
     node->next = _head[t].next;
     _head[t].next = node;
 }
 
-bool HashTable::count(int value) {
+bool sample_HashMap::count(int value) {
     int t = hash_func(value);
     ListNode *head = _head[t].next;
     while (head) {
@@ -33,7 +33,7 @@ bool HashTable::count(int value) {
     return false;
 }
 
-void HashTable::clear() {
+void sample_HashMap::clear() {
     for (int t = 0; t < MAX_HASH_TABALE_LEN; t++) {
         ListNode *cur = _head[t].next;
         while (cur) {
@@ -45,7 +45,7 @@ void HashTable::clear() {
     }
 }
 
-void HashTable::remove(int value) {
+void sample_HashMap::remove(int value) {
     int t = hash_func(value);
     ListNode *head = &_head[t];
     while (head) {
@@ -59,7 +59,7 @@ void HashTable::remove(int value) {
     }
 }
 
-void HashTable::print() {
+void sample_HashMap::print() {
     for (int i = 0; i < MAX_HASH_TABALE_LEN; i++) {
         printf("[%d]:", i);
         ListNode *head = _head[i].next;

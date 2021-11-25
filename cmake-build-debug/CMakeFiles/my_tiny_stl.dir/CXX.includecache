@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-D:/CLion Project/my_tiny_stl/BinarySearch.cpp
-BinarySearch.h
-D:/CLion Project/my_tiny_stl/BinarySearch.h
-stdio.h
+D:/CLion Project/my_tiny_stl/main.cpp
+bits/stdc++.h
 -
-
-D:/CLion Project/my_tiny_stl/BinarySearch.h
-queue
+functional
+-
+utility
+-
+cassert
 -
 

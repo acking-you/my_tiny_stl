@@ -14,11 +14,11 @@ struct ListNode {
     ListNode() : val(0), next(nullptr) {}
 };
 
-class HashTable {
+class sample_HashMap {
 public:
-    HashTable();
+    sample_HashMap();
 
-    ~HashTable();
+    ~sample_HashMap();
 
     void insert(int value);
 
