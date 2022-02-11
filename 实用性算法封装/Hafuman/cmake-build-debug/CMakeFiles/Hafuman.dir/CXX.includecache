@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/CLion Project/Hafuman/HafumanZip.h
+unordered_map
+-
+vector
+-
+queue
+-
+algorithm
+-
+bitset
+-
+
+D:/CLion Project/Hafuman/main.cpp
+HafumanZip.h
+D:/CLion Project/Hafuman/HafumanZip.h
+fstream
+-
+iostream
+-
+

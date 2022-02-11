@@ -67,24 +67,13 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\CLion Project\my_tiny_stl"
+CMAKE_SOURCE_DIR = "D:\CLion Project\Hafuman"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\CLion Project\my_tiny_stl\cmake-build-debug"
+CMAKE_BINARY_DIR = "D:\CLion Project\Hafuman\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -97,11 +86,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" "D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\CLion Project\Hafuman\cmake-build-debug\CMakeFiles" "D:\CLion Project\Hafuman\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\CLion Project\Hafuman\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -130,17 +130,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named my_tiny_stl
+# Target rules for targets named Hafuman
 
 # Build rule for target.
-my_tiny_stl: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 my_tiny_stl
-.PHONY : my_tiny_stl
+Hafuman: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Hafuman
+.PHONY : Hafuman
 
 # fast build rule for target.
-my_tiny_stl/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/build
-.PHONY : my_tiny_stl/fast
+Hafuman/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hafuman.dir\build.make CMakeFiles/Hafuman.dir/build
+.PHONY : Hafuman/fast
+
+HafumanZip.obj: HafumanZip.cpp.obj
+
+.PHONY : HafumanZip.obj
+
+# target to build an object file
+HafumanZip.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hafuman.dir\build.make CMakeFiles/Hafuman.dir/HafumanZip.cpp.obj
+.PHONY : HafumanZip.cpp.obj
+
+HafumanZip.i: HafumanZip.cpp.i
+
+.PHONY : HafumanZip.i
+
+# target to preprocess a source file
+HafumanZip.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hafuman.dir\build.make CMakeFiles/Hafuman.dir/HafumanZip.cpp.i
+.PHONY : HafumanZip.cpp.i
+
+HafumanZip.s: HafumanZip.cpp.s
+
+.PHONY : HafumanZip.s
+
+# target to generate assembly for a file
+HafumanZip.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hafuman.dir\build.make CMakeFiles/Hafuman.dir/HafumanZip.cpp.s
+.PHONY : HafumanZip.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -148,7 +175,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hafuman.dir\build.make CMakeFiles/Hafuman.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -157,7 +184,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hafuman.dir\build.make CMakeFiles/Hafuman.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -166,7 +193,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_tiny_stl.dir\build.make CMakeFiles/my_tiny_stl.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hafuman.dir\build.make CMakeFiles/Hafuman.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -177,7 +204,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... my_tiny_stl
+	@echo ... Hafuman
+	@echo ... HafumanZip.obj
+	@echo ... HafumanZip.i
+	@echo ... HafumanZip.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

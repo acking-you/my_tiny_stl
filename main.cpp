@@ -1,9 +1,20 @@
+#include<algorithm>
 #include <iostream>
-#include "assert.h"
+#include <vector>
 using namespace std;
+int eqto(int& x){
+    return x;
+}
+void print(int x){
+    cout<<x;
+}
 int main() {
-    int a = 32;
-    int b = 322;
-    assert(a==b);
-    while (1);
+    vector<int>d(3,1);
+    vector<int>t(3);
+    transform(d.begin(),d.end(),t.begin(),eqto);
+    for_each(t.begin(),t.end(),print  );
+    t.front();
+    return 0;
+
+
 }
