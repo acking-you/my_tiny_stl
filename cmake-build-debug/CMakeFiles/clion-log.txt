@@ -1,20 +1,20 @@
 "D:\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\CLion Project\my_tiny_stl"
     -- src/strpbrk.cpp will be compiled to bin/strpbrk
-    -- src/TCP_SOCKET_CLIENT.cpp will be compiled to bin/TCP_SOCKET_CLIENT
-    -- src/TCP_SOCKET_SERVER.cpp will be compiled to bin/TCP_SOCKET_SERVER
-    -- src/CMakeCXXCompilerId.cpp will be compiled to bin/CMakeCXXCompilerId
-    -- src/BigInteger.cpp will be compiled to bin/BigInteger
-    -- src/Complex.cpp will be compiled to bin/Complex
     -- src/sample_HashMap.cpp will be compiled to bin/sample_HashMap
-    -- src/Trie_dyn.cpp will be compiled to bin/Trie_dyn
-    -- src/Trie_static.cpp will be compiled to bin/Trie_static
-    -- src/UnionFind.cpp will be compiled to bin/UnionFind
     -- src/LinkMap.cpp will be compiled to bin/LinkMap
     -- src/Tarjan.cpp will be compiled to bin/Tarjan
     -- src/AVLTree.cpp will be compiled to bin/AVLTree
     -- src/BinarySearch.cpp will be compiled to bin/BinarySearch
     -- src/Treap.cpp will be compiled to bin/Treap
+    -- src/Trie_dyn.cpp will be compiled to bin/Trie_dyn
+    -- src/Trie_static.cpp will be compiled to bin/Trie_static
+    -- src/UnionFind.cpp will be compiled to bin/UnionFind
     -- src/HafumanZip.cpp will be compiled to bin/HafumanZip
+    -- src/TCP_SOCKET_CLIENT.cpp will be compiled to bin/TCP_SOCKET_CLIENT
+    -- src/TCP_SOCKET_SERVER.cpp will be compiled to bin/TCP_SOCKET_SERVER
+    -- src/BigInteger.cpp will be compiled to bin/BigInteger
+    -- src/Complex.cpp will be compiled to bin/Complex
+    -- src/CMakeCXXCompilerId.cpp will be compiled to bin/CMakeCXXCompilerId
     -- src/main.cpp will be compiled to bin/main
 -- Configuring done
 -- Generating done

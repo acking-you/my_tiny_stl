@@ -142,19 +142,6 @@ Trie_dyn/fast:
 .PHONY : Trie_dyn/fast
 
 #=============================================================================
-# Target rules for targets named Tarjan
-
-# Build rule for target.
-Tarjan: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tarjan
-.PHONY : Tarjan
-
-# fast build rule for target.
-Tarjan/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tarjan.dir\build.make CMakeFiles/Tarjan.dir/build
-.PHONY : Tarjan/fast
-
-#=============================================================================
 # Target rules for targets named CMakeCXXCompilerId
 
 # Build rule for target.
@@ -168,17 +155,43 @@ CMakeCXXCompilerId/fast:
 .PHONY : CMakeCXXCompilerId/fast
 
 #=============================================================================
-# Target rules for targets named AVLTree
+# Target rules for targets named Tarjan
 
 # Build rule for target.
-AVLTree: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AVLTree
-.PHONY : AVLTree
+Tarjan: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tarjan
+.PHONY : Tarjan
 
 # fast build rule for target.
-AVLTree/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AVLTree.dir\build.make CMakeFiles/AVLTree.dir/build
-.PHONY : AVLTree/fast
+Tarjan/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tarjan.dir\build.make CMakeFiles/Tarjan.dir/build
+.PHONY : Tarjan/fast
+
+#=============================================================================
+# Target rules for targets named LinkMap
+
+# Build rule for target.
+LinkMap: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 LinkMap
+.PHONY : LinkMap
+
+# fast build rule for target.
+LinkMap/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkMap.dir\build.make CMakeFiles/LinkMap.dir/build
+.PHONY : LinkMap/fast
+
+#=============================================================================
+# Target rules for targets named sample_HashMap
+
+# Build rule for target.
+sample_HashMap: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sample_HashMap
+.PHONY : sample_HashMap
+
+# fast build rule for target.
+sample_HashMap/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample_HashMap.dir\build.make CMakeFiles/sample_HashMap.dir/build
+.PHONY : sample_HashMap/fast
 
 #=============================================================================
 # Target rules for targets named TCP_SOCKET_CLIENT
@@ -194,17 +207,82 @@ TCP_SOCKET_CLIENT/fast:
 .PHONY : TCP_SOCKET_CLIENT/fast
 
 #=============================================================================
-# Target rules for targets named sample_HashMap
+# Target rules for targets named AVLTree
 
 # Build rule for target.
-sample_HashMap: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sample_HashMap
-.PHONY : sample_HashMap
+AVLTree: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AVLTree
+.PHONY : AVLTree
 
 # fast build rule for target.
-sample_HashMap/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample_HashMap.dir\build.make CMakeFiles/sample_HashMap.dir/build
-.PHONY : sample_HashMap/fast
+AVLTree/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AVLTree.dir\build.make CMakeFiles/AVLTree.dir/build
+.PHONY : AVLTree/fast
+
+#=============================================================================
+# Target rules for targets named BinarySearch
+
+# Build rule for target.
+BinarySearch: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 BinarySearch
+.PHONY : BinarySearch
+
+# fast build rule for target.
+BinarySearch/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BinarySearch.dir\build.make CMakeFiles/BinarySearch.dir/build
+.PHONY : BinarySearch/fast
+
+#=============================================================================
+# Target rules for targets named Treap
+
+# Build rule for target.
+Treap: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Treap
+.PHONY : Treap
+
+# fast build rule for target.
+Treap/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Treap.dir\build.make CMakeFiles/Treap.dir/build
+.PHONY : Treap/fast
+
+#=============================================================================
+# Target rules for targets named Trie_static
+
+# Build rule for target.
+Trie_static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Trie_static
+.PHONY : Trie_static
+
+# fast build rule for target.
+Trie_static/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_static.dir\build.make CMakeFiles/Trie_static.dir/build
+.PHONY : Trie_static/fast
+
+#=============================================================================
+# Target rules for targets named UnionFind
+
+# Build rule for target.
+UnionFind: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 UnionFind
+.PHONY : UnionFind
+
+# fast build rule for target.
+UnionFind/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnionFind.dir\build.make CMakeFiles/UnionFind.dir/build
+.PHONY : UnionFind/fast
+
+#=============================================================================
+# Target rules for targets named HafumanZip
+
+# Build rule for target.
+HafumanZip: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 HafumanZip
+.PHONY : HafumanZip
+
+# fast build rule for target.
+HafumanZip/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HafumanZip.dir\build.make CMakeFiles/HafumanZip.dir/build
+.PHONY : HafumanZip/fast
 
 #=============================================================================
 # Target rules for targets named TCP_SOCKET_SERVER
@@ -246,84 +324,6 @@ Complex/fast:
 .PHONY : Complex/fast
 
 #=============================================================================
-# Target rules for targets named Trie_static
-
-# Build rule for target.
-Trie_static: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Trie_static
-.PHONY : Trie_static
-
-# fast build rule for target.
-Trie_static/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_static.dir\build.make CMakeFiles/Trie_static.dir/build
-.PHONY : Trie_static/fast
-
-#=============================================================================
-# Target rules for targets named UnionFind
-
-# Build rule for target.
-UnionFind: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 UnionFind
-.PHONY : UnionFind
-
-# fast build rule for target.
-UnionFind/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnionFind.dir\build.make CMakeFiles/UnionFind.dir/build
-.PHONY : UnionFind/fast
-
-#=============================================================================
-# Target rules for targets named LinkMap
-
-# Build rule for target.
-LinkMap: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 LinkMap
-.PHONY : LinkMap
-
-# fast build rule for target.
-LinkMap/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkMap.dir\build.make CMakeFiles/LinkMap.dir/build
-.PHONY : LinkMap/fast
-
-#=============================================================================
-# Target rules for targets named BinarySearch
-
-# Build rule for target.
-BinarySearch: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 BinarySearch
-.PHONY : BinarySearch
-
-# fast build rule for target.
-BinarySearch/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BinarySearch.dir\build.make CMakeFiles/BinarySearch.dir/build
-.PHONY : BinarySearch/fast
-
-#=============================================================================
-# Target rules for targets named Treap
-
-# Build rule for target.
-Treap: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Treap
-.PHONY : Treap
-
-# fast build rule for target.
-Treap/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Treap.dir\build.make CMakeFiles/Treap.dir/build
-.PHONY : Treap/fast
-
-#=============================================================================
-# Target rules for targets named HafumanZip
-
-# Build rule for target.
-HafumanZip: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 HafumanZip
-.PHONY : HafumanZip
-
-# fast build rule for target.
-HafumanZip/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HafumanZip.dir\build.make CMakeFiles/HafumanZip.dir/build
-.PHONY : HafumanZip/fast
-
-#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -360,389 +360,389 @@ CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeCXXCompilerId.dir\build.make CMakeFiles/CMakeCXXCompilerId.dir/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
 .PHONY : CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
 
-Clib实现/strtok系列函数实现/strpbrk.obj: Clib实现/strtok系列函数实现/strpbrk.cpp.obj
-.PHONY : Clib实现/strtok系列函数实现/strpbrk.obj
+Clib/strtok_series/strpbrk.obj: Clib/strtok_series/strpbrk.cpp.obj
+.PHONY : Clib/strtok_series/strpbrk.obj
 
 # target to build an object file
-Clib实现/strtok系列函数实现/strpbrk.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\strpbrk.dir\build.make CMakeFiles/strpbrk.dir/Clib实现/strtok系列函数实现/strpbrk.cpp.obj
-.PHONY : Clib实现/strtok系列函数实现/strpbrk.cpp.obj
+Clib/strtok_series/strpbrk.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\strpbrk.dir\build.make CMakeFiles/strpbrk.dir/Clib/strtok_series/strpbrk.cpp.obj
+.PHONY : Clib/strtok_series/strpbrk.cpp.obj
 
-Clib实现/strtok系列函数实现/strpbrk.i: Clib实现/strtok系列函数实现/strpbrk.cpp.i
-.PHONY : Clib实现/strtok系列函数实现/strpbrk.i
+Clib/strtok_series/strpbrk.i: Clib/strtok_series/strpbrk.cpp.i
+.PHONY : Clib/strtok_series/strpbrk.i
 
 # target to preprocess a source file
-Clib实现/strtok系列函数实现/strpbrk.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\strpbrk.dir\build.make CMakeFiles/strpbrk.dir/Clib实现/strtok系列函数实现/strpbrk.cpp.i
-.PHONY : Clib实现/strtok系列函数实现/strpbrk.cpp.i
+Clib/strtok_series/strpbrk.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\strpbrk.dir\build.make CMakeFiles/strpbrk.dir/Clib/strtok_series/strpbrk.cpp.i
+.PHONY : Clib/strtok_series/strpbrk.cpp.i
 
-Clib实现/strtok系列函数实现/strpbrk.s: Clib实现/strtok系列函数实现/strpbrk.cpp.s
-.PHONY : Clib实现/strtok系列函数实现/strpbrk.s
+Clib/strtok_series/strpbrk.s: Clib/strtok_series/strpbrk.cpp.s
+.PHONY : Clib/strtok_series/strpbrk.s
 
 # target to generate assembly for a file
-Clib实现/strtok系列函数实现/strpbrk.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\strpbrk.dir\build.make CMakeFiles/strpbrk.dir/Clib实现/strtok系列函数实现/strpbrk.cpp.s
-.PHONY : Clib实现/strtok系列函数实现/strpbrk.cpp.s
+Clib/strtok_series/strpbrk.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\strpbrk.dir\build.make CMakeFiles/strpbrk.dir/Clib/strtok_series/strpbrk.cpp.s
+.PHONY : Clib/strtok_series/strpbrk.cpp.s
 
-TCP相关封装/TCP_SOCKET_CLIENT.obj: TCP相关封装/TCP_SOCKET_CLIENT.cpp.obj
-.PHONY : TCP相关封装/TCP_SOCKET_CLIENT.obj
+Data_struct_tool/HashTable/sample_HashMap.obj: Data_struct_tool/HashTable/sample_HashMap.cpp.obj
+.PHONY : Data_struct_tool/HashTable/sample_HashMap.obj
 
 # target to build an object file
-TCP相关封装/TCP_SOCKET_CLIENT.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_CLIENT.dir\build.make CMakeFiles/TCP_SOCKET_CLIENT.dir/TCP相关封装/TCP_SOCKET_CLIENT.cpp.obj
-.PHONY : TCP相关封装/TCP_SOCKET_CLIENT.cpp.obj
+Data_struct_tool/HashTable/sample_HashMap.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample_HashMap.dir\build.make CMakeFiles/sample_HashMap.dir/Data_struct_tool/HashTable/sample_HashMap.cpp.obj
+.PHONY : Data_struct_tool/HashTable/sample_HashMap.cpp.obj
 
-TCP相关封装/TCP_SOCKET_CLIENT.i: TCP相关封装/TCP_SOCKET_CLIENT.cpp.i
-.PHONY : TCP相关封装/TCP_SOCKET_CLIENT.i
+Data_struct_tool/HashTable/sample_HashMap.i: Data_struct_tool/HashTable/sample_HashMap.cpp.i
+.PHONY : Data_struct_tool/HashTable/sample_HashMap.i
 
 # target to preprocess a source file
-TCP相关封装/TCP_SOCKET_CLIENT.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_CLIENT.dir\build.make CMakeFiles/TCP_SOCKET_CLIENT.dir/TCP相关封装/TCP_SOCKET_CLIENT.cpp.i
-.PHONY : TCP相关封装/TCP_SOCKET_CLIENT.cpp.i
+Data_struct_tool/HashTable/sample_HashMap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample_HashMap.dir\build.make CMakeFiles/sample_HashMap.dir/Data_struct_tool/HashTable/sample_HashMap.cpp.i
+.PHONY : Data_struct_tool/HashTable/sample_HashMap.cpp.i
 
-TCP相关封装/TCP_SOCKET_CLIENT.s: TCP相关封装/TCP_SOCKET_CLIENT.cpp.s
-.PHONY : TCP相关封装/TCP_SOCKET_CLIENT.s
+Data_struct_tool/HashTable/sample_HashMap.s: Data_struct_tool/HashTable/sample_HashMap.cpp.s
+.PHONY : Data_struct_tool/HashTable/sample_HashMap.s
 
 # target to generate assembly for a file
-TCP相关封装/TCP_SOCKET_CLIENT.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_CLIENT.dir\build.make CMakeFiles/TCP_SOCKET_CLIENT.dir/TCP相关封装/TCP_SOCKET_CLIENT.cpp.s
-.PHONY : TCP相关封装/TCP_SOCKET_CLIENT.cpp.s
+Data_struct_tool/HashTable/sample_HashMap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample_HashMap.dir\build.make CMakeFiles/sample_HashMap.dir/Data_struct_tool/HashTable/sample_HashMap.cpp.s
+.PHONY : Data_struct_tool/HashTable/sample_HashMap.cpp.s
 
-TCP相关封装/TCP_SOCKET_SERVER.obj: TCP相关封装/TCP_SOCKET_SERVER.cpp.obj
-.PHONY : TCP相关封装/TCP_SOCKET_SERVER.obj
+Data_struct_tool/Map_generator/LinkMap.obj: Data_struct_tool/Map_generator/LinkMap.cpp.obj
+.PHONY : Data_struct_tool/Map_generator/LinkMap.obj
 
 # target to build an object file
-TCP相关封装/TCP_SOCKET_SERVER.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_SERVER.dir\build.make CMakeFiles/TCP_SOCKET_SERVER.dir/TCP相关封装/TCP_SOCKET_SERVER.cpp.obj
-.PHONY : TCP相关封装/TCP_SOCKET_SERVER.cpp.obj
+Data_struct_tool/Map_generator/LinkMap.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkMap.dir\build.make CMakeFiles/LinkMap.dir/Data_struct_tool/Map_generator/LinkMap.cpp.obj
+.PHONY : Data_struct_tool/Map_generator/LinkMap.cpp.obj
 
-TCP相关封装/TCP_SOCKET_SERVER.i: TCP相关封装/TCP_SOCKET_SERVER.cpp.i
-.PHONY : TCP相关封装/TCP_SOCKET_SERVER.i
+Data_struct_tool/Map_generator/LinkMap.i: Data_struct_tool/Map_generator/LinkMap.cpp.i
+.PHONY : Data_struct_tool/Map_generator/LinkMap.i
 
 # target to preprocess a source file
-TCP相关封装/TCP_SOCKET_SERVER.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_SERVER.dir\build.make CMakeFiles/TCP_SOCKET_SERVER.dir/TCP相关封装/TCP_SOCKET_SERVER.cpp.i
-.PHONY : TCP相关封装/TCP_SOCKET_SERVER.cpp.i
+Data_struct_tool/Map_generator/LinkMap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkMap.dir\build.make CMakeFiles/LinkMap.dir/Data_struct_tool/Map_generator/LinkMap.cpp.i
+.PHONY : Data_struct_tool/Map_generator/LinkMap.cpp.i
 
-TCP相关封装/TCP_SOCKET_SERVER.s: TCP相关封装/TCP_SOCKET_SERVER.cpp.s
-.PHONY : TCP相关封装/TCP_SOCKET_SERVER.s
+Data_struct_tool/Map_generator/LinkMap.s: Data_struct_tool/Map_generator/LinkMap.cpp.s
+.PHONY : Data_struct_tool/Map_generator/LinkMap.s
 
 # target to generate assembly for a file
-TCP相关封装/TCP_SOCKET_SERVER.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_SERVER.dir\build.make CMakeFiles/TCP_SOCKET_SERVER.dir/TCP相关封装/TCP_SOCKET_SERVER.cpp.s
-.PHONY : TCP相关封装/TCP_SOCKET_SERVER.cpp.s
+Data_struct_tool/Map_generator/LinkMap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkMap.dir\build.make CMakeFiles/LinkMap.dir/Data_struct_tool/Map_generator/LinkMap.cpp.s
+.PHONY : Data_struct_tool/Map_generator/LinkMap.cpp.s
 
-基本数字操作封装/BigInteger.obj: 基本数字操作封装/BigInteger.cpp.obj
-.PHONY : 基本数字操作封装/BigInteger.obj
+Data_struct_tool/Map_generator/Tarjan.obj: Data_struct_tool/Map_generator/Tarjan.cpp.obj
+.PHONY : Data_struct_tool/Map_generator/Tarjan.obj
 
 # target to build an object file
-基本数字操作封装/BigInteger.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BigInteger.dir\build.make CMakeFiles/BigInteger.dir/基本数字操作封装/BigInteger.cpp.obj
-.PHONY : 基本数字操作封装/BigInteger.cpp.obj
+Data_struct_tool/Map_generator/Tarjan.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tarjan.dir\build.make CMakeFiles/Tarjan.dir/Data_struct_tool/Map_generator/Tarjan.cpp.obj
+.PHONY : Data_struct_tool/Map_generator/Tarjan.cpp.obj
 
-基本数字操作封装/BigInteger.i: 基本数字操作封装/BigInteger.cpp.i
-.PHONY : 基本数字操作封装/BigInteger.i
+Data_struct_tool/Map_generator/Tarjan.i: Data_struct_tool/Map_generator/Tarjan.cpp.i
+.PHONY : Data_struct_tool/Map_generator/Tarjan.i
 
 # target to preprocess a source file
-基本数字操作封装/BigInteger.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BigInteger.dir\build.make CMakeFiles/BigInteger.dir/基本数字操作封装/BigInteger.cpp.i
-.PHONY : 基本数字操作封装/BigInteger.cpp.i
+Data_struct_tool/Map_generator/Tarjan.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tarjan.dir\build.make CMakeFiles/Tarjan.dir/Data_struct_tool/Map_generator/Tarjan.cpp.i
+.PHONY : Data_struct_tool/Map_generator/Tarjan.cpp.i
 
-基本数字操作封装/BigInteger.s: 基本数字操作封装/BigInteger.cpp.s
-.PHONY : 基本数字操作封装/BigInteger.s
+Data_struct_tool/Map_generator/Tarjan.s: Data_struct_tool/Map_generator/Tarjan.cpp.s
+.PHONY : Data_struct_tool/Map_generator/Tarjan.s
 
 # target to generate assembly for a file
-基本数字操作封装/BigInteger.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BigInteger.dir\build.make CMakeFiles/BigInteger.dir/基本数字操作封装/BigInteger.cpp.s
-.PHONY : 基本数字操作封装/BigInteger.cpp.s
+Data_struct_tool/Map_generator/Tarjan.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tarjan.dir\build.make CMakeFiles/Tarjan.dir/Data_struct_tool/Map_generator/Tarjan.cpp.s
+.PHONY : Data_struct_tool/Map_generator/Tarjan.cpp.s
 
-基本数字操作封装/Complex.obj: 基本数字操作封装/Complex.cpp.obj
-.PHONY : 基本数字操作封装/Complex.obj
+Data_struct_tool/Search_tree/AVLTree.obj: Data_struct_tool/Search_tree/AVLTree.cpp.obj
+.PHONY : Data_struct_tool/Search_tree/AVLTree.obj
 
 # target to build an object file
-基本数字操作封装/Complex.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Complex.dir\build.make CMakeFiles/Complex.dir/基本数字操作封装/Complex.cpp.obj
-.PHONY : 基本数字操作封装/Complex.cpp.obj
+Data_struct_tool/Search_tree/AVLTree.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AVLTree.dir\build.make CMakeFiles/AVLTree.dir/Data_struct_tool/Search_tree/AVLTree.cpp.obj
+.PHONY : Data_struct_tool/Search_tree/AVLTree.cpp.obj
 
-基本数字操作封装/Complex.i: 基本数字操作封装/Complex.cpp.i
-.PHONY : 基本数字操作封装/Complex.i
+Data_struct_tool/Search_tree/AVLTree.i: Data_struct_tool/Search_tree/AVLTree.cpp.i
+.PHONY : Data_struct_tool/Search_tree/AVLTree.i
 
 # target to preprocess a source file
-基本数字操作封装/Complex.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Complex.dir\build.make CMakeFiles/Complex.dir/基本数字操作封装/Complex.cpp.i
-.PHONY : 基本数字操作封装/Complex.cpp.i
+Data_struct_tool/Search_tree/AVLTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AVLTree.dir\build.make CMakeFiles/AVLTree.dir/Data_struct_tool/Search_tree/AVLTree.cpp.i
+.PHONY : Data_struct_tool/Search_tree/AVLTree.cpp.i
 
-基本数字操作封装/Complex.s: 基本数字操作封装/Complex.cpp.s
-.PHONY : 基本数字操作封装/Complex.s
+Data_struct_tool/Search_tree/AVLTree.s: Data_struct_tool/Search_tree/AVLTree.cpp.s
+.PHONY : Data_struct_tool/Search_tree/AVLTree.s
 
 # target to generate assembly for a file
-基本数字操作封装/Complex.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Complex.dir\build.make CMakeFiles/Complex.dir/基本数字操作封装/Complex.cpp.s
-.PHONY : 基本数字操作封装/Complex.cpp.s
+Data_struct_tool/Search_tree/AVLTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AVLTree.dir\build.make CMakeFiles/AVLTree.dir/Data_struct_tool/Search_tree/AVLTree.cpp.s
+.PHONY : Data_struct_tool/Search_tree/AVLTree.cpp.s
 
-基本数据结构的封装/哈希表类/sample_HashMap.obj: 基本数据结构的封装/哈希表类/sample_HashMap.cpp.obj
-.PHONY : 基本数据结构的封装/哈希表类/sample_HashMap.obj
+Data_struct_tool/Search_tree/BinarySearch.obj: Data_struct_tool/Search_tree/BinarySearch.cpp.obj
+.PHONY : Data_struct_tool/Search_tree/BinarySearch.obj
 
 # target to build an object file
-基本数据结构的封装/哈希表类/sample_HashMap.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample_HashMap.dir\build.make CMakeFiles/sample_HashMap.dir/基本数据结构的封装/哈希表类/sample_HashMap.cpp.obj
-.PHONY : 基本数据结构的封装/哈希表类/sample_HashMap.cpp.obj
+Data_struct_tool/Search_tree/BinarySearch.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BinarySearch.dir\build.make CMakeFiles/BinarySearch.dir/Data_struct_tool/Search_tree/BinarySearch.cpp.obj
+.PHONY : Data_struct_tool/Search_tree/BinarySearch.cpp.obj
 
-基本数据结构的封装/哈希表类/sample_HashMap.i: 基本数据结构的封装/哈希表类/sample_HashMap.cpp.i
-.PHONY : 基本数据结构的封装/哈希表类/sample_HashMap.i
+Data_struct_tool/Search_tree/BinarySearch.i: Data_struct_tool/Search_tree/BinarySearch.cpp.i
+.PHONY : Data_struct_tool/Search_tree/BinarySearch.i
 
 # target to preprocess a source file
-基本数据结构的封装/哈希表类/sample_HashMap.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample_HashMap.dir\build.make CMakeFiles/sample_HashMap.dir/基本数据结构的封装/哈希表类/sample_HashMap.cpp.i
-.PHONY : 基本数据结构的封装/哈希表类/sample_HashMap.cpp.i
+Data_struct_tool/Search_tree/BinarySearch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BinarySearch.dir\build.make CMakeFiles/BinarySearch.dir/Data_struct_tool/Search_tree/BinarySearch.cpp.i
+.PHONY : Data_struct_tool/Search_tree/BinarySearch.cpp.i
 
-基本数据结构的封装/哈希表类/sample_HashMap.s: 基本数据结构的封装/哈希表类/sample_HashMap.cpp.s
-.PHONY : 基本数据结构的封装/哈希表类/sample_HashMap.s
+Data_struct_tool/Search_tree/BinarySearch.s: Data_struct_tool/Search_tree/BinarySearch.cpp.s
+.PHONY : Data_struct_tool/Search_tree/BinarySearch.s
 
 # target to generate assembly for a file
-基本数据结构的封装/哈希表类/sample_HashMap.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample_HashMap.dir\build.make CMakeFiles/sample_HashMap.dir/基本数据结构的封装/哈希表类/sample_HashMap.cpp.s
-.PHONY : 基本数据结构的封装/哈希表类/sample_HashMap.cpp.s
+Data_struct_tool/Search_tree/BinarySearch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BinarySearch.dir\build.make CMakeFiles/BinarySearch.dir/Data_struct_tool/Search_tree/BinarySearch.cpp.s
+.PHONY : Data_struct_tool/Search_tree/BinarySearch.cpp.s
 
-基本数据结构的封装/图类/Trie_dyn.obj: 基本数据结构的封装/图类/Trie_dyn.cpp.obj
-.PHONY : 基本数据结构的封装/图类/Trie_dyn.obj
+Data_struct_tool/Search_tree/Treap.obj: Data_struct_tool/Search_tree/Treap.cpp.obj
+.PHONY : Data_struct_tool/Search_tree/Treap.obj
 
 # target to build an object file
-基本数据结构的封装/图类/Trie_dyn.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_dyn.dir\build.make CMakeFiles/Trie_dyn.dir/基本数据结构的封装/图类/Trie_dyn.cpp.obj
-.PHONY : 基本数据结构的封装/图类/Trie_dyn.cpp.obj
+Data_struct_tool/Search_tree/Treap.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Treap.dir\build.make CMakeFiles/Treap.dir/Data_struct_tool/Search_tree/Treap.cpp.obj
+.PHONY : Data_struct_tool/Search_tree/Treap.cpp.obj
 
-基本数据结构的封装/图类/Trie_dyn.i: 基本数据结构的封装/图类/Trie_dyn.cpp.i
-.PHONY : 基本数据结构的封装/图类/Trie_dyn.i
+Data_struct_tool/Search_tree/Treap.i: Data_struct_tool/Search_tree/Treap.cpp.i
+.PHONY : Data_struct_tool/Search_tree/Treap.i
 
 # target to preprocess a source file
-基本数据结构的封装/图类/Trie_dyn.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_dyn.dir\build.make CMakeFiles/Trie_dyn.dir/基本数据结构的封装/图类/Trie_dyn.cpp.i
-.PHONY : 基本数据结构的封装/图类/Trie_dyn.cpp.i
+Data_struct_tool/Search_tree/Treap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Treap.dir\build.make CMakeFiles/Treap.dir/Data_struct_tool/Search_tree/Treap.cpp.i
+.PHONY : Data_struct_tool/Search_tree/Treap.cpp.i
 
-基本数据结构的封装/图类/Trie_dyn.s: 基本数据结构的封装/图类/Trie_dyn.cpp.s
-.PHONY : 基本数据结构的封装/图类/Trie_dyn.s
+Data_struct_tool/Search_tree/Treap.s: Data_struct_tool/Search_tree/Treap.cpp.s
+.PHONY : Data_struct_tool/Search_tree/Treap.s
 
 # target to generate assembly for a file
-基本数据结构的封装/图类/Trie_dyn.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_dyn.dir\build.make CMakeFiles/Trie_dyn.dir/基本数据结构的封装/图类/Trie_dyn.cpp.s
-.PHONY : 基本数据结构的封装/图类/Trie_dyn.cpp.s
+Data_struct_tool/Search_tree/Treap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Treap.dir\build.make CMakeFiles/Treap.dir/Data_struct_tool/Search_tree/Treap.cpp.s
+.PHONY : Data_struct_tool/Search_tree/Treap.cpp.s
 
-基本数据结构的封装/图类/Trie_static.obj: 基本数据结构的封装/图类/Trie_static.cpp.obj
-.PHONY : 基本数据结构的封装/图类/Trie_static.obj
+Data_struct_tool/Variety/Trie_dyn.obj: Data_struct_tool/Variety/Trie_dyn.cpp.obj
+.PHONY : Data_struct_tool/Variety/Trie_dyn.obj
 
 # target to build an object file
-基本数据结构的封装/图类/Trie_static.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_static.dir\build.make CMakeFiles/Trie_static.dir/基本数据结构的封装/图类/Trie_static.cpp.obj
-.PHONY : 基本数据结构的封装/图类/Trie_static.cpp.obj
+Data_struct_tool/Variety/Trie_dyn.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_dyn.dir\build.make CMakeFiles/Trie_dyn.dir/Data_struct_tool/Variety/Trie_dyn.cpp.obj
+.PHONY : Data_struct_tool/Variety/Trie_dyn.cpp.obj
 
-基本数据结构的封装/图类/Trie_static.i: 基本数据结构的封装/图类/Trie_static.cpp.i
-.PHONY : 基本数据结构的封装/图类/Trie_static.i
+Data_struct_tool/Variety/Trie_dyn.i: Data_struct_tool/Variety/Trie_dyn.cpp.i
+.PHONY : Data_struct_tool/Variety/Trie_dyn.i
 
 # target to preprocess a source file
-基本数据结构的封装/图类/Trie_static.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_static.dir\build.make CMakeFiles/Trie_static.dir/基本数据结构的封装/图类/Trie_static.cpp.i
-.PHONY : 基本数据结构的封装/图类/Trie_static.cpp.i
+Data_struct_tool/Variety/Trie_dyn.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_dyn.dir\build.make CMakeFiles/Trie_dyn.dir/Data_struct_tool/Variety/Trie_dyn.cpp.i
+.PHONY : Data_struct_tool/Variety/Trie_dyn.cpp.i
 
-基本数据结构的封装/图类/Trie_static.s: 基本数据结构的封装/图类/Trie_static.cpp.s
-.PHONY : 基本数据结构的封装/图类/Trie_static.s
+Data_struct_tool/Variety/Trie_dyn.s: Data_struct_tool/Variety/Trie_dyn.cpp.s
+.PHONY : Data_struct_tool/Variety/Trie_dyn.s
 
 # target to generate assembly for a file
-基本数据结构的封装/图类/Trie_static.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_static.dir\build.make CMakeFiles/Trie_static.dir/基本数据结构的封装/图类/Trie_static.cpp.s
-.PHONY : 基本数据结构的封装/图类/Trie_static.cpp.s
+Data_struct_tool/Variety/Trie_dyn.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_dyn.dir\build.make CMakeFiles/Trie_dyn.dir/Data_struct_tool/Variety/Trie_dyn.cpp.s
+.PHONY : Data_struct_tool/Variety/Trie_dyn.cpp.s
 
-基本数据结构的封装/图类/UnionFind.obj: 基本数据结构的封装/图类/UnionFind.cpp.obj
-.PHONY : 基本数据结构的封装/图类/UnionFind.obj
+Data_struct_tool/Variety/Trie_static.obj: Data_struct_tool/Variety/Trie_static.cpp.obj
+.PHONY : Data_struct_tool/Variety/Trie_static.obj
 
 # target to build an object file
-基本数据结构的封装/图类/UnionFind.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnionFind.dir\build.make CMakeFiles/UnionFind.dir/基本数据结构的封装/图类/UnionFind.cpp.obj
-.PHONY : 基本数据结构的封装/图类/UnionFind.cpp.obj
+Data_struct_tool/Variety/Trie_static.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_static.dir\build.make CMakeFiles/Trie_static.dir/Data_struct_tool/Variety/Trie_static.cpp.obj
+.PHONY : Data_struct_tool/Variety/Trie_static.cpp.obj
 
-基本数据结构的封装/图类/UnionFind.i: 基本数据结构的封装/图类/UnionFind.cpp.i
-.PHONY : 基本数据结构的封装/图类/UnionFind.i
+Data_struct_tool/Variety/Trie_static.i: Data_struct_tool/Variety/Trie_static.cpp.i
+.PHONY : Data_struct_tool/Variety/Trie_static.i
 
 # target to preprocess a source file
-基本数据结构的封装/图类/UnionFind.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnionFind.dir\build.make CMakeFiles/UnionFind.dir/基本数据结构的封装/图类/UnionFind.cpp.i
-.PHONY : 基本数据结构的封装/图类/UnionFind.cpp.i
+Data_struct_tool/Variety/Trie_static.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_static.dir\build.make CMakeFiles/Trie_static.dir/Data_struct_tool/Variety/Trie_static.cpp.i
+.PHONY : Data_struct_tool/Variety/Trie_static.cpp.i
 
-基本数据结构的封装/图类/UnionFind.s: 基本数据结构的封装/图类/UnionFind.cpp.s
-.PHONY : 基本数据结构的封装/图类/UnionFind.s
+Data_struct_tool/Variety/Trie_static.s: Data_struct_tool/Variety/Trie_static.cpp.s
+.PHONY : Data_struct_tool/Variety/Trie_static.s
 
 # target to generate assembly for a file
-基本数据结构的封装/图类/UnionFind.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnionFind.dir\build.make CMakeFiles/UnionFind.dir/基本数据结构的封装/图类/UnionFind.cpp.s
-.PHONY : 基本数据结构的封装/图类/UnionFind.cpp.s
+Data_struct_tool/Variety/Trie_static.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_static.dir\build.make CMakeFiles/Trie_static.dir/Data_struct_tool/Variety/Trie_static.cpp.s
+.PHONY : Data_struct_tool/Variety/Trie_static.cpp.s
 
-基本数据结构的封装/建图工具/LinkMap.obj: 基本数据结构的封装/建图工具/LinkMap.cpp.obj
-.PHONY : 基本数据结构的封装/建图工具/LinkMap.obj
+Data_struct_tool/Variety/UnionFind.obj: Data_struct_tool/Variety/UnionFind.cpp.obj
+.PHONY : Data_struct_tool/Variety/UnionFind.obj
 
 # target to build an object file
-基本数据结构的封装/建图工具/LinkMap.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkMap.dir\build.make CMakeFiles/LinkMap.dir/基本数据结构的封装/建图工具/LinkMap.cpp.obj
-.PHONY : 基本数据结构的封装/建图工具/LinkMap.cpp.obj
+Data_struct_tool/Variety/UnionFind.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnionFind.dir\build.make CMakeFiles/UnionFind.dir/Data_struct_tool/Variety/UnionFind.cpp.obj
+.PHONY : Data_struct_tool/Variety/UnionFind.cpp.obj
 
-基本数据结构的封装/建图工具/LinkMap.i: 基本数据结构的封装/建图工具/LinkMap.cpp.i
-.PHONY : 基本数据结构的封装/建图工具/LinkMap.i
+Data_struct_tool/Variety/UnionFind.i: Data_struct_tool/Variety/UnionFind.cpp.i
+.PHONY : Data_struct_tool/Variety/UnionFind.i
 
 # target to preprocess a source file
-基本数据结构的封装/建图工具/LinkMap.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkMap.dir\build.make CMakeFiles/LinkMap.dir/基本数据结构的封装/建图工具/LinkMap.cpp.i
-.PHONY : 基本数据结构的封装/建图工具/LinkMap.cpp.i
+Data_struct_tool/Variety/UnionFind.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnionFind.dir\build.make CMakeFiles/UnionFind.dir/Data_struct_tool/Variety/UnionFind.cpp.i
+.PHONY : Data_struct_tool/Variety/UnionFind.cpp.i
 
-基本数据结构的封装/建图工具/LinkMap.s: 基本数据结构的封装/建图工具/LinkMap.cpp.s
-.PHONY : 基本数据结构的封装/建图工具/LinkMap.s
+Data_struct_tool/Variety/UnionFind.s: Data_struct_tool/Variety/UnionFind.cpp.s
+.PHONY : Data_struct_tool/Variety/UnionFind.s
 
 # target to generate assembly for a file
-基本数据结构的封装/建图工具/LinkMap.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkMap.dir\build.make CMakeFiles/LinkMap.dir/基本数据结构的封装/建图工具/LinkMap.cpp.s
-.PHONY : 基本数据结构的封装/建图工具/LinkMap.cpp.s
+Data_struct_tool/Variety/UnionFind.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnionFind.dir\build.make CMakeFiles/UnionFind.dir/Data_struct_tool/Variety/UnionFind.cpp.s
+.PHONY : Data_struct_tool/Variety/UnionFind.cpp.s
 
-基本数据结构的封装/建图工具/Tarjan.obj: 基本数据结构的封装/建图工具/Tarjan.cpp.obj
-.PHONY : 基本数据结构的封装/建图工具/Tarjan.obj
+Practical_algorithms/Hafuman/HafumanZip.obj: Practical_algorithms/Hafuman/HafumanZip.cpp.obj
+.PHONY : Practical_algorithms/Hafuman/HafumanZip.obj
 
 # target to build an object file
-基本数据结构的封装/建图工具/Tarjan.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tarjan.dir\build.make CMakeFiles/Tarjan.dir/基本数据结构的封装/建图工具/Tarjan.cpp.obj
-.PHONY : 基本数据结构的封装/建图工具/Tarjan.cpp.obj
+Practical_algorithms/Hafuman/HafumanZip.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HafumanZip.dir\build.make CMakeFiles/HafumanZip.dir/Practical_algorithms/Hafuman/HafumanZip.cpp.obj
+.PHONY : Practical_algorithms/Hafuman/HafumanZip.cpp.obj
 
-基本数据结构的封装/建图工具/Tarjan.i: 基本数据结构的封装/建图工具/Tarjan.cpp.i
-.PHONY : 基本数据结构的封装/建图工具/Tarjan.i
+Practical_algorithms/Hafuman/HafumanZip.i: Practical_algorithms/Hafuman/HafumanZip.cpp.i
+.PHONY : Practical_algorithms/Hafuman/HafumanZip.i
 
 # target to preprocess a source file
-基本数据结构的封装/建图工具/Tarjan.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tarjan.dir\build.make CMakeFiles/Tarjan.dir/基本数据结构的封装/建图工具/Tarjan.cpp.i
-.PHONY : 基本数据结构的封装/建图工具/Tarjan.cpp.i
+Practical_algorithms/Hafuman/HafumanZip.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HafumanZip.dir\build.make CMakeFiles/HafumanZip.dir/Practical_algorithms/Hafuman/HafumanZip.cpp.i
+.PHONY : Practical_algorithms/Hafuman/HafumanZip.cpp.i
 
-基本数据结构的封装/建图工具/Tarjan.s: 基本数据结构的封装/建图工具/Tarjan.cpp.s
-.PHONY : 基本数据结构的封装/建图工具/Tarjan.s
+Practical_algorithms/Hafuman/HafumanZip.s: Practical_algorithms/Hafuman/HafumanZip.cpp.s
+.PHONY : Practical_algorithms/Hafuman/HafumanZip.s
 
 # target to generate assembly for a file
-基本数据结构的封装/建图工具/Tarjan.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tarjan.dir\build.make CMakeFiles/Tarjan.dir/基本数据结构的封装/建图工具/Tarjan.cpp.s
-.PHONY : 基本数据结构的封装/建图工具/Tarjan.cpp.s
+Practical_algorithms/Hafuman/HafumanZip.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HafumanZip.dir\build.make CMakeFiles/HafumanZip.dir/Practical_algorithms/Hafuman/HafumanZip.cpp.s
+.PHONY : Practical_algorithms/Hafuman/HafumanZip.cpp.s
 
-基本数据结构的封装/搜索树类/AVLTree.obj: 基本数据结构的封装/搜索树类/AVLTree.cpp.obj
-.PHONY : 基本数据结构的封装/搜索树类/AVLTree.obj
+Socket_tool/TCP_SOCKET_CLIENT.obj: Socket_tool/TCP_SOCKET_CLIENT.cpp.obj
+.PHONY : Socket_tool/TCP_SOCKET_CLIENT.obj
 
 # target to build an object file
-基本数据结构的封装/搜索树类/AVLTree.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AVLTree.dir\build.make CMakeFiles/AVLTree.dir/基本数据结构的封装/搜索树类/AVLTree.cpp.obj
-.PHONY : 基本数据结构的封装/搜索树类/AVLTree.cpp.obj
+Socket_tool/TCP_SOCKET_CLIENT.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_CLIENT.dir\build.make CMakeFiles/TCP_SOCKET_CLIENT.dir/Socket_tool/TCP_SOCKET_CLIENT.cpp.obj
+.PHONY : Socket_tool/TCP_SOCKET_CLIENT.cpp.obj
 
-基本数据结构的封装/搜索树类/AVLTree.i: 基本数据结构的封装/搜索树类/AVLTree.cpp.i
-.PHONY : 基本数据结构的封装/搜索树类/AVLTree.i
+Socket_tool/TCP_SOCKET_CLIENT.i: Socket_tool/TCP_SOCKET_CLIENT.cpp.i
+.PHONY : Socket_tool/TCP_SOCKET_CLIENT.i
 
 # target to preprocess a source file
-基本数据结构的封装/搜索树类/AVLTree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AVLTree.dir\build.make CMakeFiles/AVLTree.dir/基本数据结构的封装/搜索树类/AVLTree.cpp.i
-.PHONY : 基本数据结构的封装/搜索树类/AVLTree.cpp.i
+Socket_tool/TCP_SOCKET_CLIENT.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_CLIENT.dir\build.make CMakeFiles/TCP_SOCKET_CLIENT.dir/Socket_tool/TCP_SOCKET_CLIENT.cpp.i
+.PHONY : Socket_tool/TCP_SOCKET_CLIENT.cpp.i
 
-基本数据结构的封装/搜索树类/AVLTree.s: 基本数据结构的封装/搜索树类/AVLTree.cpp.s
-.PHONY : 基本数据结构的封装/搜索树类/AVLTree.s
+Socket_tool/TCP_SOCKET_CLIENT.s: Socket_tool/TCP_SOCKET_CLIENT.cpp.s
+.PHONY : Socket_tool/TCP_SOCKET_CLIENT.s
 
 # target to generate assembly for a file
-基本数据结构的封装/搜索树类/AVLTree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AVLTree.dir\build.make CMakeFiles/AVLTree.dir/基本数据结构的封装/搜索树类/AVLTree.cpp.s
-.PHONY : 基本数据结构的封装/搜索树类/AVLTree.cpp.s
+Socket_tool/TCP_SOCKET_CLIENT.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_CLIENT.dir\build.make CMakeFiles/TCP_SOCKET_CLIENT.dir/Socket_tool/TCP_SOCKET_CLIENT.cpp.s
+.PHONY : Socket_tool/TCP_SOCKET_CLIENT.cpp.s
 
-基本数据结构的封装/搜索树类/BinarySearch.obj: 基本数据结构的封装/搜索树类/BinarySearch.cpp.obj
-.PHONY : 基本数据结构的封装/搜索树类/BinarySearch.obj
+Socket_tool/TCP_SOCKET_SERVER.obj: Socket_tool/TCP_SOCKET_SERVER.cpp.obj
+.PHONY : Socket_tool/TCP_SOCKET_SERVER.obj
 
 # target to build an object file
-基本数据结构的封装/搜索树类/BinarySearch.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BinarySearch.dir\build.make CMakeFiles/BinarySearch.dir/基本数据结构的封装/搜索树类/BinarySearch.cpp.obj
-.PHONY : 基本数据结构的封装/搜索树类/BinarySearch.cpp.obj
+Socket_tool/TCP_SOCKET_SERVER.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_SERVER.dir\build.make CMakeFiles/TCP_SOCKET_SERVER.dir/Socket_tool/TCP_SOCKET_SERVER.cpp.obj
+.PHONY : Socket_tool/TCP_SOCKET_SERVER.cpp.obj
 
-基本数据结构的封装/搜索树类/BinarySearch.i: 基本数据结构的封装/搜索树类/BinarySearch.cpp.i
-.PHONY : 基本数据结构的封装/搜索树类/BinarySearch.i
+Socket_tool/TCP_SOCKET_SERVER.i: Socket_tool/TCP_SOCKET_SERVER.cpp.i
+.PHONY : Socket_tool/TCP_SOCKET_SERVER.i
 
 # target to preprocess a source file
-基本数据结构的封装/搜索树类/BinarySearch.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BinarySearch.dir\build.make CMakeFiles/BinarySearch.dir/基本数据结构的封装/搜索树类/BinarySearch.cpp.i
-.PHONY : 基本数据结构的封装/搜索树类/BinarySearch.cpp.i
+Socket_tool/TCP_SOCKET_SERVER.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_SERVER.dir\build.make CMakeFiles/TCP_SOCKET_SERVER.dir/Socket_tool/TCP_SOCKET_SERVER.cpp.i
+.PHONY : Socket_tool/TCP_SOCKET_SERVER.cpp.i
 
-基本数据结构的封装/搜索树类/BinarySearch.s: 基本数据结构的封装/搜索树类/BinarySearch.cpp.s
-.PHONY : 基本数据结构的封装/搜索树类/BinarySearch.s
+Socket_tool/TCP_SOCKET_SERVER.s: Socket_tool/TCP_SOCKET_SERVER.cpp.s
+.PHONY : Socket_tool/TCP_SOCKET_SERVER.s
 
 # target to generate assembly for a file
-基本数据结构的封装/搜索树类/BinarySearch.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BinarySearch.dir\build.make CMakeFiles/BinarySearch.dir/基本数据结构的封装/搜索树类/BinarySearch.cpp.s
-.PHONY : 基本数据结构的封装/搜索树类/BinarySearch.cpp.s
+Socket_tool/TCP_SOCKET_SERVER.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_SERVER.dir\build.make CMakeFiles/TCP_SOCKET_SERVER.dir/Socket_tool/TCP_SOCKET_SERVER.cpp.s
+.PHONY : Socket_tool/TCP_SOCKET_SERVER.cpp.s
 
-基本数据结构的封装/搜索树类/Treap.obj: 基本数据结构的封装/搜索树类/Treap.cpp.obj
-.PHONY : 基本数据结构的封装/搜索树类/Treap.obj
+Template_tool/BigInteger.obj: Template_tool/BigInteger.cpp.obj
+.PHONY : Template_tool/BigInteger.obj
 
 # target to build an object file
-基本数据结构的封装/搜索树类/Treap.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Treap.dir\build.make CMakeFiles/Treap.dir/基本数据结构的封装/搜索树类/Treap.cpp.obj
-.PHONY : 基本数据结构的封装/搜索树类/Treap.cpp.obj
+Template_tool/BigInteger.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BigInteger.dir\build.make CMakeFiles/BigInteger.dir/Template_tool/BigInteger.cpp.obj
+.PHONY : Template_tool/BigInteger.cpp.obj
 
-基本数据结构的封装/搜索树类/Treap.i: 基本数据结构的封装/搜索树类/Treap.cpp.i
-.PHONY : 基本数据结构的封装/搜索树类/Treap.i
+Template_tool/BigInteger.i: Template_tool/BigInteger.cpp.i
+.PHONY : Template_tool/BigInteger.i
 
 # target to preprocess a source file
-基本数据结构的封装/搜索树类/Treap.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Treap.dir\build.make CMakeFiles/Treap.dir/基本数据结构的封装/搜索树类/Treap.cpp.i
-.PHONY : 基本数据结构的封装/搜索树类/Treap.cpp.i
+Template_tool/BigInteger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BigInteger.dir\build.make CMakeFiles/BigInteger.dir/Template_tool/BigInteger.cpp.i
+.PHONY : Template_tool/BigInteger.cpp.i
 
-基本数据结构的封装/搜索树类/Treap.s: 基本数据结构的封装/搜索树类/Treap.cpp.s
-.PHONY : 基本数据结构的封装/搜索树类/Treap.s
+Template_tool/BigInteger.s: Template_tool/BigInteger.cpp.s
+.PHONY : Template_tool/BigInteger.s
 
 # target to generate assembly for a file
-基本数据结构的封装/搜索树类/Treap.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Treap.dir\build.make CMakeFiles/Treap.dir/基本数据结构的封装/搜索树类/Treap.cpp.s
-.PHONY : 基本数据结构的封装/搜索树类/Treap.cpp.s
+Template_tool/BigInteger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BigInteger.dir\build.make CMakeFiles/BigInteger.dir/Template_tool/BigInteger.cpp.s
+.PHONY : Template_tool/BigInteger.cpp.s
 
-实用性算法封装/Hafuman/HafumanZip.obj: 实用性算法封装/Hafuman/HafumanZip.cpp.obj
-.PHONY : 实用性算法封装/Hafuman/HafumanZip.obj
+Template_tool/Complex.obj: Template_tool/Complex.cpp.obj
+.PHONY : Template_tool/Complex.obj
 
 # target to build an object file
-实用性算法封装/Hafuman/HafumanZip.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HafumanZip.dir\build.make CMakeFiles/HafumanZip.dir/实用性算法封装/Hafuman/HafumanZip.cpp.obj
-.PHONY : 实用性算法封装/Hafuman/HafumanZip.cpp.obj
+Template_tool/Complex.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Complex.dir\build.make CMakeFiles/Complex.dir/Template_tool/Complex.cpp.obj
+.PHONY : Template_tool/Complex.cpp.obj
 
-实用性算法封装/Hafuman/HafumanZip.i: 实用性算法封装/Hafuman/HafumanZip.cpp.i
-.PHONY : 实用性算法封装/Hafuman/HafumanZip.i
+Template_tool/Complex.i: Template_tool/Complex.cpp.i
+.PHONY : Template_tool/Complex.i
 
 # target to preprocess a source file
-实用性算法封装/Hafuman/HafumanZip.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HafumanZip.dir\build.make CMakeFiles/HafumanZip.dir/实用性算法封装/Hafuman/HafumanZip.cpp.i
-.PHONY : 实用性算法封装/Hafuman/HafumanZip.cpp.i
+Template_tool/Complex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Complex.dir\build.make CMakeFiles/Complex.dir/Template_tool/Complex.cpp.i
+.PHONY : Template_tool/Complex.cpp.i
 
-实用性算法封装/Hafuman/HafumanZip.s: 实用性算法封装/Hafuman/HafumanZip.cpp.s
-.PHONY : 实用性算法封装/Hafuman/HafumanZip.s
+Template_tool/Complex.s: Template_tool/Complex.cpp.s
+.PHONY : Template_tool/Complex.s
 
 # target to generate assembly for a file
-实用性算法封装/Hafuman/HafumanZip.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HafumanZip.dir\build.make CMakeFiles/HafumanZip.dir/实用性算法封装/Hafuman/HafumanZip.cpp.s
-.PHONY : 实用性算法封装/Hafuman/HafumanZip.cpp.s
+Template_tool/Complex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Complex.dir\build.make CMakeFiles/Complex.dir/Template_tool/Complex.cpp.s
+.PHONY : Template_tool/Complex.cpp.s
 
-实用性算法封装/Hafuman/main.obj: 实用性算法封装/Hafuman/main.cpp.obj
-.PHONY : 实用性算法封装/Hafuman/main.obj
+main.obj: main.cpp.obj
+.PHONY : main.obj
 
 # target to build an object file
-实用性算法封装/Hafuman/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/实用性算法封装/Hafuman/main.cpp.obj
-.PHONY : 实用性算法封装/Hafuman/main.cpp.obj
+main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.obj
+.PHONY : main.cpp.obj
 
-实用性算法封装/Hafuman/main.i: 实用性算法封装/Hafuman/main.cpp.i
-.PHONY : 实用性算法封装/Hafuman/main.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-实用性算法封装/Hafuman/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/实用性算法封装/Hafuman/main.cpp.i
-.PHONY : 实用性算法封装/Hafuman/main.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-实用性算法封装/Hafuman/main.s: 实用性算法封装/Hafuman/main.cpp.s
-.PHONY : 实用性算法封装/Hafuman/main.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-实用性算法封装/Hafuman/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/实用性算法封装/Hafuman/main.cpp.s
-.PHONY : 实用性算法封装/Hafuman/main.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -772,54 +772,54 @@ help:
 	@echo ... CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.obj
 	@echo ... CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.i
 	@echo ... CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.s
-	@echo ... Clib实现/strtok系列函数实现/strpbrk.obj
-	@echo ... Clib实现/strtok系列函数实现/strpbrk.i
-	@echo ... Clib实现/strtok系列函数实现/strpbrk.s
-	@echo ... TCP相关封装/TCP_SOCKET_CLIENT.obj
-	@echo ... TCP相关封装/TCP_SOCKET_CLIENT.i
-	@echo ... TCP相关封装/TCP_SOCKET_CLIENT.s
-	@echo ... TCP相关封装/TCP_SOCKET_SERVER.obj
-	@echo ... TCP相关封装/TCP_SOCKET_SERVER.i
-	@echo ... TCP相关封装/TCP_SOCKET_SERVER.s
-	@echo ... 基本数字操作封装/BigInteger.obj
-	@echo ... 基本数字操作封装/BigInteger.i
-	@echo ... 基本数字操作封装/BigInteger.s
-	@echo ... 基本数字操作封装/Complex.obj
-	@echo ... 基本数字操作封装/Complex.i
-	@echo ... 基本数字操作封装/Complex.s
-	@echo ... 基本数据结构的封装/哈希表类/sample_HashMap.obj
-	@echo ... 基本数据结构的封装/哈希表类/sample_HashMap.i
-	@echo ... 基本数据结构的封装/哈希表类/sample_HashMap.s
-	@echo ... 基本数据结构的封装/图类/Trie_dyn.obj
-	@echo ... 基本数据结构的封装/图类/Trie_dyn.i
-	@echo ... 基本数据结构的封装/图类/Trie_dyn.s
-	@echo ... 基本数据结构的封装/图类/Trie_static.obj
-	@echo ... 基本数据结构的封装/图类/Trie_static.i
-	@echo ... 基本数据结构的封装/图类/Trie_static.s
-	@echo ... 基本数据结构的封装/图类/UnionFind.obj
-	@echo ... 基本数据结构的封装/图类/UnionFind.i
-	@echo ... 基本数据结构的封装/图类/UnionFind.s
-	@echo ... 基本数据结构的封装/建图工具/LinkMap.obj
-	@echo ... 基本数据结构的封装/建图工具/LinkMap.i
-	@echo ... 基本数据结构的封装/建图工具/LinkMap.s
-	@echo ... 基本数据结构的封装/建图工具/Tarjan.obj
-	@echo ... 基本数据结构的封装/建图工具/Tarjan.i
-	@echo ... 基本数据结构的封装/建图工具/Tarjan.s
-	@echo ... 基本数据结构的封装/搜索树类/AVLTree.obj
-	@echo ... 基本数据结构的封装/搜索树类/AVLTree.i
-	@echo ... 基本数据结构的封装/搜索树类/AVLTree.s
-	@echo ... 基本数据结构的封装/搜索树类/BinarySearch.obj
-	@echo ... 基本数据结构的封装/搜索树类/BinarySearch.i
-	@echo ... 基本数据结构的封装/搜索树类/BinarySearch.s
-	@echo ... 基本数据结构的封装/搜索树类/Treap.obj
-	@echo ... 基本数据结构的封装/搜索树类/Treap.i
-	@echo ... 基本数据结构的封装/搜索树类/Treap.s
-	@echo ... 实用性算法封装/Hafuman/HafumanZip.obj
-	@echo ... 实用性算法封装/Hafuman/HafumanZip.i
-	@echo ... 实用性算法封装/Hafuman/HafumanZip.s
-	@echo ... 实用性算法封装/Hafuman/main.obj
-	@echo ... 实用性算法封装/Hafuman/main.i
-	@echo ... 实用性算法封装/Hafuman/main.s
+	@echo ... Clib/strtok_series/strpbrk.obj
+	@echo ... Clib/strtok_series/strpbrk.i
+	@echo ... Clib/strtok_series/strpbrk.s
+	@echo ... Data_struct_tool/HashTable/sample_HashMap.obj
+	@echo ... Data_struct_tool/HashTable/sample_HashMap.i
+	@echo ... Data_struct_tool/HashTable/sample_HashMap.s
+	@echo ... Data_struct_tool/Map_generator/LinkMap.obj
+	@echo ... Data_struct_tool/Map_generator/LinkMap.i
+	@echo ... Data_struct_tool/Map_generator/LinkMap.s
+	@echo ... Data_struct_tool/Map_generator/Tarjan.obj
+	@echo ... Data_struct_tool/Map_generator/Tarjan.i
+	@echo ... Data_struct_tool/Map_generator/Tarjan.s
+	@echo ... Data_struct_tool/Search_tree/AVLTree.obj
+	@echo ... Data_struct_tool/Search_tree/AVLTree.i
+	@echo ... Data_struct_tool/Search_tree/AVLTree.s
+	@echo ... Data_struct_tool/Search_tree/BinarySearch.obj
+	@echo ... Data_struct_tool/Search_tree/BinarySearch.i
+	@echo ... Data_struct_tool/Search_tree/BinarySearch.s
+	@echo ... Data_struct_tool/Search_tree/Treap.obj
+	@echo ... Data_struct_tool/Search_tree/Treap.i
+	@echo ... Data_struct_tool/Search_tree/Treap.s
+	@echo ... Data_struct_tool/Variety/Trie_dyn.obj
+	@echo ... Data_struct_tool/Variety/Trie_dyn.i
+	@echo ... Data_struct_tool/Variety/Trie_dyn.s
+	@echo ... Data_struct_tool/Variety/Trie_static.obj
+	@echo ... Data_struct_tool/Variety/Trie_static.i
+	@echo ... Data_struct_tool/Variety/Trie_static.s
+	@echo ... Data_struct_tool/Variety/UnionFind.obj
+	@echo ... Data_struct_tool/Variety/UnionFind.i
+	@echo ... Data_struct_tool/Variety/UnionFind.s
+	@echo ... Practical_algorithms/Hafuman/HafumanZip.obj
+	@echo ... Practical_algorithms/Hafuman/HafumanZip.i
+	@echo ... Practical_algorithms/Hafuman/HafumanZip.s
+	@echo ... Socket_tool/TCP_SOCKET_CLIENT.obj
+	@echo ... Socket_tool/TCP_SOCKET_CLIENT.i
+	@echo ... Socket_tool/TCP_SOCKET_CLIENT.s
+	@echo ... Socket_tool/TCP_SOCKET_SERVER.obj
+	@echo ... Socket_tool/TCP_SOCKET_SERVER.i
+	@echo ... Socket_tool/TCP_SOCKET_SERVER.s
+	@echo ... Template_tool/BigInteger.obj
+	@echo ... Template_tool/BigInteger.i
+	@echo ... Template_tool/BigInteger.s
+	@echo ... Template_tool/Complex.obj
+	@echo ... Template_tool/Complex.i
+	@echo ... Template_tool/Complex.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 .PHONY : help
 
 
