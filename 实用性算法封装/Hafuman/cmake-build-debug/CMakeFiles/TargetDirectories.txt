@@ -1,3 +1,0 @@
-D:/CLion Project/Hafuman/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-D:/CLion Project/Hafuman/cmake-build-debug/CMakeFiles/Hafuman.dir
-D:/CLion Project/Hafuman/cmake-build-debug/CMakeFiles/edit_cache.dir
