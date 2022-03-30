@@ -101,48 +101,6 @@
 					<DistClean command="D:/new_mingw/MinGW/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="CMakeCXXCompilerId">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeCXXCompilerId.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="d:\new_mingw\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0"/>
-					<Add directory="d:\new_mingw\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/x86_64-w64-mingw32"/>
-					<Add directory="d:\new_mingw\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/backward"/>
-					<Add directory="d:\new_mingw\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="d:\new_mingw\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="d:\new_mingw\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/new_mingw/MinGW/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 CMakeCXXCompilerId"/>
-					<CompileFile command="D:/new_mingw/MinGW/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/new_mingw/MinGW/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/new_mingw/MinGW/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="CMakeCXXCompilerId/fast">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeCXXCompilerId.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="d:\new_mingw\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0"/>
-					<Add directory="d:\new_mingw\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/x86_64-w64-mingw32"/>
-					<Add directory="d:\new_mingw\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/backward"/>
-					<Add directory="d:\new_mingw\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="d:\new_mingw\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="d:\new_mingw\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/new_mingw/MinGW/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 CMakeCXXCompilerId/fast"/>
-					<CompileFile command="D:/new_mingw/MinGW/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/new_mingw/MinGW/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/new_mingw/MinGW/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="Tarjan">
 				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/Tarjan.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
@@ -752,97 +710,94 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Clib/strtok_series/strpbrk.cpp">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Clib/strtok_series/strpbrk.cpp">
 			<Option target="strpbrk"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Data_struct_tool/HashTable/sample_HashMap.cpp">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/HashTable/sample_HashMap.cpp">
 			<Option target="sample_HashMap"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Data_struct_tool/HashTable/sample_HashMap.h">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/HashTable/sample_HashMap.h">
 			<Option target="sample_HashMap"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Data_struct_tool/Map_generator/LinkMap.cpp">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Map_generator/LinkMap.cpp">
 			<Option target="LinkMap"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Data_struct_tool/Map_generator/LinkMap.h">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Map_generator/LinkMap.h">
 			<Option target="LinkMap"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Data_struct_tool/Map_generator/Tarjan.cpp">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Map_generator/Tarjan.cpp">
 			<Option target="Tarjan"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Data_struct_tool/Map_generator/Tarjan.h">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Map_generator/Tarjan.h">
 			<Option target="Tarjan"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Data_struct_tool/Search_tree/AVLTree.cpp">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Search_tree/AVLTree.cpp">
 			<Option target="AVLTree"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Data_struct_tool/Search_tree/AVLTree.h">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Search_tree/AVLTree.h">
 			<Option target="AVLTree"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Data_struct_tool/Search_tree/BinarySearch.cpp">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Search_tree/BinarySearch.cpp">
 			<Option target="BinarySearch"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Data_struct_tool/Search_tree/BinarySearch.h">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Search_tree/BinarySearch.h">
 			<Option target="BinarySearch"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Data_struct_tool/Search_tree/Treap.cpp">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Search_tree/Treap.cpp">
 			<Option target="Treap"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Data_struct_tool/Search_tree/Treap.h">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Search_tree/Treap.h">
 			<Option target="Treap"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Data_struct_tool/Variety/Trie_dyn.cpp">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Variety/Trie_dyn.cpp">
 			<Option target="Trie_dyn"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Data_struct_tool/Variety/Trie_dyn.h">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Variety/Trie_dyn.h">
 			<Option target="Trie_dyn"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Data_struct_tool/Variety/Trie_static.cpp">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Variety/Trie_static.cpp">
 			<Option target="Trie_static"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Data_struct_tool/Variety/Trie_static.h">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Variety/Trie_static.h">
 			<Option target="Trie_static"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Data_struct_tool/Variety/UnionFind.cpp">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Variety/UnionFind.cpp">
 			<Option target="UnionFind"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Data_struct_tool/Variety/UnionFind.h">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Variety/UnionFind.h">
 			<Option target="UnionFind"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Practical_algorithms/Hafuman/HafumanZip.cpp">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Practical_algorithms/Hafuman/HafumanZip.cpp">
 			<Option target="HafumanZip"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Practical_algorithms/Hafuman/HafumanZip.h">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Practical_algorithms/Hafuman/HafumanZip.h">
 			<Option target="HafumanZip"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Socket_tool/TCP_SOCKET_CLIENT.cpp">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Socket_tool/TCP_SOCKET_CLIENT.cpp">
 			<Option target="TCP_SOCKET_CLIENT"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Socket_tool/TCP_SOCKET_CLIENT.h">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Socket_tool/TCP_SOCKET_CLIENT.h">
 			<Option target="TCP_SOCKET_CLIENT"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Socket_tool/TCP_SOCKET_SERVER.cpp">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Socket_tool/TCP_SOCKET_SERVER.cpp">
 			<Option target="TCP_SOCKET_SERVER"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Socket_tool/TCP_SOCKET_SERVER.h">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Socket_tool/TCP_SOCKET_SERVER.h">
 			<Option target="TCP_SOCKET_SERVER"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Template_tool/BigInteger.cpp">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Template_tool/BigInteger.cpp">
 			<Option target="BigInteger"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Template_tool/BigInteger.h">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Template_tool/BigInteger.h">
 			<Option target="BigInteger"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Template_tool/Complex.cpp">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Template_tool/Complex.cpp">
 			<Option target="Complex"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/Template_tool/Complex.h">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/Template_tool/Complex.h">
 			<Option target="Complex"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp">
-			<Option target="CMakeCXXCompilerId"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/main.cpp">
+		<Unit filename="D:/CLion Project/my_tiny_stl/src/main.cpp">
 			<Option target="main"/>
 		</Unit>
 		<Unit filename="D:/CLion Project/my_tiny_stl/CMakeLists.txt">

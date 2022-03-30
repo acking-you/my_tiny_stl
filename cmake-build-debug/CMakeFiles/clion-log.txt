@@ -14,7 +14,6 @@
     -- src/TCP_SOCKET_SERVER.cpp will be compiled to bin/TCP_SOCKET_SERVER
     -- src/BigInteger.cpp will be compiled to bin/BigInteger
     -- src/Complex.cpp will be compiled to bin/Complex
-    -- src/CMakeCXXCompilerId.cpp will be compiled to bin/CMakeCXXCompilerId
     -- src/main.cpp will be compiled to bin/main
 -- Configuring done
 -- Generating done

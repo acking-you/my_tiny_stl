@@ -142,19 +142,6 @@ Trie_dyn/fast:
 .PHONY : Trie_dyn/fast
 
 #=============================================================================
-# Target rules for targets named CMakeCXXCompilerId
-
-# Build rule for target.
-CMakeCXXCompilerId: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeCXXCompilerId
-.PHONY : CMakeCXXCompilerId
-
-# fast build rule for target.
-CMakeCXXCompilerId/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeCXXCompilerId.dir\build.make CMakeFiles/CMakeCXXCompilerId.dir/build
-.PHONY : CMakeCXXCompilerId/fast
-
-#=============================================================================
 # Target rules for targets named Tarjan
 
 # Build rule for target.
@@ -336,413 +323,389 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.obj: CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj
-.PHONY : CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.obj
+src/Clib/strtok_series/strpbrk.obj: src/Clib/strtok_series/strpbrk.cpp.obj
+.PHONY : src/Clib/strtok_series/strpbrk.obj
 
 # target to build an object file
-CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeCXXCompilerId.dir\build.make CMakeFiles/CMakeCXXCompilerId.dir/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj
-.PHONY : CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj
+src/Clib/strtok_series/strpbrk.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\strpbrk.dir\build.make CMakeFiles/strpbrk.dir/src/Clib/strtok_series/strpbrk.cpp.obj
+.PHONY : src/Clib/strtok_series/strpbrk.cpp.obj
 
-CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.i: CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.i
-.PHONY : CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.i
+src/Clib/strtok_series/strpbrk.i: src/Clib/strtok_series/strpbrk.cpp.i
+.PHONY : src/Clib/strtok_series/strpbrk.i
 
 # target to preprocess a source file
-CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeCXXCompilerId.dir\build.make CMakeFiles/CMakeCXXCompilerId.dir/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.i
-.PHONY : CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.i
+src/Clib/strtok_series/strpbrk.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\strpbrk.dir\build.make CMakeFiles/strpbrk.dir/src/Clib/strtok_series/strpbrk.cpp.i
+.PHONY : src/Clib/strtok_series/strpbrk.cpp.i
 
-CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.s: CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
-.PHONY : CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.s
+src/Clib/strtok_series/strpbrk.s: src/Clib/strtok_series/strpbrk.cpp.s
+.PHONY : src/Clib/strtok_series/strpbrk.s
 
 # target to generate assembly for a file
-CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeCXXCompilerId.dir\build.make CMakeFiles/CMakeCXXCompilerId.dir/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
-.PHONY : CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
+src/Clib/strtok_series/strpbrk.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\strpbrk.dir\build.make CMakeFiles/strpbrk.dir/src/Clib/strtok_series/strpbrk.cpp.s
+.PHONY : src/Clib/strtok_series/strpbrk.cpp.s
 
-Clib/strtok_series/strpbrk.obj: Clib/strtok_series/strpbrk.cpp.obj
-.PHONY : Clib/strtok_series/strpbrk.obj
+src/Data_struct_tool/HashTable/sample_HashMap.obj: src/Data_struct_tool/HashTable/sample_HashMap.cpp.obj
+.PHONY : src/Data_struct_tool/HashTable/sample_HashMap.obj
 
 # target to build an object file
-Clib/strtok_series/strpbrk.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\strpbrk.dir\build.make CMakeFiles/strpbrk.dir/Clib/strtok_series/strpbrk.cpp.obj
-.PHONY : Clib/strtok_series/strpbrk.cpp.obj
+src/Data_struct_tool/HashTable/sample_HashMap.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample_HashMap.dir\build.make CMakeFiles/sample_HashMap.dir/src/Data_struct_tool/HashTable/sample_HashMap.cpp.obj
+.PHONY : src/Data_struct_tool/HashTable/sample_HashMap.cpp.obj
 
-Clib/strtok_series/strpbrk.i: Clib/strtok_series/strpbrk.cpp.i
-.PHONY : Clib/strtok_series/strpbrk.i
+src/Data_struct_tool/HashTable/sample_HashMap.i: src/Data_struct_tool/HashTable/sample_HashMap.cpp.i
+.PHONY : src/Data_struct_tool/HashTable/sample_HashMap.i
 
 # target to preprocess a source file
-Clib/strtok_series/strpbrk.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\strpbrk.dir\build.make CMakeFiles/strpbrk.dir/Clib/strtok_series/strpbrk.cpp.i
-.PHONY : Clib/strtok_series/strpbrk.cpp.i
+src/Data_struct_tool/HashTable/sample_HashMap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample_HashMap.dir\build.make CMakeFiles/sample_HashMap.dir/src/Data_struct_tool/HashTable/sample_HashMap.cpp.i
+.PHONY : src/Data_struct_tool/HashTable/sample_HashMap.cpp.i
 
-Clib/strtok_series/strpbrk.s: Clib/strtok_series/strpbrk.cpp.s
-.PHONY : Clib/strtok_series/strpbrk.s
+src/Data_struct_tool/HashTable/sample_HashMap.s: src/Data_struct_tool/HashTable/sample_HashMap.cpp.s
+.PHONY : src/Data_struct_tool/HashTable/sample_HashMap.s
 
 # target to generate assembly for a file
-Clib/strtok_series/strpbrk.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\strpbrk.dir\build.make CMakeFiles/strpbrk.dir/Clib/strtok_series/strpbrk.cpp.s
-.PHONY : Clib/strtok_series/strpbrk.cpp.s
+src/Data_struct_tool/HashTable/sample_HashMap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample_HashMap.dir\build.make CMakeFiles/sample_HashMap.dir/src/Data_struct_tool/HashTable/sample_HashMap.cpp.s
+.PHONY : src/Data_struct_tool/HashTable/sample_HashMap.cpp.s
 
-Data_struct_tool/HashTable/sample_HashMap.obj: Data_struct_tool/HashTable/sample_HashMap.cpp.obj
-.PHONY : Data_struct_tool/HashTable/sample_HashMap.obj
+src/Data_struct_tool/Map_generator/LinkMap.obj: src/Data_struct_tool/Map_generator/LinkMap.cpp.obj
+.PHONY : src/Data_struct_tool/Map_generator/LinkMap.obj
 
 # target to build an object file
-Data_struct_tool/HashTable/sample_HashMap.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample_HashMap.dir\build.make CMakeFiles/sample_HashMap.dir/Data_struct_tool/HashTable/sample_HashMap.cpp.obj
-.PHONY : Data_struct_tool/HashTable/sample_HashMap.cpp.obj
+src/Data_struct_tool/Map_generator/LinkMap.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkMap.dir\build.make CMakeFiles/LinkMap.dir/src/Data_struct_tool/Map_generator/LinkMap.cpp.obj
+.PHONY : src/Data_struct_tool/Map_generator/LinkMap.cpp.obj
 
-Data_struct_tool/HashTable/sample_HashMap.i: Data_struct_tool/HashTable/sample_HashMap.cpp.i
-.PHONY : Data_struct_tool/HashTable/sample_HashMap.i
+src/Data_struct_tool/Map_generator/LinkMap.i: src/Data_struct_tool/Map_generator/LinkMap.cpp.i
+.PHONY : src/Data_struct_tool/Map_generator/LinkMap.i
 
 # target to preprocess a source file
-Data_struct_tool/HashTable/sample_HashMap.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample_HashMap.dir\build.make CMakeFiles/sample_HashMap.dir/Data_struct_tool/HashTable/sample_HashMap.cpp.i
-.PHONY : Data_struct_tool/HashTable/sample_HashMap.cpp.i
+src/Data_struct_tool/Map_generator/LinkMap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkMap.dir\build.make CMakeFiles/LinkMap.dir/src/Data_struct_tool/Map_generator/LinkMap.cpp.i
+.PHONY : src/Data_struct_tool/Map_generator/LinkMap.cpp.i
 
-Data_struct_tool/HashTable/sample_HashMap.s: Data_struct_tool/HashTable/sample_HashMap.cpp.s
-.PHONY : Data_struct_tool/HashTable/sample_HashMap.s
+src/Data_struct_tool/Map_generator/LinkMap.s: src/Data_struct_tool/Map_generator/LinkMap.cpp.s
+.PHONY : src/Data_struct_tool/Map_generator/LinkMap.s
 
 # target to generate assembly for a file
-Data_struct_tool/HashTable/sample_HashMap.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample_HashMap.dir\build.make CMakeFiles/sample_HashMap.dir/Data_struct_tool/HashTable/sample_HashMap.cpp.s
-.PHONY : Data_struct_tool/HashTable/sample_HashMap.cpp.s
+src/Data_struct_tool/Map_generator/LinkMap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkMap.dir\build.make CMakeFiles/LinkMap.dir/src/Data_struct_tool/Map_generator/LinkMap.cpp.s
+.PHONY : src/Data_struct_tool/Map_generator/LinkMap.cpp.s
 
-Data_struct_tool/Map_generator/LinkMap.obj: Data_struct_tool/Map_generator/LinkMap.cpp.obj
-.PHONY : Data_struct_tool/Map_generator/LinkMap.obj
+src/Data_struct_tool/Map_generator/Tarjan.obj: src/Data_struct_tool/Map_generator/Tarjan.cpp.obj
+.PHONY : src/Data_struct_tool/Map_generator/Tarjan.obj
 
 # target to build an object file
-Data_struct_tool/Map_generator/LinkMap.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkMap.dir\build.make CMakeFiles/LinkMap.dir/Data_struct_tool/Map_generator/LinkMap.cpp.obj
-.PHONY : Data_struct_tool/Map_generator/LinkMap.cpp.obj
+src/Data_struct_tool/Map_generator/Tarjan.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tarjan.dir\build.make CMakeFiles/Tarjan.dir/src/Data_struct_tool/Map_generator/Tarjan.cpp.obj
+.PHONY : src/Data_struct_tool/Map_generator/Tarjan.cpp.obj
 
-Data_struct_tool/Map_generator/LinkMap.i: Data_struct_tool/Map_generator/LinkMap.cpp.i
-.PHONY : Data_struct_tool/Map_generator/LinkMap.i
+src/Data_struct_tool/Map_generator/Tarjan.i: src/Data_struct_tool/Map_generator/Tarjan.cpp.i
+.PHONY : src/Data_struct_tool/Map_generator/Tarjan.i
 
 # target to preprocess a source file
-Data_struct_tool/Map_generator/LinkMap.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkMap.dir\build.make CMakeFiles/LinkMap.dir/Data_struct_tool/Map_generator/LinkMap.cpp.i
-.PHONY : Data_struct_tool/Map_generator/LinkMap.cpp.i
+src/Data_struct_tool/Map_generator/Tarjan.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tarjan.dir\build.make CMakeFiles/Tarjan.dir/src/Data_struct_tool/Map_generator/Tarjan.cpp.i
+.PHONY : src/Data_struct_tool/Map_generator/Tarjan.cpp.i
 
-Data_struct_tool/Map_generator/LinkMap.s: Data_struct_tool/Map_generator/LinkMap.cpp.s
-.PHONY : Data_struct_tool/Map_generator/LinkMap.s
+src/Data_struct_tool/Map_generator/Tarjan.s: src/Data_struct_tool/Map_generator/Tarjan.cpp.s
+.PHONY : src/Data_struct_tool/Map_generator/Tarjan.s
 
 # target to generate assembly for a file
-Data_struct_tool/Map_generator/LinkMap.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkMap.dir\build.make CMakeFiles/LinkMap.dir/Data_struct_tool/Map_generator/LinkMap.cpp.s
-.PHONY : Data_struct_tool/Map_generator/LinkMap.cpp.s
+src/Data_struct_tool/Map_generator/Tarjan.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tarjan.dir\build.make CMakeFiles/Tarjan.dir/src/Data_struct_tool/Map_generator/Tarjan.cpp.s
+.PHONY : src/Data_struct_tool/Map_generator/Tarjan.cpp.s
 
-Data_struct_tool/Map_generator/Tarjan.obj: Data_struct_tool/Map_generator/Tarjan.cpp.obj
-.PHONY : Data_struct_tool/Map_generator/Tarjan.obj
+src/Data_struct_tool/Search_tree/AVLTree.obj: src/Data_struct_tool/Search_tree/AVLTree.cpp.obj
+.PHONY : src/Data_struct_tool/Search_tree/AVLTree.obj
 
 # target to build an object file
-Data_struct_tool/Map_generator/Tarjan.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tarjan.dir\build.make CMakeFiles/Tarjan.dir/Data_struct_tool/Map_generator/Tarjan.cpp.obj
-.PHONY : Data_struct_tool/Map_generator/Tarjan.cpp.obj
+src/Data_struct_tool/Search_tree/AVLTree.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AVLTree.dir\build.make CMakeFiles/AVLTree.dir/src/Data_struct_tool/Search_tree/AVLTree.cpp.obj
+.PHONY : src/Data_struct_tool/Search_tree/AVLTree.cpp.obj
 
-Data_struct_tool/Map_generator/Tarjan.i: Data_struct_tool/Map_generator/Tarjan.cpp.i
-.PHONY : Data_struct_tool/Map_generator/Tarjan.i
+src/Data_struct_tool/Search_tree/AVLTree.i: src/Data_struct_tool/Search_tree/AVLTree.cpp.i
+.PHONY : src/Data_struct_tool/Search_tree/AVLTree.i
 
 # target to preprocess a source file
-Data_struct_tool/Map_generator/Tarjan.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tarjan.dir\build.make CMakeFiles/Tarjan.dir/Data_struct_tool/Map_generator/Tarjan.cpp.i
-.PHONY : Data_struct_tool/Map_generator/Tarjan.cpp.i
+src/Data_struct_tool/Search_tree/AVLTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AVLTree.dir\build.make CMakeFiles/AVLTree.dir/src/Data_struct_tool/Search_tree/AVLTree.cpp.i
+.PHONY : src/Data_struct_tool/Search_tree/AVLTree.cpp.i
 
-Data_struct_tool/Map_generator/Tarjan.s: Data_struct_tool/Map_generator/Tarjan.cpp.s
-.PHONY : Data_struct_tool/Map_generator/Tarjan.s
+src/Data_struct_tool/Search_tree/AVLTree.s: src/Data_struct_tool/Search_tree/AVLTree.cpp.s
+.PHONY : src/Data_struct_tool/Search_tree/AVLTree.s
 
 # target to generate assembly for a file
-Data_struct_tool/Map_generator/Tarjan.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tarjan.dir\build.make CMakeFiles/Tarjan.dir/Data_struct_tool/Map_generator/Tarjan.cpp.s
-.PHONY : Data_struct_tool/Map_generator/Tarjan.cpp.s
+src/Data_struct_tool/Search_tree/AVLTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AVLTree.dir\build.make CMakeFiles/AVLTree.dir/src/Data_struct_tool/Search_tree/AVLTree.cpp.s
+.PHONY : src/Data_struct_tool/Search_tree/AVLTree.cpp.s
 
-Data_struct_tool/Search_tree/AVLTree.obj: Data_struct_tool/Search_tree/AVLTree.cpp.obj
-.PHONY : Data_struct_tool/Search_tree/AVLTree.obj
+src/Data_struct_tool/Search_tree/BinarySearch.obj: src/Data_struct_tool/Search_tree/BinarySearch.cpp.obj
+.PHONY : src/Data_struct_tool/Search_tree/BinarySearch.obj
 
 # target to build an object file
-Data_struct_tool/Search_tree/AVLTree.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AVLTree.dir\build.make CMakeFiles/AVLTree.dir/Data_struct_tool/Search_tree/AVLTree.cpp.obj
-.PHONY : Data_struct_tool/Search_tree/AVLTree.cpp.obj
+src/Data_struct_tool/Search_tree/BinarySearch.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BinarySearch.dir\build.make CMakeFiles/BinarySearch.dir/src/Data_struct_tool/Search_tree/BinarySearch.cpp.obj
+.PHONY : src/Data_struct_tool/Search_tree/BinarySearch.cpp.obj
 
-Data_struct_tool/Search_tree/AVLTree.i: Data_struct_tool/Search_tree/AVLTree.cpp.i
-.PHONY : Data_struct_tool/Search_tree/AVLTree.i
+src/Data_struct_tool/Search_tree/BinarySearch.i: src/Data_struct_tool/Search_tree/BinarySearch.cpp.i
+.PHONY : src/Data_struct_tool/Search_tree/BinarySearch.i
 
 # target to preprocess a source file
-Data_struct_tool/Search_tree/AVLTree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AVLTree.dir\build.make CMakeFiles/AVLTree.dir/Data_struct_tool/Search_tree/AVLTree.cpp.i
-.PHONY : Data_struct_tool/Search_tree/AVLTree.cpp.i
+src/Data_struct_tool/Search_tree/BinarySearch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BinarySearch.dir\build.make CMakeFiles/BinarySearch.dir/src/Data_struct_tool/Search_tree/BinarySearch.cpp.i
+.PHONY : src/Data_struct_tool/Search_tree/BinarySearch.cpp.i
 
-Data_struct_tool/Search_tree/AVLTree.s: Data_struct_tool/Search_tree/AVLTree.cpp.s
-.PHONY : Data_struct_tool/Search_tree/AVLTree.s
+src/Data_struct_tool/Search_tree/BinarySearch.s: src/Data_struct_tool/Search_tree/BinarySearch.cpp.s
+.PHONY : src/Data_struct_tool/Search_tree/BinarySearch.s
 
 # target to generate assembly for a file
-Data_struct_tool/Search_tree/AVLTree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AVLTree.dir\build.make CMakeFiles/AVLTree.dir/Data_struct_tool/Search_tree/AVLTree.cpp.s
-.PHONY : Data_struct_tool/Search_tree/AVLTree.cpp.s
+src/Data_struct_tool/Search_tree/BinarySearch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BinarySearch.dir\build.make CMakeFiles/BinarySearch.dir/src/Data_struct_tool/Search_tree/BinarySearch.cpp.s
+.PHONY : src/Data_struct_tool/Search_tree/BinarySearch.cpp.s
 
-Data_struct_tool/Search_tree/BinarySearch.obj: Data_struct_tool/Search_tree/BinarySearch.cpp.obj
-.PHONY : Data_struct_tool/Search_tree/BinarySearch.obj
+src/Data_struct_tool/Search_tree/Treap.obj: src/Data_struct_tool/Search_tree/Treap.cpp.obj
+.PHONY : src/Data_struct_tool/Search_tree/Treap.obj
 
 # target to build an object file
-Data_struct_tool/Search_tree/BinarySearch.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BinarySearch.dir\build.make CMakeFiles/BinarySearch.dir/Data_struct_tool/Search_tree/BinarySearch.cpp.obj
-.PHONY : Data_struct_tool/Search_tree/BinarySearch.cpp.obj
+src/Data_struct_tool/Search_tree/Treap.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Treap.dir\build.make CMakeFiles/Treap.dir/src/Data_struct_tool/Search_tree/Treap.cpp.obj
+.PHONY : src/Data_struct_tool/Search_tree/Treap.cpp.obj
 
-Data_struct_tool/Search_tree/BinarySearch.i: Data_struct_tool/Search_tree/BinarySearch.cpp.i
-.PHONY : Data_struct_tool/Search_tree/BinarySearch.i
+src/Data_struct_tool/Search_tree/Treap.i: src/Data_struct_tool/Search_tree/Treap.cpp.i
+.PHONY : src/Data_struct_tool/Search_tree/Treap.i
 
 # target to preprocess a source file
-Data_struct_tool/Search_tree/BinarySearch.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BinarySearch.dir\build.make CMakeFiles/BinarySearch.dir/Data_struct_tool/Search_tree/BinarySearch.cpp.i
-.PHONY : Data_struct_tool/Search_tree/BinarySearch.cpp.i
+src/Data_struct_tool/Search_tree/Treap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Treap.dir\build.make CMakeFiles/Treap.dir/src/Data_struct_tool/Search_tree/Treap.cpp.i
+.PHONY : src/Data_struct_tool/Search_tree/Treap.cpp.i
 
-Data_struct_tool/Search_tree/BinarySearch.s: Data_struct_tool/Search_tree/BinarySearch.cpp.s
-.PHONY : Data_struct_tool/Search_tree/BinarySearch.s
+src/Data_struct_tool/Search_tree/Treap.s: src/Data_struct_tool/Search_tree/Treap.cpp.s
+.PHONY : src/Data_struct_tool/Search_tree/Treap.s
 
 # target to generate assembly for a file
-Data_struct_tool/Search_tree/BinarySearch.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BinarySearch.dir\build.make CMakeFiles/BinarySearch.dir/Data_struct_tool/Search_tree/BinarySearch.cpp.s
-.PHONY : Data_struct_tool/Search_tree/BinarySearch.cpp.s
+src/Data_struct_tool/Search_tree/Treap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Treap.dir\build.make CMakeFiles/Treap.dir/src/Data_struct_tool/Search_tree/Treap.cpp.s
+.PHONY : src/Data_struct_tool/Search_tree/Treap.cpp.s
 
-Data_struct_tool/Search_tree/Treap.obj: Data_struct_tool/Search_tree/Treap.cpp.obj
-.PHONY : Data_struct_tool/Search_tree/Treap.obj
+src/Data_struct_tool/Variety/Trie_dyn.obj: src/Data_struct_tool/Variety/Trie_dyn.cpp.obj
+.PHONY : src/Data_struct_tool/Variety/Trie_dyn.obj
 
 # target to build an object file
-Data_struct_tool/Search_tree/Treap.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Treap.dir\build.make CMakeFiles/Treap.dir/Data_struct_tool/Search_tree/Treap.cpp.obj
-.PHONY : Data_struct_tool/Search_tree/Treap.cpp.obj
+src/Data_struct_tool/Variety/Trie_dyn.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_dyn.dir\build.make CMakeFiles/Trie_dyn.dir/src/Data_struct_tool/Variety/Trie_dyn.cpp.obj
+.PHONY : src/Data_struct_tool/Variety/Trie_dyn.cpp.obj
 
-Data_struct_tool/Search_tree/Treap.i: Data_struct_tool/Search_tree/Treap.cpp.i
-.PHONY : Data_struct_tool/Search_tree/Treap.i
+src/Data_struct_tool/Variety/Trie_dyn.i: src/Data_struct_tool/Variety/Trie_dyn.cpp.i
+.PHONY : src/Data_struct_tool/Variety/Trie_dyn.i
 
 # target to preprocess a source file
-Data_struct_tool/Search_tree/Treap.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Treap.dir\build.make CMakeFiles/Treap.dir/Data_struct_tool/Search_tree/Treap.cpp.i
-.PHONY : Data_struct_tool/Search_tree/Treap.cpp.i
+src/Data_struct_tool/Variety/Trie_dyn.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_dyn.dir\build.make CMakeFiles/Trie_dyn.dir/src/Data_struct_tool/Variety/Trie_dyn.cpp.i
+.PHONY : src/Data_struct_tool/Variety/Trie_dyn.cpp.i
 
-Data_struct_tool/Search_tree/Treap.s: Data_struct_tool/Search_tree/Treap.cpp.s
-.PHONY : Data_struct_tool/Search_tree/Treap.s
+src/Data_struct_tool/Variety/Trie_dyn.s: src/Data_struct_tool/Variety/Trie_dyn.cpp.s
+.PHONY : src/Data_struct_tool/Variety/Trie_dyn.s
 
 # target to generate assembly for a file
-Data_struct_tool/Search_tree/Treap.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Treap.dir\build.make CMakeFiles/Treap.dir/Data_struct_tool/Search_tree/Treap.cpp.s
-.PHONY : Data_struct_tool/Search_tree/Treap.cpp.s
+src/Data_struct_tool/Variety/Trie_dyn.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_dyn.dir\build.make CMakeFiles/Trie_dyn.dir/src/Data_struct_tool/Variety/Trie_dyn.cpp.s
+.PHONY : src/Data_struct_tool/Variety/Trie_dyn.cpp.s
 
-Data_struct_tool/Variety/Trie_dyn.obj: Data_struct_tool/Variety/Trie_dyn.cpp.obj
-.PHONY : Data_struct_tool/Variety/Trie_dyn.obj
+src/Data_struct_tool/Variety/Trie_static.obj: src/Data_struct_tool/Variety/Trie_static.cpp.obj
+.PHONY : src/Data_struct_tool/Variety/Trie_static.obj
 
 # target to build an object file
-Data_struct_tool/Variety/Trie_dyn.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_dyn.dir\build.make CMakeFiles/Trie_dyn.dir/Data_struct_tool/Variety/Trie_dyn.cpp.obj
-.PHONY : Data_struct_tool/Variety/Trie_dyn.cpp.obj
+src/Data_struct_tool/Variety/Trie_static.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_static.dir\build.make CMakeFiles/Trie_static.dir/src/Data_struct_tool/Variety/Trie_static.cpp.obj
+.PHONY : src/Data_struct_tool/Variety/Trie_static.cpp.obj
 
-Data_struct_tool/Variety/Trie_dyn.i: Data_struct_tool/Variety/Trie_dyn.cpp.i
-.PHONY : Data_struct_tool/Variety/Trie_dyn.i
+src/Data_struct_tool/Variety/Trie_static.i: src/Data_struct_tool/Variety/Trie_static.cpp.i
+.PHONY : src/Data_struct_tool/Variety/Trie_static.i
 
 # target to preprocess a source file
-Data_struct_tool/Variety/Trie_dyn.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_dyn.dir\build.make CMakeFiles/Trie_dyn.dir/Data_struct_tool/Variety/Trie_dyn.cpp.i
-.PHONY : Data_struct_tool/Variety/Trie_dyn.cpp.i
+src/Data_struct_tool/Variety/Trie_static.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_static.dir\build.make CMakeFiles/Trie_static.dir/src/Data_struct_tool/Variety/Trie_static.cpp.i
+.PHONY : src/Data_struct_tool/Variety/Trie_static.cpp.i
 
-Data_struct_tool/Variety/Trie_dyn.s: Data_struct_tool/Variety/Trie_dyn.cpp.s
-.PHONY : Data_struct_tool/Variety/Trie_dyn.s
+src/Data_struct_tool/Variety/Trie_static.s: src/Data_struct_tool/Variety/Trie_static.cpp.s
+.PHONY : src/Data_struct_tool/Variety/Trie_static.s
 
 # target to generate assembly for a file
-Data_struct_tool/Variety/Trie_dyn.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_dyn.dir\build.make CMakeFiles/Trie_dyn.dir/Data_struct_tool/Variety/Trie_dyn.cpp.s
-.PHONY : Data_struct_tool/Variety/Trie_dyn.cpp.s
+src/Data_struct_tool/Variety/Trie_static.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_static.dir\build.make CMakeFiles/Trie_static.dir/src/Data_struct_tool/Variety/Trie_static.cpp.s
+.PHONY : src/Data_struct_tool/Variety/Trie_static.cpp.s
 
-Data_struct_tool/Variety/Trie_static.obj: Data_struct_tool/Variety/Trie_static.cpp.obj
-.PHONY : Data_struct_tool/Variety/Trie_static.obj
+src/Data_struct_tool/Variety/UnionFind.obj: src/Data_struct_tool/Variety/UnionFind.cpp.obj
+.PHONY : src/Data_struct_tool/Variety/UnionFind.obj
 
 # target to build an object file
-Data_struct_tool/Variety/Trie_static.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_static.dir\build.make CMakeFiles/Trie_static.dir/Data_struct_tool/Variety/Trie_static.cpp.obj
-.PHONY : Data_struct_tool/Variety/Trie_static.cpp.obj
+src/Data_struct_tool/Variety/UnionFind.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnionFind.dir\build.make CMakeFiles/UnionFind.dir/src/Data_struct_tool/Variety/UnionFind.cpp.obj
+.PHONY : src/Data_struct_tool/Variety/UnionFind.cpp.obj
 
-Data_struct_tool/Variety/Trie_static.i: Data_struct_tool/Variety/Trie_static.cpp.i
-.PHONY : Data_struct_tool/Variety/Trie_static.i
+src/Data_struct_tool/Variety/UnionFind.i: src/Data_struct_tool/Variety/UnionFind.cpp.i
+.PHONY : src/Data_struct_tool/Variety/UnionFind.i
 
 # target to preprocess a source file
-Data_struct_tool/Variety/Trie_static.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_static.dir\build.make CMakeFiles/Trie_static.dir/Data_struct_tool/Variety/Trie_static.cpp.i
-.PHONY : Data_struct_tool/Variety/Trie_static.cpp.i
+src/Data_struct_tool/Variety/UnionFind.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnionFind.dir\build.make CMakeFiles/UnionFind.dir/src/Data_struct_tool/Variety/UnionFind.cpp.i
+.PHONY : src/Data_struct_tool/Variety/UnionFind.cpp.i
 
-Data_struct_tool/Variety/Trie_static.s: Data_struct_tool/Variety/Trie_static.cpp.s
-.PHONY : Data_struct_tool/Variety/Trie_static.s
+src/Data_struct_tool/Variety/UnionFind.s: src/Data_struct_tool/Variety/UnionFind.cpp.s
+.PHONY : src/Data_struct_tool/Variety/UnionFind.s
 
 # target to generate assembly for a file
-Data_struct_tool/Variety/Trie_static.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_static.dir\build.make CMakeFiles/Trie_static.dir/Data_struct_tool/Variety/Trie_static.cpp.s
-.PHONY : Data_struct_tool/Variety/Trie_static.cpp.s
+src/Data_struct_tool/Variety/UnionFind.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnionFind.dir\build.make CMakeFiles/UnionFind.dir/src/Data_struct_tool/Variety/UnionFind.cpp.s
+.PHONY : src/Data_struct_tool/Variety/UnionFind.cpp.s
 
-Data_struct_tool/Variety/UnionFind.obj: Data_struct_tool/Variety/UnionFind.cpp.obj
-.PHONY : Data_struct_tool/Variety/UnionFind.obj
+src/Practical_algorithms/Hafuman/HafumanZip.obj: src/Practical_algorithms/Hafuman/HafumanZip.cpp.obj
+.PHONY : src/Practical_algorithms/Hafuman/HafumanZip.obj
 
 # target to build an object file
-Data_struct_tool/Variety/UnionFind.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnionFind.dir\build.make CMakeFiles/UnionFind.dir/Data_struct_tool/Variety/UnionFind.cpp.obj
-.PHONY : Data_struct_tool/Variety/UnionFind.cpp.obj
+src/Practical_algorithms/Hafuman/HafumanZip.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HafumanZip.dir\build.make CMakeFiles/HafumanZip.dir/src/Practical_algorithms/Hafuman/HafumanZip.cpp.obj
+.PHONY : src/Practical_algorithms/Hafuman/HafumanZip.cpp.obj
 
-Data_struct_tool/Variety/UnionFind.i: Data_struct_tool/Variety/UnionFind.cpp.i
-.PHONY : Data_struct_tool/Variety/UnionFind.i
+src/Practical_algorithms/Hafuman/HafumanZip.i: src/Practical_algorithms/Hafuman/HafumanZip.cpp.i
+.PHONY : src/Practical_algorithms/Hafuman/HafumanZip.i
 
 # target to preprocess a source file
-Data_struct_tool/Variety/UnionFind.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnionFind.dir\build.make CMakeFiles/UnionFind.dir/Data_struct_tool/Variety/UnionFind.cpp.i
-.PHONY : Data_struct_tool/Variety/UnionFind.cpp.i
+src/Practical_algorithms/Hafuman/HafumanZip.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HafumanZip.dir\build.make CMakeFiles/HafumanZip.dir/src/Practical_algorithms/Hafuman/HafumanZip.cpp.i
+.PHONY : src/Practical_algorithms/Hafuman/HafumanZip.cpp.i
 
-Data_struct_tool/Variety/UnionFind.s: Data_struct_tool/Variety/UnionFind.cpp.s
-.PHONY : Data_struct_tool/Variety/UnionFind.s
+src/Practical_algorithms/Hafuman/HafumanZip.s: src/Practical_algorithms/Hafuman/HafumanZip.cpp.s
+.PHONY : src/Practical_algorithms/Hafuman/HafumanZip.s
 
 # target to generate assembly for a file
-Data_struct_tool/Variety/UnionFind.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnionFind.dir\build.make CMakeFiles/UnionFind.dir/Data_struct_tool/Variety/UnionFind.cpp.s
-.PHONY : Data_struct_tool/Variety/UnionFind.cpp.s
+src/Practical_algorithms/Hafuman/HafumanZip.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HafumanZip.dir\build.make CMakeFiles/HafumanZip.dir/src/Practical_algorithms/Hafuman/HafumanZip.cpp.s
+.PHONY : src/Practical_algorithms/Hafuman/HafumanZip.cpp.s
 
-Practical_algorithms/Hafuman/HafumanZip.obj: Practical_algorithms/Hafuman/HafumanZip.cpp.obj
-.PHONY : Practical_algorithms/Hafuman/HafumanZip.obj
+src/Socket_tool/TCP_SOCKET_CLIENT.obj: src/Socket_tool/TCP_SOCKET_CLIENT.cpp.obj
+.PHONY : src/Socket_tool/TCP_SOCKET_CLIENT.obj
 
 # target to build an object file
-Practical_algorithms/Hafuman/HafumanZip.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HafumanZip.dir\build.make CMakeFiles/HafumanZip.dir/Practical_algorithms/Hafuman/HafumanZip.cpp.obj
-.PHONY : Practical_algorithms/Hafuman/HafumanZip.cpp.obj
+src/Socket_tool/TCP_SOCKET_CLIENT.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_CLIENT.dir\build.make CMakeFiles/TCP_SOCKET_CLIENT.dir/src/Socket_tool/TCP_SOCKET_CLIENT.cpp.obj
+.PHONY : src/Socket_tool/TCP_SOCKET_CLIENT.cpp.obj
 
-Practical_algorithms/Hafuman/HafumanZip.i: Practical_algorithms/Hafuman/HafumanZip.cpp.i
-.PHONY : Practical_algorithms/Hafuman/HafumanZip.i
+src/Socket_tool/TCP_SOCKET_CLIENT.i: src/Socket_tool/TCP_SOCKET_CLIENT.cpp.i
+.PHONY : src/Socket_tool/TCP_SOCKET_CLIENT.i
 
 # target to preprocess a source file
-Practical_algorithms/Hafuman/HafumanZip.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HafumanZip.dir\build.make CMakeFiles/HafumanZip.dir/Practical_algorithms/Hafuman/HafumanZip.cpp.i
-.PHONY : Practical_algorithms/Hafuman/HafumanZip.cpp.i
+src/Socket_tool/TCP_SOCKET_CLIENT.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_CLIENT.dir\build.make CMakeFiles/TCP_SOCKET_CLIENT.dir/src/Socket_tool/TCP_SOCKET_CLIENT.cpp.i
+.PHONY : src/Socket_tool/TCP_SOCKET_CLIENT.cpp.i
 
-Practical_algorithms/Hafuman/HafumanZip.s: Practical_algorithms/Hafuman/HafumanZip.cpp.s
-.PHONY : Practical_algorithms/Hafuman/HafumanZip.s
+src/Socket_tool/TCP_SOCKET_CLIENT.s: src/Socket_tool/TCP_SOCKET_CLIENT.cpp.s
+.PHONY : src/Socket_tool/TCP_SOCKET_CLIENT.s
 
 # target to generate assembly for a file
-Practical_algorithms/Hafuman/HafumanZip.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HafumanZip.dir\build.make CMakeFiles/HafumanZip.dir/Practical_algorithms/Hafuman/HafumanZip.cpp.s
-.PHONY : Practical_algorithms/Hafuman/HafumanZip.cpp.s
+src/Socket_tool/TCP_SOCKET_CLIENT.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_CLIENT.dir\build.make CMakeFiles/TCP_SOCKET_CLIENT.dir/src/Socket_tool/TCP_SOCKET_CLIENT.cpp.s
+.PHONY : src/Socket_tool/TCP_SOCKET_CLIENT.cpp.s
 
-Socket_tool/TCP_SOCKET_CLIENT.obj: Socket_tool/TCP_SOCKET_CLIENT.cpp.obj
-.PHONY : Socket_tool/TCP_SOCKET_CLIENT.obj
+src/Socket_tool/TCP_SOCKET_SERVER.obj: src/Socket_tool/TCP_SOCKET_SERVER.cpp.obj
+.PHONY : src/Socket_tool/TCP_SOCKET_SERVER.obj
 
 # target to build an object file
-Socket_tool/TCP_SOCKET_CLIENT.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_CLIENT.dir\build.make CMakeFiles/TCP_SOCKET_CLIENT.dir/Socket_tool/TCP_SOCKET_CLIENT.cpp.obj
-.PHONY : Socket_tool/TCP_SOCKET_CLIENT.cpp.obj
+src/Socket_tool/TCP_SOCKET_SERVER.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_SERVER.dir\build.make CMakeFiles/TCP_SOCKET_SERVER.dir/src/Socket_tool/TCP_SOCKET_SERVER.cpp.obj
+.PHONY : src/Socket_tool/TCP_SOCKET_SERVER.cpp.obj
 
-Socket_tool/TCP_SOCKET_CLIENT.i: Socket_tool/TCP_SOCKET_CLIENT.cpp.i
-.PHONY : Socket_tool/TCP_SOCKET_CLIENT.i
+src/Socket_tool/TCP_SOCKET_SERVER.i: src/Socket_tool/TCP_SOCKET_SERVER.cpp.i
+.PHONY : src/Socket_tool/TCP_SOCKET_SERVER.i
 
 # target to preprocess a source file
-Socket_tool/TCP_SOCKET_CLIENT.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_CLIENT.dir\build.make CMakeFiles/TCP_SOCKET_CLIENT.dir/Socket_tool/TCP_SOCKET_CLIENT.cpp.i
-.PHONY : Socket_tool/TCP_SOCKET_CLIENT.cpp.i
+src/Socket_tool/TCP_SOCKET_SERVER.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_SERVER.dir\build.make CMakeFiles/TCP_SOCKET_SERVER.dir/src/Socket_tool/TCP_SOCKET_SERVER.cpp.i
+.PHONY : src/Socket_tool/TCP_SOCKET_SERVER.cpp.i
 
-Socket_tool/TCP_SOCKET_CLIENT.s: Socket_tool/TCP_SOCKET_CLIENT.cpp.s
-.PHONY : Socket_tool/TCP_SOCKET_CLIENT.s
+src/Socket_tool/TCP_SOCKET_SERVER.s: src/Socket_tool/TCP_SOCKET_SERVER.cpp.s
+.PHONY : src/Socket_tool/TCP_SOCKET_SERVER.s
 
 # target to generate assembly for a file
-Socket_tool/TCP_SOCKET_CLIENT.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_CLIENT.dir\build.make CMakeFiles/TCP_SOCKET_CLIENT.dir/Socket_tool/TCP_SOCKET_CLIENT.cpp.s
-.PHONY : Socket_tool/TCP_SOCKET_CLIENT.cpp.s
+src/Socket_tool/TCP_SOCKET_SERVER.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_SERVER.dir\build.make CMakeFiles/TCP_SOCKET_SERVER.dir/src/Socket_tool/TCP_SOCKET_SERVER.cpp.s
+.PHONY : src/Socket_tool/TCP_SOCKET_SERVER.cpp.s
 
-Socket_tool/TCP_SOCKET_SERVER.obj: Socket_tool/TCP_SOCKET_SERVER.cpp.obj
-.PHONY : Socket_tool/TCP_SOCKET_SERVER.obj
+src/Template_tool/BigInteger.obj: src/Template_tool/BigInteger.cpp.obj
+.PHONY : src/Template_tool/BigInteger.obj
 
 # target to build an object file
-Socket_tool/TCP_SOCKET_SERVER.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_SERVER.dir\build.make CMakeFiles/TCP_SOCKET_SERVER.dir/Socket_tool/TCP_SOCKET_SERVER.cpp.obj
-.PHONY : Socket_tool/TCP_SOCKET_SERVER.cpp.obj
+src/Template_tool/BigInteger.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BigInteger.dir\build.make CMakeFiles/BigInteger.dir/src/Template_tool/BigInteger.cpp.obj
+.PHONY : src/Template_tool/BigInteger.cpp.obj
 
-Socket_tool/TCP_SOCKET_SERVER.i: Socket_tool/TCP_SOCKET_SERVER.cpp.i
-.PHONY : Socket_tool/TCP_SOCKET_SERVER.i
+src/Template_tool/BigInteger.i: src/Template_tool/BigInteger.cpp.i
+.PHONY : src/Template_tool/BigInteger.i
 
 # target to preprocess a source file
-Socket_tool/TCP_SOCKET_SERVER.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_SERVER.dir\build.make CMakeFiles/TCP_SOCKET_SERVER.dir/Socket_tool/TCP_SOCKET_SERVER.cpp.i
-.PHONY : Socket_tool/TCP_SOCKET_SERVER.cpp.i
+src/Template_tool/BigInteger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BigInteger.dir\build.make CMakeFiles/BigInteger.dir/src/Template_tool/BigInteger.cpp.i
+.PHONY : src/Template_tool/BigInteger.cpp.i
 
-Socket_tool/TCP_SOCKET_SERVER.s: Socket_tool/TCP_SOCKET_SERVER.cpp.s
-.PHONY : Socket_tool/TCP_SOCKET_SERVER.s
+src/Template_tool/BigInteger.s: src/Template_tool/BigInteger.cpp.s
+.PHONY : src/Template_tool/BigInteger.s
 
 # target to generate assembly for a file
-Socket_tool/TCP_SOCKET_SERVER.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_SERVER.dir\build.make CMakeFiles/TCP_SOCKET_SERVER.dir/Socket_tool/TCP_SOCKET_SERVER.cpp.s
-.PHONY : Socket_tool/TCP_SOCKET_SERVER.cpp.s
+src/Template_tool/BigInteger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BigInteger.dir\build.make CMakeFiles/BigInteger.dir/src/Template_tool/BigInteger.cpp.s
+.PHONY : src/Template_tool/BigInteger.cpp.s
 
-Template_tool/BigInteger.obj: Template_tool/BigInteger.cpp.obj
-.PHONY : Template_tool/BigInteger.obj
+src/Template_tool/Complex.obj: src/Template_tool/Complex.cpp.obj
+.PHONY : src/Template_tool/Complex.obj
 
 # target to build an object file
-Template_tool/BigInteger.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BigInteger.dir\build.make CMakeFiles/BigInteger.dir/Template_tool/BigInteger.cpp.obj
-.PHONY : Template_tool/BigInteger.cpp.obj
+src/Template_tool/Complex.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Complex.dir\build.make CMakeFiles/Complex.dir/src/Template_tool/Complex.cpp.obj
+.PHONY : src/Template_tool/Complex.cpp.obj
 
-Template_tool/BigInteger.i: Template_tool/BigInteger.cpp.i
-.PHONY : Template_tool/BigInteger.i
+src/Template_tool/Complex.i: src/Template_tool/Complex.cpp.i
+.PHONY : src/Template_tool/Complex.i
 
 # target to preprocess a source file
-Template_tool/BigInteger.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BigInteger.dir\build.make CMakeFiles/BigInteger.dir/Template_tool/BigInteger.cpp.i
-.PHONY : Template_tool/BigInteger.cpp.i
+src/Template_tool/Complex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Complex.dir\build.make CMakeFiles/Complex.dir/src/Template_tool/Complex.cpp.i
+.PHONY : src/Template_tool/Complex.cpp.i
 
-Template_tool/BigInteger.s: Template_tool/BigInteger.cpp.s
-.PHONY : Template_tool/BigInteger.s
+src/Template_tool/Complex.s: src/Template_tool/Complex.cpp.s
+.PHONY : src/Template_tool/Complex.s
 
 # target to generate assembly for a file
-Template_tool/BigInteger.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BigInteger.dir\build.make CMakeFiles/BigInteger.dir/Template_tool/BigInteger.cpp.s
-.PHONY : Template_tool/BigInteger.cpp.s
+src/Template_tool/Complex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Complex.dir\build.make CMakeFiles/Complex.dir/src/Template_tool/Complex.cpp.s
+.PHONY : src/Template_tool/Complex.cpp.s
 
-Template_tool/Complex.obj: Template_tool/Complex.cpp.obj
-.PHONY : Template_tool/Complex.obj
+src/main.obj: src/main.cpp.obj
+.PHONY : src/main.obj
 
 # target to build an object file
-Template_tool/Complex.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Complex.dir\build.make CMakeFiles/Complex.dir/Template_tool/Complex.cpp.obj
-.PHONY : Template_tool/Complex.cpp.obj
+src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
 
-Template_tool/Complex.i: Template_tool/Complex.cpp.i
-.PHONY : Template_tool/Complex.i
-
-# target to preprocess a source file
-Template_tool/Complex.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Complex.dir\build.make CMakeFiles/Complex.dir/Template_tool/Complex.cpp.i
-.PHONY : Template_tool/Complex.cpp.i
-
-Template_tool/Complex.s: Template_tool/Complex.cpp.s
-.PHONY : Template_tool/Complex.s
-
-# target to generate assembly for a file
-Template_tool/Complex.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Complex.dir\build.make CMakeFiles/Complex.dir/Template_tool/Complex.cpp.s
-.PHONY : Template_tool/Complex.cpp.s
-
-main.obj: main.cpp.obj
-.PHONY : main.obj
-
-# target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.obj
-.PHONY : main.cpp.obj
-
-main.i: main.cpp.i
-.PHONY : main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -755,7 +718,6 @@ help:
 	@echo ... AVLTree
 	@echo ... BigInteger
 	@echo ... BinarySearch
-	@echo ... CMakeCXXCompilerId
 	@echo ... Complex
 	@echo ... HafumanZip
 	@echo ... LinkMap
@@ -769,57 +731,54 @@ help:
 	@echo ... main
 	@echo ... sample_HashMap
 	@echo ... strpbrk
-	@echo ... CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.obj
-	@echo ... CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.i
-	@echo ... CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.s
-	@echo ... Clib/strtok_series/strpbrk.obj
-	@echo ... Clib/strtok_series/strpbrk.i
-	@echo ... Clib/strtok_series/strpbrk.s
-	@echo ... Data_struct_tool/HashTable/sample_HashMap.obj
-	@echo ... Data_struct_tool/HashTable/sample_HashMap.i
-	@echo ... Data_struct_tool/HashTable/sample_HashMap.s
-	@echo ... Data_struct_tool/Map_generator/LinkMap.obj
-	@echo ... Data_struct_tool/Map_generator/LinkMap.i
-	@echo ... Data_struct_tool/Map_generator/LinkMap.s
-	@echo ... Data_struct_tool/Map_generator/Tarjan.obj
-	@echo ... Data_struct_tool/Map_generator/Tarjan.i
-	@echo ... Data_struct_tool/Map_generator/Tarjan.s
-	@echo ... Data_struct_tool/Search_tree/AVLTree.obj
-	@echo ... Data_struct_tool/Search_tree/AVLTree.i
-	@echo ... Data_struct_tool/Search_tree/AVLTree.s
-	@echo ... Data_struct_tool/Search_tree/BinarySearch.obj
-	@echo ... Data_struct_tool/Search_tree/BinarySearch.i
-	@echo ... Data_struct_tool/Search_tree/BinarySearch.s
-	@echo ... Data_struct_tool/Search_tree/Treap.obj
-	@echo ... Data_struct_tool/Search_tree/Treap.i
-	@echo ... Data_struct_tool/Search_tree/Treap.s
-	@echo ... Data_struct_tool/Variety/Trie_dyn.obj
-	@echo ... Data_struct_tool/Variety/Trie_dyn.i
-	@echo ... Data_struct_tool/Variety/Trie_dyn.s
-	@echo ... Data_struct_tool/Variety/Trie_static.obj
-	@echo ... Data_struct_tool/Variety/Trie_static.i
-	@echo ... Data_struct_tool/Variety/Trie_static.s
-	@echo ... Data_struct_tool/Variety/UnionFind.obj
-	@echo ... Data_struct_tool/Variety/UnionFind.i
-	@echo ... Data_struct_tool/Variety/UnionFind.s
-	@echo ... Practical_algorithms/Hafuman/HafumanZip.obj
-	@echo ... Practical_algorithms/Hafuman/HafumanZip.i
-	@echo ... Practical_algorithms/Hafuman/HafumanZip.s
-	@echo ... Socket_tool/TCP_SOCKET_CLIENT.obj
-	@echo ... Socket_tool/TCP_SOCKET_CLIENT.i
-	@echo ... Socket_tool/TCP_SOCKET_CLIENT.s
-	@echo ... Socket_tool/TCP_SOCKET_SERVER.obj
-	@echo ... Socket_tool/TCP_SOCKET_SERVER.i
-	@echo ... Socket_tool/TCP_SOCKET_SERVER.s
-	@echo ... Template_tool/BigInteger.obj
-	@echo ... Template_tool/BigInteger.i
-	@echo ... Template_tool/BigInteger.s
-	@echo ... Template_tool/Complex.obj
-	@echo ... Template_tool/Complex.i
-	@echo ... Template_tool/Complex.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... src/Clib/strtok_series/strpbrk.obj
+	@echo ... src/Clib/strtok_series/strpbrk.i
+	@echo ... src/Clib/strtok_series/strpbrk.s
+	@echo ... src/Data_struct_tool/HashTable/sample_HashMap.obj
+	@echo ... src/Data_struct_tool/HashTable/sample_HashMap.i
+	@echo ... src/Data_struct_tool/HashTable/sample_HashMap.s
+	@echo ... src/Data_struct_tool/Map_generator/LinkMap.obj
+	@echo ... src/Data_struct_tool/Map_generator/LinkMap.i
+	@echo ... src/Data_struct_tool/Map_generator/LinkMap.s
+	@echo ... src/Data_struct_tool/Map_generator/Tarjan.obj
+	@echo ... src/Data_struct_tool/Map_generator/Tarjan.i
+	@echo ... src/Data_struct_tool/Map_generator/Tarjan.s
+	@echo ... src/Data_struct_tool/Search_tree/AVLTree.obj
+	@echo ... src/Data_struct_tool/Search_tree/AVLTree.i
+	@echo ... src/Data_struct_tool/Search_tree/AVLTree.s
+	@echo ... src/Data_struct_tool/Search_tree/BinarySearch.obj
+	@echo ... src/Data_struct_tool/Search_tree/BinarySearch.i
+	@echo ... src/Data_struct_tool/Search_tree/BinarySearch.s
+	@echo ... src/Data_struct_tool/Search_tree/Treap.obj
+	@echo ... src/Data_struct_tool/Search_tree/Treap.i
+	@echo ... src/Data_struct_tool/Search_tree/Treap.s
+	@echo ... src/Data_struct_tool/Variety/Trie_dyn.obj
+	@echo ... src/Data_struct_tool/Variety/Trie_dyn.i
+	@echo ... src/Data_struct_tool/Variety/Trie_dyn.s
+	@echo ... src/Data_struct_tool/Variety/Trie_static.obj
+	@echo ... src/Data_struct_tool/Variety/Trie_static.i
+	@echo ... src/Data_struct_tool/Variety/Trie_static.s
+	@echo ... src/Data_struct_tool/Variety/UnionFind.obj
+	@echo ... src/Data_struct_tool/Variety/UnionFind.i
+	@echo ... src/Data_struct_tool/Variety/UnionFind.s
+	@echo ... src/Practical_algorithms/Hafuman/HafumanZip.obj
+	@echo ... src/Practical_algorithms/Hafuman/HafumanZip.i
+	@echo ... src/Practical_algorithms/Hafuman/HafumanZip.s
+	@echo ... src/Socket_tool/TCP_SOCKET_CLIENT.obj
+	@echo ... src/Socket_tool/TCP_SOCKET_CLIENT.i
+	@echo ... src/Socket_tool/TCP_SOCKET_CLIENT.s
+	@echo ... src/Socket_tool/TCP_SOCKET_SERVER.obj
+	@echo ... src/Socket_tool/TCP_SOCKET_SERVER.i
+	@echo ... src/Socket_tool/TCP_SOCKET_SERVER.s
+	@echo ... src/Template_tool/BigInteger.obj
+	@echo ... src/Template_tool/BigInteger.i
+	@echo ... src/Template_tool/BigInteger.s
+	@echo ... src/Template_tool/Complex.obj
+	@echo ... src/Template_tool/Complex.i
+	@echo ... src/Template_tool/Complex.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
 .PHONY : help
 
 

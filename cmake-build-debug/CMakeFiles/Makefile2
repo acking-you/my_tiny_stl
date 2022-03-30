@@ -64,7 +64,6 @@ CMAKE_BINARY_DIR = "D:\CLion Project\my_tiny_stl\cmake-build-debug"
 # The main recursive "all" target.
 all: CMakeFiles/strpbrk.dir/all
 all: CMakeFiles/Trie_dyn.dir/all
-all: CMakeFiles/CMakeCXXCompilerId.dir/all
 all: CMakeFiles/Tarjan.dir/all
 all: CMakeFiles/LinkMap.dir/all
 all: CMakeFiles/sample_HashMap.dir/all
@@ -88,7 +87,6 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/strpbrk.dir/clean
 clean: CMakeFiles/Trie_dyn.dir/clean
-clean: CMakeFiles/CMakeCXXCompilerId.dir/clean
 clean: CMakeFiles/Tarjan.dir/clean
 clean: CMakeFiles/LinkMap.dir/clean
 clean: CMakeFiles/sample_HashMap.dir/clean
@@ -112,7 +110,7 @@ clean: CMakeFiles/main.dir/clean
 CMakeFiles/strpbrk.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\strpbrk.dir\build.make CMakeFiles/strpbrk.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\strpbrk.dir\build.make CMakeFiles/strpbrk.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=33,34 "Built target strpbrk"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=31,32 "Built target strpbrk"
 .PHONY : CMakeFiles/strpbrk.dir/all
 
 # Build rule for subdir invocation for target.
@@ -138,7 +136,7 @@ CMakeFiles/strpbrk.dir/clean:
 CMakeFiles/Trie_dyn.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_dyn.dir\build.make CMakeFiles/Trie_dyn.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_dyn.dir\build.make CMakeFiles/Trie_dyn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=23,24 "Built target Trie_dyn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=21,22 "Built target Trie_dyn"
 .PHONY : CMakeFiles/Trie_dyn.dir/all
 
 # Build rule for subdir invocation for target.
@@ -158,39 +156,13 @@ CMakeFiles/Trie_dyn.dir/clean:
 .PHONY : CMakeFiles/Trie_dyn.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/CMakeCXXCompilerId.dir
-
-# All Build rule for target.
-CMakeFiles/CMakeCXXCompilerId.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeCXXCompilerId.dir\build.make CMakeFiles/CMakeCXXCompilerId.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeCXXCompilerId.dir\build.make CMakeFiles/CMakeCXXCompilerId.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=7,8 "Built target CMakeCXXCompilerId"
-.PHONY : CMakeFiles/CMakeCXXCompilerId.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/CMakeCXXCompilerId.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/CMakeCXXCompilerId.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" 0
-.PHONY : CMakeFiles/CMakeCXXCompilerId.dir/rule
-
-# Convenience name for target.
-CMakeCXXCompilerId: CMakeFiles/CMakeCXXCompilerId.dir/rule
-.PHONY : CMakeCXXCompilerId
-
-# clean rule for target.
-CMakeFiles/CMakeCXXCompilerId.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeCXXCompilerId.dir\build.make CMakeFiles/CMakeCXXCompilerId.dir/clean
-.PHONY : CMakeFiles/CMakeCXXCompilerId.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/Tarjan.dir
 
 # All Build rule for target.
 CMakeFiles/Tarjan.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tarjan.dir\build.make CMakeFiles/Tarjan.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tarjan.dir\build.make CMakeFiles/Tarjan.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=19,20 "Built target Tarjan"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=17,18 "Built target Tarjan"
 .PHONY : CMakeFiles/Tarjan.dir/all
 
 # Build rule for subdir invocation for target.
@@ -216,7 +188,7 @@ CMakeFiles/Tarjan.dir/clean:
 CMakeFiles/LinkMap.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkMap.dir\build.make CMakeFiles/LinkMap.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkMap.dir\build.make CMakeFiles/LinkMap.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=13,14 "Built target LinkMap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=11,12 "Built target LinkMap"
 .PHONY : CMakeFiles/LinkMap.dir/all
 
 # Build rule for subdir invocation for target.
@@ -242,7 +214,7 @@ CMakeFiles/LinkMap.dir/clean:
 CMakeFiles/sample_HashMap.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample_HashMap.dir\build.make CMakeFiles/sample_HashMap.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample_HashMap.dir\build.make CMakeFiles/sample_HashMap.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=31,32 "Built target sample_HashMap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=29,30 "Built target sample_HashMap"
 .PHONY : CMakeFiles/sample_HashMap.dir/all
 
 # Build rule for subdir invocation for target.
@@ -268,7 +240,7 @@ CMakeFiles/sample_HashMap.dir/clean:
 CMakeFiles/TCP_SOCKET_CLIENT.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_CLIENT.dir\build.make CMakeFiles/TCP_SOCKET_CLIENT.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_CLIENT.dir\build.make CMakeFiles/TCP_SOCKET_CLIENT.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=15,16 "Built target TCP_SOCKET_CLIENT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=13,14 "Built target TCP_SOCKET_CLIENT"
 .PHONY : CMakeFiles/TCP_SOCKET_CLIENT.dir/all
 
 # Build rule for subdir invocation for target.
@@ -346,7 +318,7 @@ CMakeFiles/BinarySearch.dir/clean:
 CMakeFiles/Treap.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Treap.dir\build.make CMakeFiles/Treap.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Treap.dir\build.make CMakeFiles/Treap.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=21,22 "Built target Treap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=19,20 "Built target Treap"
 .PHONY : CMakeFiles/Treap.dir/all
 
 # Build rule for subdir invocation for target.
@@ -372,7 +344,7 @@ CMakeFiles/Treap.dir/clean:
 CMakeFiles/Trie_static.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_static.dir\build.make CMakeFiles/Trie_static.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trie_static.dir\build.make CMakeFiles/Trie_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=25,26 "Built target Trie_static"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=23,24 "Built target Trie_static"
 .PHONY : CMakeFiles/Trie_static.dir/all
 
 # Build rule for subdir invocation for target.
@@ -398,7 +370,7 @@ CMakeFiles/Trie_static.dir/clean:
 CMakeFiles/UnionFind.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnionFind.dir\build.make CMakeFiles/UnionFind.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnionFind.dir\build.make CMakeFiles/UnionFind.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=27,28 "Built target UnionFind"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=25,26 "Built target UnionFind"
 .PHONY : CMakeFiles/UnionFind.dir/all
 
 # Build rule for subdir invocation for target.
@@ -424,7 +396,7 @@ CMakeFiles/UnionFind.dir/clean:
 CMakeFiles/HafumanZip.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\HafumanZip.dir\build.make CMakeFiles/HafumanZip.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\HafumanZip.dir\build.make CMakeFiles/HafumanZip.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=11,12 "Built target HafumanZip"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=9,10 "Built target HafumanZip"
 .PHONY : CMakeFiles/HafumanZip.dir/all
 
 # Build rule for subdir invocation for target.
@@ -450,7 +422,7 @@ CMakeFiles/HafumanZip.dir/clean:
 CMakeFiles/TCP_SOCKET_SERVER.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_SERVER.dir\build.make CMakeFiles/TCP_SOCKET_SERVER.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_SERVER.dir\build.make CMakeFiles/TCP_SOCKET_SERVER.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=17,18 "Built target TCP_SOCKET_SERVER"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=15,16 "Built target TCP_SOCKET_SERVER"
 .PHONY : CMakeFiles/TCP_SOCKET_SERVER.dir/all
 
 # Build rule for subdir invocation for target.
@@ -502,7 +474,7 @@ CMakeFiles/BigInteger.dir/clean:
 CMakeFiles/Complex.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Complex.dir\build.make CMakeFiles/Complex.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Complex.dir\build.make CMakeFiles/Complex.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=9,10 "Built target Complex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=7,8 "Built target Complex"
 .PHONY : CMakeFiles/Complex.dir/all
 
 # Build rule for subdir invocation for target.
@@ -528,7 +500,7 @@ CMakeFiles/Complex.dir/clean:
 CMakeFiles/main.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=29,30 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CLion Project\my_tiny_stl\cmake-build-debug\CMakeFiles" --progress-num=27,28 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.

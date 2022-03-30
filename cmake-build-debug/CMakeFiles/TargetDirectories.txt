@@ -1,6 +1,5 @@
 D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/strpbrk.dir
 D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/Trie_dyn.dir
-D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/CMakeCXXCompilerId.dir
 D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/Tarjan.dir
 D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/LinkMap.dir
 D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/sample_HashMap.dir

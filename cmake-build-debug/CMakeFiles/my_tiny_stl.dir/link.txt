@@ -1,3 +1,0 @@
-"D:\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\my_tiny_stl.dir/objects.a
-D:\new_mingw\MinGW\bin\ar.exe qc CMakeFiles\my_tiny_stl.dir/objects.a @CMakeFiles\my_tiny_stl.dir\objects1.rsp
-D:\new_mingw\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\my_tiny_stl.dir/objects.a -Wl,--no-whole-archive -o my_tiny_stl.exe -Wl,--out-implib,libmy_tiny_stl.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\my_tiny_stl.dir\linklibs.rsp
