@@ -285,6 +285,19 @@ TCP_SOCKET_SERVER/fast:
 .PHONY : TCP_SOCKET_SERVER/fast
 
 #=============================================================================
+# Target rules for targets named BigInteger-oldversion
+
+# Build rule for target.
+BigInteger-oldversion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 BigInteger-oldversion
+.PHONY : BigInteger-oldversion
+
+# fast build rule for target.
+BigInteger-oldversion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BigInteger-oldversion.dir\build.make CMakeFiles/BigInteger-oldversion.dir/build
+.PHONY : BigInteger-oldversion/fast
+
+#=============================================================================
 # Target rules for targets named BigInteger
 
 # Build rule for target.
@@ -635,6 +648,30 @@ src/Socket_tool/TCP_SOCKET_SERVER.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TCP_SOCKET_SERVER.dir\build.make CMakeFiles/TCP_SOCKET_SERVER.dir/src/Socket_tool/TCP_SOCKET_SERVER.cpp.s
 .PHONY : src/Socket_tool/TCP_SOCKET_SERVER.cpp.s
 
+src/Template_tool/BigInteger-oldversion.obj: src/Template_tool/BigInteger-oldversion.cpp.obj
+.PHONY : src/Template_tool/BigInteger-oldversion.obj
+
+# target to build an object file
+src/Template_tool/BigInteger-oldversion.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BigInteger-oldversion.dir\build.make CMakeFiles/BigInteger-oldversion.dir/src/Template_tool/BigInteger-oldversion.cpp.obj
+.PHONY : src/Template_tool/BigInteger-oldversion.cpp.obj
+
+src/Template_tool/BigInteger-oldversion.i: src/Template_tool/BigInteger-oldversion.cpp.i
+.PHONY : src/Template_tool/BigInteger-oldversion.i
+
+# target to preprocess a source file
+src/Template_tool/BigInteger-oldversion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BigInteger-oldversion.dir\build.make CMakeFiles/BigInteger-oldversion.dir/src/Template_tool/BigInteger-oldversion.cpp.i
+.PHONY : src/Template_tool/BigInteger-oldversion.cpp.i
+
+src/Template_tool/BigInteger-oldversion.s: src/Template_tool/BigInteger-oldversion.cpp.s
+.PHONY : src/Template_tool/BigInteger-oldversion.s
+
+# target to generate assembly for a file
+src/Template_tool/BigInteger-oldversion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BigInteger-oldversion.dir\build.make CMakeFiles/BigInteger-oldversion.dir/src/Template_tool/BigInteger-oldversion.cpp.s
+.PHONY : src/Template_tool/BigInteger-oldversion.cpp.s
+
 src/Template_tool/BigInteger.obj: src/Template_tool/BigInteger.cpp.obj
 .PHONY : src/Template_tool/BigInteger.obj
 
@@ -717,6 +754,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... AVLTree
 	@echo ... BigInteger
+	@echo ... BigInteger-oldversion
 	@echo ... BinarySearch
 	@echo ... Complex
 	@echo ... HafumanZip
@@ -770,6 +808,9 @@ help:
 	@echo ... src/Socket_tool/TCP_SOCKET_SERVER.obj
 	@echo ... src/Socket_tool/TCP_SOCKET_SERVER.i
 	@echo ... src/Socket_tool/TCP_SOCKET_SERVER.s
+	@echo ... src/Template_tool/BigInteger-oldversion.obj
+	@echo ... src/Template_tool/BigInteger-oldversion.i
+	@echo ... src/Template_tool/BigInteger-oldversion.s
 	@echo ... src/Template_tool/BigInteger.obj
 	@echo ... src/Template_tool/BigInteger.i
 	@echo ... src/Template_tool/BigInteger.s

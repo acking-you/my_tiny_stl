@@ -1,92 +1,70 @@
 //
-// Created by Alone on 2021/10/7.
+// Created by Alone on 2022-4-2.
 //
 
-#ifndef MY_TINY_STL_BIGINTEGER_H
-#define MY_TINY_STL_BIGINTEGER_H
+#ifndef BIGINTEGER_BIGINTEGER_H
+#define BIGINTEGER_BIGINTEGER_H
+#include <string>
+#include <vector>
 
-#include <algorithm>
-#include <iostream>
-#include <cstring>
-namespace L_B__ {
-    class BigInteger {
-        bool f;
-        char *nums;
-        int length;
-        int capacity;
-    public:
-        //构造函数
-        BigInteger() : length(0), capacity(1), f(false) { //缺省构造函数
-            nums = new char[capacity];
+using std::vector;
+using std::string;
+using ull = unsigned long long;
+class BigInteger {
+    string multi(string const& a,string const& b){
+        string ret;
+        ull sz_a = a.size(),sz_b = b.size();
+        ret.reserve(sz_a+sz_b+1);
+        container.clear();
+        container.resize(sz_a+sz_b+1); //a*b肯定不会超过它们的长度和
+
+        ull index = 0,upper=0;
+        for (int i = 0; i < sz_a; ++i) {//TODO 计算乘法
+            ull tmp_index = index;
+            for (int j = 0; j < sz_b; ++j) {
+                container[tmp_index++] += (a[i]-'0')*(b[j]-'0');
+            }
+            ++index;
         }
+        //TODO 去除末尾的0
+        while (!container.empty()&&container.back()==0)container.pop_back();
 
-        BigInteger(const char *n);
-
-        BigInteger(const BigInteger &a);
-
-        BigInteger(BigInteger &&a);
-
-        ~BigInteger() { //析构函数
-            delete[] nums;
+        //TODO 记录答案
+        for(int i=0;i<container.size()||upper;i++){
+            if(i<container.size())
+                upper += container[i];
+            ret.push_back(char(upper%10+'0'));
+            upper /= 10;
         }
+        return ret;
+    }
+    bool reverseCheck();
+    [[nodiscard]] int signedCheck(string &b) const;
+    [[nodiscard]] int signedCheck(int sign) const;
+public:
+    BigInteger();
+    explicit BigInteger(ull number);
+    explicit BigInteger(string  number);
+    BigInteger& setSign(int);
+    BigInteger& setFlag(int);
+//TODO 由于怕使用const&导致check flag操作还得重新copy一个数据，所以用了&&，但由于不是模板推导，所以&&不算万能了😂
+    BigInteger operator*(BigInteger && src);
+    BigInteger& operator*=(BigInteger &&src);
+    BigInteger operator*(BigInteger& src);
+    BigInteger& operator*=(BigInteger&src);
+    BigInteger operator*(ull src);
+    BigInteger& operator*=(ull src);
+    BigInteger operator*(string src);
+    BigInteger& operator*=(string src);
 
-    public:
-        //静态函数
-        static void Swap(BigInteger &a, BigInteger &b);
+    friend std::ostream& operator<<(std::ostream& os,BigInteger&& obj);
+    friend std::ostream& operator<<(std::ostream& os,BigInteger& obj);
+private:
+    string bigNumber;
+    vector<int> container;
+    int flag = -1;//TODO 用于判断当前是否处于逆序状态
+    int sign;//TODO 用于判断当前的符号
+};
 
-        static bool compare(const BigInteger &a, const BigInteger &b);
 
-        bool isEqual(BigInteger &a, BigInteger &b);
-
-        static BigInteger add(BigInteger &a, BigInteger &b);
-
-        static BigInteger minus(BigInteger &a, BigInteger &b);
-
-    public:
-        //运算符重载
-        char &operator[](int i) {
-            return nums[i];
-        }
-
-        BigInteger &operator=(BigInteger &&a) { //Swap&Copy方式实现右值赋值重载
-            Swap(*this, a);
-            return *this;
-        }
-
-        BigInteger &operator=(const BigInteger &a);
-
-        bool operator<(const BigInteger &a) const;
-
-        BigInteger operator+(BigInteger &a);
-
-        BigInteger operator-(BigInteger &a);
-
-    public:
-        //对象的基本成员函数
-        int getCap() {
-            return capacity;
-        }
-
-        int getLength() {
-            return length;
-        }
-
-        bool isNegative() {
-            return f;
-        }
-
-        bool isEmpty() {
-            return length == 0;
-        }
-
-        void reverse();
-
-        void push_back(char x);
-
-        void print();
-
-        void read();
-    };
-
-}
-#endif //MY_TINY_STL_BIGINTEGER_H
+#endif //BIGINTEGER_BIGINTEGER_H

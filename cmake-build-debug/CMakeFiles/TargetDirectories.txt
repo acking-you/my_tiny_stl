@@ -11,6 +11,7 @@ D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/Trie_static.dir
 D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/UnionFind.dir
 D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/HafumanZip.dir
 D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/TCP_SOCKET_SERVER.dir
+D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/BigInteger-oldversion.dir
 D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/BigInteger.dir
 D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/Complex.dir
 D:/CLion Project/my_tiny_stl/cmake-build-debug/CMakeFiles/edit_cache.dir

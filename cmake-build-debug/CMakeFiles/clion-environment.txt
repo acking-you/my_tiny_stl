@@ -1,4 +1,4 @@
-ToolSet: w64 9.0 (local)@D:\new_mingw\MinGW
+ToolSet: w64 10.0 (local)@D:\Qt6\Tools\mingw900_64
 Options: 
 
 Options:

@@ -199,7 +199,7 @@ private:
     void ReAlloc(size_t newCapacity) {
         // allocate space for new block
         T* newBlock = (T*)::operator new(sizeof(T)*newCapacity);
-        int p_Size = m_Size;
+        auto p_Size = m_Size;
         // ensure no overflow
         if (newCapacity < p_Size)
             p_Size = newCapacity;

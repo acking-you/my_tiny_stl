@@ -64,6 +64,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/UnionFind.dir/DependInfo.cmake"
   "CMakeFiles/HafumanZip.dir/DependInfo.cmake"
   "CMakeFiles/TCP_SOCKET_SERVER.dir/DependInfo.cmake"
+  "CMakeFiles/BigInteger-oldversion.dir/DependInfo.cmake"
   "CMakeFiles/BigInteger.dir/DependInfo.cmake"
   "CMakeFiles/Complex.dir/DependInfo.cmake"
   "CMakeFiles/main.dir/DependInfo.cmake"
