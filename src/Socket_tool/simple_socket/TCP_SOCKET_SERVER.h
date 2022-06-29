@@ -11,24 +11,23 @@ class TCP_SOCKET_SERVER : public TCP_INTERFACE {
 public:
     TCP_SOCKET_SERVER();
 
-    ~TCP_SOCKET_SERVER();
+    ~TCP_SOCKET_SERVER() override;
 
     void Bind(int port);
 
     void Listen();
 
-    SOCKET Accept();
+    socket_t Accept();
 
-    int Send(SOCKET clnt, const void *buf, const int buflen);
+    int Send(socket_t clnt, const void *buf, const int buflen) override;
 
-    int Recv(SOCKET clnt, void *buf, const int buflen);
+    int Recv(socket_t clnt, void *buf, const int buflen) override;
 
-    void Close(SOCKET clnt);
+    void Close(socket_t clnt) override;
 
-    void error_die(const char *str);
 
 private:
-    SOCKET servSock;
+    socket_t servSock;
     sockaddr_in sockAddr;
 
 };

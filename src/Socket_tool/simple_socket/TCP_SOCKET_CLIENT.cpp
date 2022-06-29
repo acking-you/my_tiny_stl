@@ -3,37 +3,37 @@
 //
 
 #include "TCP_SOCKET_CLIENT.h"
-
+#include<cstring>
 //初始化
 TCP_SOCKET_CLIENT::TCP_SOCKET_CLIENT() : clntSock(0) {}
 
 //关闭套接字操作
-void TCP_SOCKET_CLIENT::Close(SOCKET clnt) {
-    if (closesocket(clnt) != 0)
-        error_die("close");
+void TCP_SOCKET_CLIENT::Close(socket_t clnt) {
+    if (close(clnt) != 0)
+        ERR_LOG("close");
     clntSock = 0;
 }
 
 //连接服务器操作
-SOCKET TCP_SOCKET_CLIENT::Connect(const char *IPAdrr, u_short port) {
+socket_t TCP_SOCKET_CLIENT::Connect(const char *IPAdrr, u_short port) {
     memset(&sockAddr, 0, sizeof sockAddr);
     clntSock = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP);
     sockAddr.sin_family = PF_INET;
     sockAddr.sin_addr.s_addr = inet_addr(IPAdrr);
     sockAddr.sin_port = htons(port);
-    if (connect(clntSock, (SOCKADDR *) &sockAddr, sizeof(sockAddr)) != 0) {
-        error_die("connect");
+    if (connect(clntSock, (sockaddr*) &sockAddr, sizeof(sockAddr)) != 0) {
+        ERR_EXIT("connect");
     }
     return clntSock;
 }
 
 //发送信息操作
-int TCP_SOCKET_CLIENT::Send(SOCKET clnt, const void *buf, const int bufSize) {
+int TCP_SOCKET_CLIENT::Send(socket_t clnt, const void *buf, const int bufSize) {
     return send(clnt, (const char *) buf, bufSize, 0);
 }
 
 //接收信息操作
-int TCP_SOCKET_CLIENT::Recv(SOCKET clnt, void *buf, const int bufSize) {
+int TCP_SOCKET_CLIENT::Recv(socket_t clnt, void *buf, const int bufSize) {
     return recv(clnt, (char *) buf, bufSize, 0);
 }
 
@@ -61,10 +61,5 @@ void TCP_SOCKET_CLIENT::Gethostbyname(const char *URL) {
 //析构时需要确保所有东西已经关闭
 TCP_SOCKET_CLIENT::~TCP_SOCKET_CLIENT() {
     if (clntSock != 0)
-        closesocket(clntSock);
-}
-
-void TCP_SOCKET_CLIENT::error_die(const char *str) {
-    printf("[hint]%s failed:%d", str, WSAGetLastError());
-    exit(-1);
+        close(clntSock);
 }
