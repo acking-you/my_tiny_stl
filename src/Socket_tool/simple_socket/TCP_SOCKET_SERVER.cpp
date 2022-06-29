@@ -36,7 +36,7 @@ socket_t TCP_SOCKET_SERVER::Accept() {
     socklen_t nSize = sizeof(t);
     //后面两个参数为可选
     socket_t clnt = accept(servSock, (sockaddr*)(&t), &nSize);
-    if (clnt <= 0)ERR_EXIT("accept");
+    if (clnt <= 0)ERR_LOG("accept");
     return clnt;
 }
 

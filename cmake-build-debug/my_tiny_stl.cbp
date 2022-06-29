@@ -5,851 +5,215 @@
 		<Option title="my_tiny_stl"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\Clib\;CMake Files\src\Data_struct_tool\;CMake Files\src\Data_struct_tool\HashTable\;CMake Files\src\Practical_algorithms\;CMake Files\src\Socket_tool\;CMake Files\src\Socket_tool\simple_socket\;CMake Files\src\Template_tool\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
+				<Option working_dir="/mnt/d/CLion Project/my_tiny_stl/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="strpbrk">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/strpbrk.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 strpbrk"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="strpbrk/fast">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/strpbrk.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 strpbrk/fast"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Trie_dyn">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/Trie_dyn.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 Trie_dyn"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Trie_dyn/fast">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/Trie_dyn.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 Trie_dyn/fast"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Tarjan">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/Tarjan.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 Tarjan"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Tarjan/fast">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/Tarjan.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 Tarjan/fast"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="LinkMap">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/LinkMap.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 LinkMap"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="LinkMap/fast">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/LinkMap.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 LinkMap/fast"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="sample_HashMap">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/sample_HashMap.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 sample_HashMap"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="sample_HashMap/fast">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/sample_HashMap.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 sample_HashMap/fast"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="TCP_SOCKET_CLIENT">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/TCP_SOCKET_CLIENT.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 TCP_SOCKET_CLIENT"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="TCP_SOCKET_CLIENT/fast">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/TCP_SOCKET_CLIENT.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 TCP_SOCKET_CLIENT/fast"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="AVLTree">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/AVLTree.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 AVLTree"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="AVLTree/fast">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/AVLTree.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 AVLTree/fast"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="BinarySearch">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/BinarySearch.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 BinarySearch"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="BinarySearch/fast">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/BinarySearch.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 BinarySearch/fast"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Treap">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/Treap.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 Treap"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Treap/fast">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/Treap.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 Treap/fast"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Trie_static">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/Trie_static.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 Trie_static"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Trie_static/fast">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/Trie_static.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 Trie_static/fast"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="UnionFind">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/UnionFind.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 UnionFind"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="UnionFind/fast">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/UnionFind.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 UnionFind/fast"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="HafumanZip">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/HafumanZip.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 HafumanZip"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="HafumanZip/fast">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/HafumanZip.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 HafumanZip/fast"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="TCP_SOCKET_SERVER">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/TCP_SOCKET_SERVER.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 TCP_SOCKET_SERVER"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="TCP_SOCKET_SERVER/fast">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/TCP_SOCKET_SERVER.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 TCP_SOCKET_SERVER/fast"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="BigInteger-oldversion">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/BigInteger-oldversion.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 BigInteger-oldversion"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="BigInteger-oldversion/fast">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/BigInteger-oldversion.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 BigInteger-oldversion/fast"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="BigInteger">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/BigInteger.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 BigInteger"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="BigInteger/fast">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/BigInteger.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 BigInteger/fast"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Complex">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/Complex.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 Complex"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Complex/fast">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/Complex.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 Complex/fast"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
+				<Option working_dir="/mnt/d/CLion Project/my_tiny_stl/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="main">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/main.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 main"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="main/fast">
-				<Option output="D:/CLion Project/my_tiny_stl/cmake-build-debug/main.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Qt6/Tools/mingw900_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 main/fast"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/CLion Project/my_tiny_stl/cmake-build-debug"/>
+				<Option working_dir="/mnt/d/CLion Project/my_tiny_stl/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Qt6/Tools/mingw900_64/bin/mingw32-make.exe -f &quot;D:/CLion Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dict_test">
+				<Option output="/mnt/d/CLion Project/my_tiny_stl/cmake-build-debug/src/Data_struct_tool/HashTable/dict_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/CLion Project/my_tiny_stl/cmake-build-debug/src/Data_struct_tool/HashTable"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Data_struct_tool/HashTable/Makefile&quot;  VERBOSE=1 dict_test"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Data_struct_tool/HashTable/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Data_struct_tool/HashTable/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Data_struct_tool/HashTable/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dict_test/fast">
+				<Option output="/mnt/d/CLion Project/my_tiny_stl/cmake-build-debug/src/Data_struct_tool/HashTable/dict_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/CLion Project/my_tiny_stl/cmake-build-debug/src/Data_struct_tool/HashTable"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Data_struct_tool/HashTable/Makefile&quot;  VERBOSE=1 dict_test/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Data_struct_tool/HashTable/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Data_struct_tool/HashTable/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Data_struct_tool/HashTable/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simulation">
+				<Option output="/mnt/d/CLion Project/my_tiny_stl/cmake-build-debug/src/Practical_algorithms/simulation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/CLion Project/my_tiny_stl/cmake-build-debug/src/Practical_algorithms"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Practical_algorithms/Makefile&quot;  VERBOSE=1 simulation"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Practical_algorithms/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Practical_algorithms/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Practical_algorithms/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simulation/fast">
+				<Option output="/mnt/d/CLion Project/my_tiny_stl/cmake-build-debug/src/Practical_algorithms/simulation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/CLion Project/my_tiny_stl/cmake-build-debug/src/Practical_algorithms"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Practical_algorithms/Makefile&quot;  VERBOSE=1 simulation/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Practical_algorithms/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Practical_algorithms/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Practical_algorithms/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option output="/mnt/d/CLion Project/my_tiny_stl/cmake-build-debug/src/Socket_tool/simple_socket/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/CLion Project/my_tiny_stl/cmake-build-debug/src/Socket_tool/simple_socket"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Socket_tool/simple_socket/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Socket_tool/simple_socket/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Socket_tool/simple_socket/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Socket_tool/simple_socket/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test/fast">
+				<Option output="/mnt/d/CLion Project/my_tiny_stl/cmake-build-debug/src/Socket_tool/simple_socket/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/CLion Project/my_tiny_stl/cmake-build-debug/src/Socket_tool/simple_socket"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Socket_tool/simple_socket/Makefile&quot;  VERBOSE=1 test/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Socket_tool/simple_socket/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Socket_tool/simple_socket/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CLion\ Project/my_tiny_stl/cmake-build-debug/src/Socket_tool/simple_socket/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Clib/strtok_series/strpbrk.cpp">
-			<Option target="strpbrk"/>
+		<Unit filename="/mnt/d/CLion Project/my_tiny_stl/src/Data_struct_tool/HashTable/dict/test.cpp">
+			<Option target="dict_test"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/HashTable/sample_HashMap.cpp">
-			<Option target="sample_HashMap"/>
+		<Unit filename="/mnt/d/CLion Project/my_tiny_stl/src/Practical_algorithms/simulation/simulation_functioncall.cpp">
+			<Option target="simulation"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/HashTable/sample_HashMap.h">
-			<Option target="sample_HashMap"/>
+		<Unit filename="/mnt/d/CLion Project/my_tiny_stl/src/Socket_tool/simple_socket/TCP_SOCKET_CLIENT.cpp">
+			<Option target="test"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Map_generator/LinkMap.cpp">
-			<Option target="LinkMap"/>
+		<Unit filename="/mnt/d/CLion Project/my_tiny_stl/src/Socket_tool/simple_socket/TCP_SOCKET_CLIENT.h">
+			<Option target="test"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Map_generator/LinkMap.h">
-			<Option target="LinkMap"/>
+		<Unit filename="/mnt/d/CLion Project/my_tiny_stl/src/Socket_tool/simple_socket/TCP_SOCKET_SERVER.cpp">
+			<Option target="test"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Map_generator/Tarjan.cpp">
-			<Option target="Tarjan"/>
+		<Unit filename="/mnt/d/CLion Project/my_tiny_stl/src/Socket_tool/simple_socket/TCP_SOCKET_SERVER.h">
+			<Option target="test"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Map_generator/Tarjan.h">
-			<Option target="Tarjan"/>
+		<Unit filename="/mnt/d/CLion Project/my_tiny_stl/src/Socket_tool/simple_socket/test_socket.cpp">
+			<Option target="test"/>
 		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Search_tree/AVLTree.cpp">
-			<Option target="AVLTree"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Search_tree/AVLTree.h">
-			<Option target="AVLTree"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Search_tree/BinarySearch.cpp">
-			<Option target="BinarySearch"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Search_tree/BinarySearch.h">
-			<Option target="BinarySearch"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Search_tree/Treap.cpp">
-			<Option target="Treap"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Search_tree/Treap.h">
-			<Option target="Treap"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Variety/Trie_dyn.cpp">
-			<Option target="Trie_dyn"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Variety/Trie_dyn.h">
-			<Option target="Trie_dyn"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Variety/Trie_static.cpp">
-			<Option target="Trie_static"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Variety/Trie_static.h">
-			<Option target="Trie_static"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Variety/UnionFind.cpp">
-			<Option target="UnionFind"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Data_struct_tool/Variety/UnionFind.h">
-			<Option target="UnionFind"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Practical_algorithms/Hafuman/HafumanZip.cpp">
-			<Option target="HafumanZip"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Practical_algorithms/Hafuman/HafumanZip.h">
-			<Option target="HafumanZip"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Socket_tool/TCP_SOCKET_CLIENT.cpp">
-			<Option target="TCP_SOCKET_CLIENT"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Socket_tool/TCP_SOCKET_CLIENT.h">
-			<Option target="TCP_SOCKET_CLIENT"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Socket_tool/TCP_SOCKET_SERVER.cpp">
-			<Option target="TCP_SOCKET_SERVER"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Socket_tool/TCP_SOCKET_SERVER.h">
-			<Option target="TCP_SOCKET_SERVER"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Template_tool/BigInteger-oldversion.cpp">
-			<Option target="BigInteger-oldversion"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Template_tool/BigInteger-oldversion.h">
-			<Option target="BigInteger-oldversion"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Template_tool/BigInteger.cpp">
-			<Option target="BigInteger"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Template_tool/BigInteger.h">
-			<Option target="BigInteger"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Template_tool/Complex.cpp">
-			<Option target="Complex"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/Template_tool/Complex.h">
-			<Option target="Complex"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/src/main.cpp">
-			<Option target="main"/>
-		</Unit>
-		<Unit filename="D:/CLion Project/my_tiny_stl/CMakeLists.txt">
+		<Unit filename="/mnt/d/CLion Project/my_tiny_stl/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLion Project/my_tiny_stl/src/Clib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\Clib\"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLion Project/my_tiny_stl/src/Data_struct_tool/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\Data_struct_tool\"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLion Project/my_tiny_stl/src/Data_struct_tool/HashTable/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\Data_struct_tool\HashTable\"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLion Project/my_tiny_stl/src/Practical_algorithms/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\Practical_algorithms\"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLion Project/my_tiny_stl/src/Socket_tool/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\Socket_tool\"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLion Project/my_tiny_stl/src/Socket_tool/simple_socket/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\Socket_tool\simple_socket\"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLion Project/my_tiny_stl/src/Template_tool/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\Template_tool\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

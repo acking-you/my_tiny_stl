@@ -1,21 +1,4 @@
-"D:\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\CLion Project\my_tiny_stl"
-    -- src/strpbrk.cpp will be compiled to bin/strpbrk
-    -- src/sample_HashMap.cpp will be compiled to bin/sample_HashMap
-    -- src/LinkMap.cpp will be compiled to bin/LinkMap
-    -- src/Tarjan.cpp will be compiled to bin/Tarjan
-    -- src/AVLTree.cpp will be compiled to bin/AVLTree
-    -- src/BinarySearch.cpp will be compiled to bin/BinarySearch
-    -- src/Treap.cpp will be compiled to bin/Treap
-    -- src/Trie_dyn.cpp will be compiled to bin/Trie_dyn
-    -- src/Trie_static.cpp will be compiled to bin/Trie_static
-    -- src/UnionFind.cpp will be compiled to bin/UnionFind
-    -- src/HafumanZip.cpp will be compiled to bin/HafumanZip
-    -- src/TCP_SOCKET_CLIENT.cpp will be compiled to bin/TCP_SOCKET_CLIENT
-    -- src/TCP_SOCKET_SERVER.cpp will be compiled to bin/TCP_SOCKET_SERVER
-    -- src/BigInteger-oldversion.cpp will be compiled to bin/BigInteger-oldversion
-    -- src/BigInteger.cpp will be compiled to bin/BigInteger
-    -- src/Complex.cpp will be compiled to bin/Complex
-    -- src/main.cpp will be compiled to bin/main
+C:\WINDOWS\system32\wsl.exe --distribution Ubuntu-22.04 --exec /bin/bash -c "export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd '/mnt/d/CLion Project/my_tiny_stl/cmake-build-debug' && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S '/mnt/d/CLion Project/my_tiny_stl' -B '/mnt/d/CLion Project/my_tiny_stl/cmake-build-debug'"
 -- Configuring done
 -- Generating done
--- Build files have been written to: D:/CLion Project/my_tiny_stl/cmake-build-debug
+-- Build files have been written to: /mnt/d/CLion Project/my_tiny_stl/cmake-build-debug

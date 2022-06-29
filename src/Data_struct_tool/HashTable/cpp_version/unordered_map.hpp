@@ -2,269 +2,495 @@
 // Created by L_B__ on 2021/11/25.
 //
 /*
- * 有关说明：完全使用的java1.7的那套实现方法
- * 而由于暂时还没有实现迭代器，所以无法对外部开放遍历方法。
- * 实际上实现迭代器也不难，就是通过实现一个方法来构造一个内部的迭代器类
- * 设计一个迭代器类，在C++里面一般是一个内部封装类，然后实现next方法即可（实际表现为重载运算符）
- * 但不过很明显这里如果这样设计迭代器，会产生较大的额外消耗，所以暂不设计
+ * 有关说明：参考Redis内的渐进式rehash实现。
+ * 迭代器部分设计借鉴Java。
+ * 本实现最新更新的版本为2022-6-29更新
  * */
-#include <functional>
-#include <utility>
-#include <cassert>
+
+//实现简单dict->渐进式多线程rehash的dict
+//注意！：以下以C++20的标准实现（在函数原型中用到了auto&&
 
 #ifndef MY_TINY_STL_UNORDERED_MAP_H
 #define MY_TINY_STL_UNORDERED_MAP_H
-namespace L_B__ {
-    template<typename K, typename V, typename H = std::hash<K>>
-    class unordered_map {
-/*类型声明*/
-    private:
-        typedef K key_t;
-        typedef V val_t;
-        typedef H hash_t;   //对应的哈希模板类型
-    public:
-        struct node {//单个节点
-            key_t key;
-            val_t val;
-            node *next;
 
-            node() : key(0), val(0), next(nullptr) {}
+#include<utility>
+#include<iostream>
+#include<thread>
+#include<functional>
+#include<cassert>
 
-            node(key_t key, val_t val) : key(key), val(val), next(nullptr) {}
-        };
+template<class K,class V>
+class UnorderedMap;
+template<class k, class v>
+class Dict {
+public:
+    enum {
+        SMALL_LOAD = 1,
+        MID_LOAD = 5,
+        BIG_LOAD = 10,
+    };
 
-        const float factor = 0.75f;//装载因子
-/*数据定义*/
-    public:
-        size_t cnt;             //已经插入的键值对数目
-        size_t capacity;         //当前最大容量
-        node **map;              //一条哈希链的首地址
+    struct dictNode {
+        std::pair<k, v> value;
+        dictNode *next{};
+    };
+    using key_t = k;
+    using value_t = v;
+    using node_t = dictNode;
 
-/*构造函数实现*/
-    public:
-        /*default construct*/
-        unordered_map() : cnt(0), capacity(64), map(nullptr)//默认cap长度设置为16
-        {
-            map = new node *[capacity];
-            for (int i = 0; i < capacity; i++) {
-                map[i] = nullptr;
-            }
+    friend class UnorderedMap<k,v>;  //友元类
+    friend inline void swap(Dict& a,Dict& b){
+        using std::swap;
+        swap(a.m_table,b.m_table);
+        swap(a.m_size,b.m_size);
+        swap(a.m_used,b.m_used);
+    }
+
+    Dict() = default;
+
+    explicit Dict(size_t capacity){
+        init_data(capacity);
+    }
+
+    ~Dict(){
+        destroy();
+    }
+
+    bool Insert(node_t* src){
+        assert(src!= nullptr);
+        if(push_node(src)==nullptr)return false;
+        m_used++;
+        return true;
+    }
+
+    node_t* Insert(std::pair<key_t,value_t>&&src){
+        auto* node = new node_t();
+        node->value = src;
+        if(push_node(node) == nullptr){
+            delete node;
+            return nullptr;
         }
+        m_used++;
+        return node;
+    }
 
-        /*copy construct*/
-        unordered_map(unordered_map &src) : cnt(src.cnt), capacity(src.capacity), map(nullptr) {
-            assert(capacity > 0);
-            map = new node *[capacity];
-            copy_map(map, src.map);//委托实现深拷贝
+    value_t& operator[](key_t && key){ //支持下标操作，如果不存在则创建默认零值
+        auto* node = do_search(std::forward<key_t>(key));
+        if(node == nullptr){
+            auto* new_node = new node_t();
+            new_node->value.first = key;
+            push_node(new_node);
+            m_used++;
+            return new_node->value.second;
         }
+        return node->value.second;
+    }
 
-        /*move construct*/
-        unordered_map(unordered_map &&src) : cnt(src.cnt), capacity(src.capacity), map(src.map) {
-            assert(capacity > 0 && map != nullptr);
-            //已经成功进行内存转移，接下来只需要把原src的map赋值为nullptr便可防止调用析构函数销毁内存
-            src.map = nullptr;
+    bool Update(std::pair<key_t,value_t>&& obj){
+        auto* node = do_search(obj.first);
+        if(node){
+            node->value.second = obj.second;
+            return true;
         }
+        return false;
+    }
 
-        /*destruct*/
-        ~unordered_map() {
-            destroy();
+    bool Delete(key_t&& key){
+        auto node = poll_node(std::forward<key_t>(key));
+        if(node){
+            delete node;
+            m_used--;
+            return true;
         }
+        return false;
+    }
 
-/*所有的对外功能实现*/
-    public:
-        void put(key_t key, val_t val) {
-            if (cnt >= factor * capacity)resize();
-            putVal(key, val);
+    value_t Search(std::pair<key_t,value_t>&& obj){
+        auto* node = do_search(obj.first);
+        if(node){
+            return node->value.second;
         }
+        return value_t(); //返回对应类型的零值
+    }
 
-        void insert(node *src) {
-            assert(src != nullptr);//外界必须已经分配内存
-            size_t index = getIndex(src->key);
-            if (map[index] == nullptr) {
-                src->next = nullptr;
-                map[index] = src;
-            } else {
-                src->next = map[index];
-                map[index] = src;
-            }
-            cnt++;
-        }
+    bool Empty(){
+        return m_used == 0;
+    }
 
-        void insert(std::pair<key_t, val_t> src) {//通过外界传入pair实现键值对传递
-            put(src.first, src.second);
-        }
+    size_t Size(){
+        return m_used;
+    }
 
-        val_t &get(key_t key) {//当你调用get的时候就必须存在，否则会被断言
-            val_t *ret = getVal(key);
-            assert(ret != nullptr);
-            return *ret;
-        }
+    void Clear(){
+        clear_table();
+    }
 
-        bool count(key_t key) {
-            return getVal(key) != nullptr;
-        }
+private:
+    node_t* push_node(node_t* node){   //返回成功操作的
+        auto index = get_index(std::forward<key_t>(node->value.first));//获取位置
+        auto* dst = do_search(std::forward<key_t>(node->value.first)); //根据key查找是否先前存在
 
-        void clear() {
-            if (cnt == 0)
-                return;
-            assert(map != nullptr);
-            for (int i = 0; i < capacity; i++) {
-                if (map[i] != nullptr)
-                    del_nodes(map[i]);
-                map[i] = nullptr;
-            }
-            cnt = 0;//清空哈希表就是重置里面的数据
-        }
-
-        size_t &size() {
-            return cnt;
-        }
-/*重载运算符更好操作*/
-    public:
-        val_t &operator[](key_t key) {
-            val_t *val = getVal(key);
-            if (val == nullptr)//按照STL的平时使用习惯，如果不存在key，则创建一片空间存储对应的0键值对
-                put(key, val_t(0));
-            else return *val;
-            return get(key);
-        }
-
-        //接受左值的赋值运算符
-        unordered_map &operator=(unordered_map &src) {
-            assert(src.map != nullptr && src.capacity > 0);
-            destroy();
-            capacity = src.capacity;
-            cnt = src.cnt;
-            map = new node *[capacity];
-            copy_map(map, src.map);
-            return *this;
-        }
-
-        //接受右值的赋值运算符
-        unordered_map &operator=(unordered_map &&src) {
-            destroy();
-            map = src.map;
-            cnt = src.cnt;
-            capacity = src.capacity;
-
-            src.map = nullptr;
-            return *this;
-        }
-
-/*不需要具体对象的函数*/
-    public:
-        static void del_nodes(node *src) {//释放单条链
-            assert(src != nullptr);
-            node *pre;
-            node *cur = src;
-            while (cur != nullptr) {
-                pre = cur;
-                cur = cur->next;
-                delete pre;
-            }
-        }
-
-
-/*一些不对外开放的内部委托函数*/
-    private:
-        val_t *getVal(key_t key) {//通用getval函数
-            size_t index = getIndex(key);
-            node *p = map[index];
-            while (p != nullptr) {
-                if (p->key == key)
-                    return &(p->val);
-                p = p->next;
-            }
+        if(dst != nullptr){//已经存在
             return nullptr;
         }
 
-        size_t getIndex(key_t key) {
-            hash_t to_hash;
-            size_t code = to_hash(key);//用对应的哈希仿函数得出hashcode
-            code = code ^ (code >> 16);//扰动函数
-            return code & (capacity - 1);//子掩码方式得出下标
-        }
+        auto& head = m_table[index]; //注意用引用，为了修改head
+        node->next = head;
+        head = node;
+        return node;
+    }
 
-        void putVal(key_t key, key_t val) {
-            size_t index = getIndex(key);
-            node *tmp = map[index];
-            if (tmp == nullptr) {//当前位置为空
-                map[index] = new node(key, val);
-                cnt++;
-                return;
-            }
-            while (tmp != nullptr) {
-                if (tmp->key == key) {//已经存在key，对val进行覆盖
-                    tmp->val = val;
-                    return;
-                }
-                tmp = tmp->next;
-            }
-            //如果这条链不存在对应的key，就直接头插
-            node *p = new node(key, val);
-            p->next = map[index];
-            map[index] = p;
-            cnt++;
-        }
-
-        void resize() {//注意每次resize需要rehash
-            capacity <<= 1;//扩容两倍
-            node **tmp = map;
-            map = new node *[capacity];
-            std::fill(map, map + capacity, nullptr);//C++14里面指针无法初始化为0，需要为nullptr
-            rehash(tmp);
-            delete[]tmp;
-        }
-
-        void rehash(node **preTable) {
-            cnt = 0; //由于insert会重新把size计数的
-            assert(preTable != nullptr);
-            size_t preSize = capacity >> 1;
-            for (size_t i = 0; i < preSize; ++i) {
-                if (preTable[i] != nullptr) {
-                    node *preNode;
-                    node *curNode = preTable[i];
-                    while (curNode != nullptr) {
-                        preNode = curNode;
-                        curNode = curNode->next;
-                        insert(preNode);
-                    }
-                }
+    node_t* poll_node(key_t&& key){   //返回成功操作的
+        auto index = get_index(std::forward<key_t>(key));//获取位置
+        node_t*& head = m_table[index];
+        if(head == nullptr) return nullptr; //不存在
+        node_t* cur_node = head;
+        node_t* pre_node = nullptr;
+        if(cur_node&&cur_node->value.first!=key){ //如果cur_node不是目标则继续寻找
+            while(cur_node){
+                pre_node = cur_node;    //过程中记录前一个节点
+                cur_node = cur_node->next;
+                if(cur_node->value.first==key)
+                    break;
             }
         }
-
-        void destroy() {
-            if (map == nullptr)//曾经已经被清理过
-                return;
-            for (size_t i = 0; i < capacity; i++) {
-                if (map[i] != nullptr)
-                    del_nodes(map[i]);
-                map[i] = nullptr;
-            }
-            delete[] map;
-            map = nullptr;
+        //开始删除操作：更新链表结构，并返回需要删除的指针
+        if(!pre_node){   //若目标元素是头部
+            head = head->next;
+            return cur_node;
         }
+        pre_node->next = cur_node->next;
+        cur_node->next = nullptr;
+        return cur_node;
+    }
 
-        void copy_map(node **_dest, node **_src) {
-            assert(_dest != nullptr && _src != nullptr);
-            for (size_t i = 0; i < capacity; i++) {
-                _dest[i] = nullptr;
-                if (_src[i] != nullptr) {
-                    node *head = _src[i];
-                    _dest[i] = new node(head->key, head->val);
-                    node *p = _dest[i];
-                    while (head != nullptr) {
-                        head = head->next;
-                        if (head != nullptr) {
-                            p->next = new node(head->key, head->val);
-                            p = p->next;
-                        }
-                    }
-                }
+    node_t* do_search(auto&& key){ //找不到返回空，找到了返回找到的节点
+        node_t* node = m_table[get_index(std::forward<key_t>(key))];
+        while(node){
+            if(node->value.first == key){
+                return node;
+            }
+            node = node->next;
+        }
+        return node;
+    }
+
+    void del_nodelist(node_t* head){
+        auto* cur_node = head;
+        while(cur_node){
+            auto* next_node = cur_node->next;
+            delete cur_node;
+            cur_node = next_node;
+        }
+    }
+
+    void clear_table(){
+        for(int i = m_size-1;i>=0;--i){
+            if(m_table[i]){
+                del_nodelist(m_table[i]);
+                m_table[i] = nullptr;
             }
         }
+        m_used = 0;
+    }
+
+    void destroy(){
+        clear_table();
+        delete[] m_table;
+        m_table = nullptr;
+    }
+
+    size_t get_index(key_t&& key){
+        std::hash<key_t> h;
+        auto code = h(std::forward<key_t>(key));
+        code = code ^ (code >> 16);//扰动函数
+        return code&(m_size-1);
+    }
+
+    double get_loadFactor(){
+        return (double)m_used/m_size;
+    }
+
+    inline size_t find_size(size_t need_size){
+        size_t i = 2;
+        do{
+            i <<= 1;
+        }while(i<need_size);
+        return i;
+    }
+
+    void init_data(size_t cap){
+        if((cap&(cap-1))!=0){ //如果不为2的幂，则找出大于它的最小二的幂
+            cap = find_size(cap);
+        }
+        m_size = cap;
+        m_table = new node_t*[cap]{};
+        m_used = 0;
+    }
+
+    void _realloc(size_t cap){
+        if(m_table){//销毁之前分配过的内存
+            destroy();
+        }
+        init_data(cap);
+    }
+
+private:
+    node_t **m_table{};
+    size_t m_size{};
+    size_t m_used{};
+};
+
+template<class K,class V>
+class UnorderedMap{
+public:
+    using key_t = K;
+    using value_t = V;
+    using node_t = typename Dict<K,V>::node_t;
+    enum {
+        SPAN = 150  //每次渐进式的跨度
     };
-}
+
+    class iterator{ //用于迭代所有元素的容器
+    private:
+        explicit iterator(UnorderedMap<K,V>* src,std::pair<int,size_t> curOp,node_t* curNode):
+                m_src(src),m_curOperate(std::move(curOp)),m_curNode(curNode){}
+    public:
+        friend class UnorderedMap<K,V>;
+        bool hasNext(){
+            m_curNode = _getNext();
+            return m_curNode!=nullptr;
+        }
+        std::pair<key_t,value_t> next(){
+            if(m_curNode)
+                return m_curNode->value;
+            throw std::runtime_error("next value nullptr");
+        }
+        void debug(){
+            std::cout<<"bucket size:"<<m_src->m_dict.m_size<<" ele size:"<<m_src->m_dict.m_used<<
+                     " idx:"<<m_src->m_rehashidx<<"\n";
+        }
+    private:
+        node_t* _getNext(){
+            //1.m_curNode还有下个节点
+            //2.根据操作信息对表进行操作
+            if(m_curNode&&m_curNode->next)
+                return m_curNode->next;
+
+            size_t index = m_curOperate.second;
+            //操作第一张表
+            if(m_curOperate.first==1){
+                index++;
+                while(index<m_src->m_dict.m_size){
+                    if(m_src->m_dict.m_table[index]){
+                        m_curOperate.second = index;
+                        return m_src->m_dict.m_table[index];
+                    }
+                    index++;
+                }
+
+                //若前面没查到，继续查询表2
+                index = 0;
+                while(index<m_src->m_rehash_dict.m_size){
+                    if(m_src->m_rehash_dict.m_table[index]){
+                        m_curOperate.first = 2;
+                        m_curOperate.second = index;
+                        return m_src->m_dict.m_table[index];
+                    }
+                    index++;
+                }
+
+                //表2也没有，则没有东西可查，返回null
+                return nullptr;
+            }
+
+            //继续操作第二张表
+            if (m_curOperate.first==2){
+                index++;
+                while(index<m_src->m_rehash_dict.m_size){
+                    if(m_src->m_rehash_dict.m_table[index]){
+                        m_curOperate.second = index;
+                        return m_src->m_rehash_dict.m_table[index];
+                    }
+                    index++;
+                }
+                return nullptr;
+            }
+
+            return nullptr;
+        }
+
+    private:
+        UnorderedMap<K,V>* m_src;
+        std::pair<int,size_t> m_curOperate;
+        node_t* m_curNode;  //用于缓存
+    };
+
+    explicit UnorderedMap(size_t cap = 16):m_dict(cap){
+    }
+
+    //以下利用auto&&万能引用+完美转发自动生成两套代码
+
+
+    bool Insert(std::pair<key_t,value_t>&& src){
+        return _insert(src) != nullptr;
+    }
+
+    bool Insert(std::pair<key_t,value_t>& src){
+        return _insert(src) != nullptr;
+    }
+
+    bool Erase(key_t&& key){
+        return _erase(std::forward<key_t>(key));
+    }
+
+    bool Erase(key_t& key){
+        return _erase(std::forward<key_t>(key));
+    }
+
+    bool Exist(key_t&& key) {
+        return _exist(std::forward<key_t>(key)) != nullptr;
+    }
+
+    bool Exist(key_t& key) {
+        return _exist(std::forward<key_t>(key)) != nullptr;
+    }
+
+    value_t & operator[](key_t && key){
+        return _get_value(std::forward<key_t>(key));
+    }
+
+    value_t & operator[](key_t & key){
+        return _get_value(std::forward<key_t>(key));
+    }
+
+
+    size_t Size(){
+        return _size();
+    }
+
+    iterator Iterator(){
+        return iterator(this,{1,-1},nullptr);
+    }
+
+private:
+
+    node_t* _insert(auto && src){
+        //1.是否正在进行rehash扩容
+        //2.判断是否需要rehash扩容
+
+        node_t* ret;
+        //正在进行rehash，则还需要进行rehash，且插入到第二张哈希表
+        if(m_rehashidx>=0){
+            ret = m_rehash_dict.Insert(std::forward<std::pair<key_t,value_t>>(src));
+            rehash_round();
+            return ret;
+        }
+
+        auto load_factor =  m_dict.get_loadFactor();
+        if(load_factor>=(float)Dict<K,V>::MID_LOAD){
+            m_rehashidx = 0;
+            if(rehash_round()){
+                return m_dict.Insert(std::forward<std::pair<key_t,value_t>>(src));
+            }
+            return m_rehash_dict.Insert(std::forward<std::pair<key_t,value_t>>(src));
+        }
+
+        return m_dict.Insert(std::forward<std::pair<key_t,value_t>>(src));
+    }
+
+    bool _erase(auto&& key){
+
+        if(m_rehashidx>=0){
+            bool r1 = m_dict.Delete(std::forward<key_t>(key));
+            bool r2 = false;
+            if(!r1)
+                r2 = m_rehash_dict.Delete(std::forward<key_t>(key));
+            rehash_round();
+            return r2 || r1;
+        }
+
+        return m_dict.Delete(std::forward<key_t>(key));
+    }
+
+
+    node_t* _exist(auto && key){
+        if(m_rehashidx>=0){
+            auto node = m_dict.do_search(std::forward<key_t>(key));
+            if(node==nullptr)
+                node = m_rehash_dict.do_search(std::forward<key_t>(key));
+            rehash_round();
+            return node;
+        }
+
+        return m_dict.do_search(std::forward<key_t>(key));
+    }
+
+
+    value_t & _get_value(auto&& key){
+        node_t* src_node = _exist(std::forward<key_t>(key));
+        if(src_node){
+            return src_node->value.second;
+        }
+        node_t* p = _insert(std::make_pair(key,value_t()));
+        if(p)
+            return p->value.second;
+        throw std::runtime_error("push dict node error");
+    }
+
+
+    size_t _size(){
+        if(m_rehash_dict.Empty()){
+            return m_dict.m_used;
+        }
+        return m_dict.m_used+m_rehash_dict.m_used;
+    }
+
+
+    //根据跨度继续往下执行哈希操作
+    bool rehash_round(){
+        //若首次rehash需要申请内存
+        if(m_rehashidx == 0){
+            m_rehash_dict._realloc(m_dict.m_used*2);
+        }
+
+        int i = 0;
+        auto& dict_size = m_dict.m_size;
+        auto& src = m_dict.m_table;
+        auto& used_size = m_dict.m_used;
+
+        while(i<SPAN&&m_rehashidx+i<dict_size){
+            node_t* node = src[m_rehashidx+i];
+            while(node){
+                auto* next_node = node->next;
+                m_rehash_dict.Insert(node);
+                used_size--;
+                node = next_node;
+            }
+            src[m_rehashidx+i] = nullptr;
+            i++;
+        }
+
+        //rehash执行完成
+        if(m_rehashidx+i==dict_size){
+            m_rehashidx = -1;
+            delete src;
+            src = nullptr;  //恢复初始状态
+            dict_size = 0;
+            used_size = 0;
+            swap(m_dict,m_rehash_dict);
+            return true;
+        }
+        //rehash还未执行完
+        m_rehashidx += i;
+        return false;
+    }
+
+private:
+    Dict<K,V> m_dict;
+    Dict<K,V> m_rehash_dict;
+    int m_rehashidx = -1;
+};
 
 
 #endif //MY_TINY_STL_UNORDERED_MAP_H

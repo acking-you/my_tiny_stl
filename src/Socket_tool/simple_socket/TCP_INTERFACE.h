@@ -5,7 +5,6 @@
 #ifndef MY_TINY_STL_TCP_INTERFACE_H
 #define MY_TINY_STL_TCP_INTERFACE_H
 
-#include <cstdio>
 #include "_public_socket.h"
 
 class TCP_INTERFACE {
